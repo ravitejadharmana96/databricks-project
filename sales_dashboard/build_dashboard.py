@@ -1,8 +1,8 @@
-"""Build dashboards/gold_sales_dashboard.json (Databricks AI/BI dashboard on claude_catalog.gold)."""
+"""Build gold_sales_dashboard.json (Databricks AI/BI dashboard on claude_catalog.gold) next to this script."""
 import json
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent.parent / "dashboards" / "gold_sales_dashboard.json"
+OUT = Path(__file__).resolve().parent / "gold_sales_dashboard.json"
 G = "claude_catalog.gold"
 
 # Okabe-Ito based, colour-blind safe. Semantic status colours are pinned as literal hex.
