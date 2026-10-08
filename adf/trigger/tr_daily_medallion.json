@@ -1,0 +1,25 @@
+{
+  "name": "tr_daily_medallion",
+  "properties": {
+    "description": "Runs pl_run_medallion_databricks every day at 06:00 UTC. Created in Stopped state; start it in ADF Studio (Manage > Triggers) after publishing.",
+    "type": "ScheduleTrigger",
+    "runtimeState": "Stopped",
+    "typeProperties": {
+      "recurrence": {
+        "frequency": "Day",
+        "interval": 1,
+        "startTime": "2026-10-09T06:00:00Z",
+        "timeZone": "UTC"
+      }
+    },
+    "pipelines": [
+      {
+        "pipelineReference": { "referenceName": "pl_run_medallion_databricks", "type": "PipelineReference" },
+        "parameters": {
+          "batch": "batch_1",
+          "key_vault_name": "<KEY_VAULT_NAME>"
+        }
+      }
+    ]
+  }
+}

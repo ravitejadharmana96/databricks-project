@@ -2,6 +2,8 @@
 
 Databricks AI/BI (Lakeview) dashboard on the gold layer of `claude_catalog.gold`.
 
+![Gold Sales Dashboard](Sales_Dashboard.png)
+
 | | |
 |---|---|
 | Dashboard ID | `01f1c318f3581ae9b3abb00a972269fa` |
@@ -39,9 +41,9 @@ their dataset apply to them (region for stores, category for departments).
 Run from the repository root. Use `update` on the same ID; `create` would make a new dashboard with a new URL.
 
 ```bash
-python3 sales_dashboard/build_dashboard.py
+python3 Dashboards/sales_dashboard/build_dashboard.py
 databricks lakeview update 01f1c318f3581ae9b3abb00a972269fa \
-  --serialized-dashboard "$(cat sales_dashboard/gold_sales_dashboard.json)"
+  --serialized-dashboard "$(cat Dashboards/sales_dashboard/gold_sales_dashboard.json)"
 databricks lakeview publish 01f1c318f3581ae9b3abb00a972269fa --warehouse-id 406e144bbc87fee4
 ```
 

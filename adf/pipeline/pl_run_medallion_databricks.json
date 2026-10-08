@@ -1,0 +1,106 @@
+{
+  "name": "pl_run_medallion_databricks",
+  "properties": {
+    "description": "Runs the Databricks job medallion_pipeline (raw -> silver -> gold) on an AWS workspace via the Jobs REST API, waits for it, and fails the pipeline if the job fails.",
+    "parameters": {
+      "workspace_host": { "type": "string", "defaultValue": "dbc-75f286b5-b6db.cloud.databricks.com" },
+      "job_id":         { "type": "string", "defaultValue": "527613356560453" },
+      "batch":          { "type": "string", "defaultValue": "batch_1" },
+      "key_vault_name": { "type": "string", "defaultValue": "<KEY_VAULT_NAME>" },
+      "secret_name":    { "type": "string", "defaultValue": "databricks-token" },
+      "poll_seconds":   { "type": "int",    "defaultValue": 30 }
+    },
+    "variables": {
+      "life_cycle_state": { "type": "String", "defaultValue": "PENDING" },
+      "result_state":     { "type": "String", "defaultValue": "" }
+    },
+    "activities": [
+      {
+        "name": "GetDatabricksToken",
+        "description": "Reads the Databricks token from Key Vault using the factory's managed identity. Output is secured so the token is not logged.",
+        "type": "WebActivity",
+        "policy": { "timeout": "0.00:02:00", "retry": 1, "retryIntervalInSeconds": 30, "secureOutput": true, "secureInput": false },
+        "typeProperties": {
+          "method": "GET",
+          "url": { "value": "@concat('https://', pipeline().parameters.key_vault_name, '.vault.azure.net/secrets/', pipeline().parameters.secret_name, '?api-version=7.4')", "type": "Expression" },
+          "authentication": { "type": "MSI", "resource": "https://vault.azure.net" }
+        }
+      },
+      {
+        "name": "RunDatabricksJob",
+        "description": "POST /api/2.1/jobs/run-now with the batch job parameter.",
+        "type": "WebActivity",
+        "dependsOn": [ { "activity": "GetDatabricksToken", "dependencyConditions": [ "Succeeded" ] } ],
+        "policy": { "timeout": "0.00:05:00", "retry": 0, "retryIntervalInSeconds": 30, "secureOutput": false, "secureInput": true },
+        "typeProperties": {
+          "method": "POST",
+          "url": { "value": "@concat('https://', pipeline().parameters.workspace_host, '/api/2.1/jobs/run-now')", "type": "Expression" },
+          "headers": {
+            "Authorization": { "value": "@concat('Bearer ', activity('GetDatabricksToken').output.value)", "type": "Expression" },
+            "Content-Type": "application/json"
+          },
+          "body": { "value": "@json(concat('{\"job_id\":', pipeline().parameters.job_id, ',\"job_parameters\":{\"batch\":\"', pipeline().parameters.batch, '\"}}'))", "type": "Expression" }
+        }
+      },
+      {
+        "name": "WaitForJobToFinish",
+        "description": "Polls GET /api/2.1/jobs/runs/get until the run reaches a terminal state (max 3 hours).",
+        "type": "Until",
+        "dependsOn": [ { "activity": "RunDatabricksJob", "dependencyConditions": [ "Succeeded" ] } ],
+        "typeProperties": {
+          "expression": { "value": "@or(equals(variables('life_cycle_state'), 'TERMINATED'), or(equals(variables('life_cycle_state'), 'SKIPPED'), equals(variables('life_cycle_state'), 'INTERNAL_ERROR')))", "type": "Expression" },
+          "timeout": "0.03:00:00",
+          "activities": [
+            {
+              "name": "WaitBeforePoll",
+              "type": "Wait",
+              "typeProperties": { "waitTimeInSeconds": { "value": "@pipeline().parameters.poll_seconds", "type": "Expression" } }
+            },
+            {
+              "name": "GetRunStatus",
+              "type": "WebActivity",
+              "dependsOn": [ { "activity": "WaitBeforePoll", "dependencyConditions": [ "Succeeded" ] } ],
+              "policy": { "timeout": "0.00:02:00", "retry": 2, "retryIntervalInSeconds": 30, "secureOutput": false, "secureInput": true },
+              "typeProperties": {
+                "method": "GET",
+                "url": { "value": "@concat('https://', pipeline().parameters.workspace_host, '/api/2.1/jobs/runs/get?run_id=', string(activity('RunDatabricksJob').output.run_id))", "type": "Expression" },
+                "headers": { "Authorization": { "value": "@concat('Bearer ', activity('GetDatabricksToken').output.value)", "type": "Expression" } }
+              }
+            },
+            {
+              "name": "SetLifeCycleState",
+              "type": "SetVariable",
+              "dependsOn": [ { "activity": "GetRunStatus", "dependencyConditions": [ "Succeeded" ] } ],
+              "typeProperties": { "variableName": "life_cycle_state", "value": { "value": "@string(activity('GetRunStatus').output.state.life_cycle_state)", "type": "Expression" } }
+            },
+            {
+              "name": "SetResultState",
+              "type": "SetVariable",
+              "dependsOn": [ { "activity": "SetLifeCycleState", "dependencyConditions": [ "Succeeded" ] } ],
+              "typeProperties": { "variableName": "result_state", "value": { "value": "@coalesce(activity('GetRunStatus').output.state?.result_state, '')", "type": "Expression" } }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CheckJobResult",
+        "type": "IfCondition",
+        "dependsOn": [ { "activity": "WaitForJobToFinish", "dependencyConditions": [ "Succeeded" ] } ],
+        "typeProperties": {
+          "expression": { "value": "@equals(variables('result_state'), 'SUCCESS')", "type": "Expression" },
+          "ifTrueActivities": [],
+          "ifFalseActivities": [
+            {
+              "name": "FailPipeline",
+              "type": "Fail",
+              "typeProperties": {
+                "message": { "value": "@concat('Databricks job ', pipeline().parameters.job_id, ' run ', string(activity('RunDatabricksJob').output.run_id), ' ended with state ', variables('life_cycle_state'), ' / ', variables('result_state'))", "type": "Expression" },
+                "errorCode": "DATABRICKS_JOB_FAILED"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
