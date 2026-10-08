@@ -1,0 +1,1657 @@
+{
+  "datasets": [
+    {
+      "name": "ds_orders",
+      "displayName": "Orders (gold.fact_orders + dims)",
+      "queryLines": [
+        "SELECT f.order_id, f.order_date, f.status, f.payment_method, f.quantity,\n",
+        "       f.gross_amount, f.net_amount, f.is_net_revenue,\n",
+        "       cur.region, cur.store_name, d.category, d.department_name,\n",
+        "       c.segment AS segment_at_order\n",
+        "FROM claude_catalog.gold.fact_orders f\n",
+        "JOIN claude_catalog.gold.dim_store v   ON v.store_sk = f.store_sk\n",
+        "JOIN claude_catalog.gold.dim_store cur ON cur.store_id = v.store_id AND cur.is_current\n",
+        "JOIN claude_catalog.gold.dim_department d ON d.department_id = f.department_id\n",
+        "JOIN claude_catalog.gold.dim_customer c ON c.customer_sk = f.customer_sk"
+      ],
+      "columns": [
+        {
+          "displayName": "Net Revenue",
+          "description": "Revenue excluding cancelled and returned orders",
+          "expression": "SUM(`net_amount`)"
+        },
+        {
+          "displayName": "Gross Revenue",
+          "description": "Revenue including cancelled and returned orders",
+          "expression": "SUM(`gross_amount`)"
+        },
+        {
+          "displayName": "Orders",
+          "description": "Number of orders",
+          "expression": "COUNT(`order_id`)"
+        },
+        {
+          "displayName": "Avg Order Value",
+          "description": "Net revenue per non-cancelled, non-returned order",
+          "expression": "SUM(`net_amount`) / NULLIF(SUM(CASE WHEN `is_net_revenue` THEN 1 ELSE 0 END), 0)"
+        },
+        {
+          "displayName": "Cancel + Return Rate",
+          "description": "Share of orders cancelled or returned",
+          "expression": "SUM(CASE WHEN `status` IN ('Cancelled', 'Returned') THEN 1 ELSE 0 END) * 1.0 / COUNT(`order_id`)"
+        }
+      ]
+    },
+    {
+      "name": "ds_stores",
+      "displayName": "Top 15 stores",
+      "queryLines": [
+        "SELECT store_id, store_name, city, state, region, orders, net_revenue, avg_order_value, revenue_rank\n",
+        "FROM claude_catalog.gold.agg_store_performance\n",
+        "ORDER BY revenue_rank\n",
+        "LIMIT 15"
+      ]
+    },
+    {
+      "name": "ds_depts",
+      "displayName": "Top 10 departments",
+      "queryLines": [
+        "SELECT department_name, category, orders, units, net_revenue, revenue_rank\n",
+        "FROM claude_catalog.gold.agg_department_performance\n",
+        "ORDER BY revenue_rank\n",
+        "LIMIT 10"
+      ]
+    },
+    {
+      "name": "ds_customers",
+      "displayName": "Customer 360",
+      "queryLines": [
+        "SELECT customer_id, full_name, city, state, segment, total_orders, lifetime_value,\n",
+        "       last_order_date, days_since_last_order, rfm_segment\n",
+        "FROM claude_catalog.gold.customer_360"
+      ]
+    },
+    {
+      "name": "ds_top_customers",
+      "displayName": "Top 20 customers",
+      "queryLines": [
+        "SELECT customer_id, full_name, city, state, segment, total_orders, lifetime_value,\n",
+        "       last_order_date, rfm_segment\n",
+        "FROM claude_catalog.gold.customer_360\n",
+        "WHERE total_orders > 0\n",
+        "ORDER BY lifetime_value DESC\n",
+        "LIMIT 20"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "overview",
+      "displayName": "Sales Overview",
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1",
+      "layout": [
+        {
+          "widget": {
+            "name": "ov-title",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# Sales Overview"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "ov-story",
+            "multilineTextboxSpec": {
+              "lines": [
+                "Where does revenue come from, and where do we lose it? **Net revenue** excludes cancelled and returned orders, so the gap between the gross and net lines is revenue lost. Use the Filters page to slice by date, region, category, status or payment method."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-net",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "measure(Net Revenue)",
+                      "expression": "MEASURE(`Net Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Net Revenue)",
+                  "displayName": "Net revenue",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "title": "Net Revenue",
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-orders",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "measure(Orders)",
+                      "expression": "MEASURE(`Orders`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Orders)",
+                  "displayName": "Orders"
+                }
+              },
+              "frame": {
+                "title": "Orders",
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-aov",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "measure(Avg Order Value)",
+                      "expression": "MEASURE(`Avg Order Value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Avg Order Value)",
+                  "displayName": "Avg order value",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "title": "Avg Order Value",
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi-lost",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "measure(Cancel + Return Rate)",
+                      "expression": "MEASURE(`Cancel + Return Rate`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Cancel + Return Rate)",
+                  "displayName": "Cancel + return rate",
+                  "format": {
+                    "type": "number-percent",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 1
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "title": "Cancel + Return Rate",
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "monthly-revenue",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "monthly(order_date)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `order_date`)"
+                    },
+                    {
+                      "name": "measure(Net Revenue)",
+                      "expression": "MEASURE(`Net Revenue`)"
+                    },
+                    {
+                      "name": "measure(Gross Revenue)",
+                      "expression": "MEASURE(`Gross Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "monthly(order_date)",
+                  "scale": {
+                    "type": "temporal"
+                  },
+                  "displayName": "Month"
+                },
+                "y": {
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "fields": [
+                    {
+                      "fieldName": "measure(Net Revenue)",
+                      "displayName": "Net revenue",
+                      "format": {
+                        "type": "number-currency",
+                        "currencyCode": "USD",
+                        "abbreviation": "compact",
+                        "decimalPlaces": {
+                          "type": "max",
+                          "places": 2
+                        }
+                      }
+                    },
+                    {
+                      "fieldName": "measure(Gross Revenue)",
+                      "displayName": "Gross revenue",
+                      "format": {
+                        "type": "number-currency",
+                        "currencyCode": "USD",
+                        "abbreviation": "compact",
+                        "decimalPlaces": {
+                          "type": "max",
+                          "places": 2
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Monthly revenue: gross vs net (the gap is lost revenue)"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 8,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "status-mix",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "status",
+                      "expression": "`status`"
+                    },
+                    {
+                      "name": "measure(Orders)",
+                      "expression": "MEASURE(`Orders`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "measure(Orders)",
+                  "displayName": "Orders",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "status",
+                  "displayName": "Status",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Completed",
+                        "color": "#009E73"
+                      },
+                      {
+                        "value": "Shipped",
+                        "color": "#0072B2"
+                      },
+                      {
+                        "value": "Pending",
+                        "color": "#56B4E9"
+                      },
+                      {
+                        "value": "Cancelled",
+                        "color": "#D55E00"
+                      },
+                      {
+                        "value": "Returned",
+                        "color": "#CC79A7"
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Order status mix"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 6,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "rev-region",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    },
+                    {
+                      "name": "measure(Net Revenue)",
+                      "expression": "MEASURE(`Net Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "region",
+                  "displayName": "Region",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "value"
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Net Revenue)",
+                  "displayName": "Net revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Net revenue by region"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "rev-category",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "category",
+                      "expression": "`category`"
+                    },
+                    {
+                      "name": "measure(Net Revenue)",
+                      "expression": "MEASURE(`Net Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Net Revenue)",
+                  "displayName": "Net revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "category",
+                  "displayName": "Category",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "value"
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Net revenue by department category"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 12,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "rev-payment",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "payment_method",
+                      "expression": "`payment_method`"
+                    },
+                    {
+                      "name": "measure(Net Revenue)",
+                      "expression": "MEASURE(`Net Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "measure(Net Revenue)",
+                  "displayName": "Net revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "payment_method",
+                  "displayName": "Payment method",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Net revenue by payment method"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 12,
+            "width": 4,
+            "height": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stores",
+      "displayName": "Stores & Departments",
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1",
+      "layout": [
+        {
+          "widget": {
+            "name": "st-title",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# Stores & Departments"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "st-story",
+            "multilineTextboxSpec": {
+              "lines": [
+                "Top performers by net revenue, and where cancellations and returns concentrate. The store and department rankings come from the gold aggregate tables, so only the region and category filters apply to them; the cancel + return chart follows every filter."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "top-stores",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_stores",
+                  "fields": [
+                    {
+                      "name": "revenue_rank",
+                      "expression": "`revenue_rank`"
+                    },
+                    {
+                      "name": "store_name",
+                      "expression": "`store_name`"
+                    },
+                    {
+                      "name": "city",
+                      "expression": "`city`"
+                    },
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    },
+                    {
+                      "name": "orders",
+                      "expression": "`orders`"
+                    },
+                    {
+                      "name": "net_revenue",
+                      "expression": "`net_revenue`"
+                    },
+                    {
+                      "name": "avg_order_value",
+                      "expression": "`avg_order_value`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "revenue_rank",
+                    "displayName": "Rank"
+                  },
+                  {
+                    "fieldName": "store_name",
+                    "displayName": "Store"
+                  },
+                  {
+                    "fieldName": "city",
+                    "displayName": "City"
+                  },
+                  {
+                    "fieldName": "region",
+                    "displayName": "Region"
+                  },
+                  {
+                    "fieldName": "orders",
+                    "displayName": "Orders"
+                  },
+                  {
+                    "fieldName": "net_revenue",
+                    "displayName": "Net revenue",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact",
+                      "decimalPlaces": {
+                        "type": "max",
+                        "places": 2
+                      }
+                    }
+                  },
+                  {
+                    "fieldName": "avg_order_value",
+                    "displayName": "Avg order value",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact",
+                      "decimalPlaces": {
+                        "type": "max",
+                        "places": 2
+                      }
+                    }
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Top 15 stores by net revenue"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "top-depts",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_depts",
+                  "fields": [
+                    {
+                      "name": "department_name",
+                      "expression": "`department_name`"
+                    },
+                    {
+                      "name": "net_revenue",
+                      "expression": "`net_revenue`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "net_revenue",
+                  "displayName": "Net revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "department_name",
+                  "displayName": "Department",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Top 10 departments by net revenue"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 10,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "rate-region",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    },
+                    {
+                      "name": "measure(Cancel + Return Rate)",
+                      "expression": "MEASURE(`Cancel + Return Rate`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "region",
+                  "displayName": "Region",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Cancel + Return Rate)",
+                  "displayName": "Cancel + return rate",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-percent",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 1
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Cancel + return rate by region"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 10,
+            "width": 6,
+            "height": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "customers",
+      "displayName": "Customers",
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1",
+      "layout": [
+        {
+          "widget": {
+            "name": "cu-title",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# Customers"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "cu-story",
+            "multilineTextboxSpec": {
+              "lines": [
+                "Who buys, and who is drifting away? RFM segments use each customer's most recent order. The two charts on the right use the customer's segment **at the time of the order** (point-in-time from the SCD-2 history), so an upgrade from Regular to Premium does not rewrite past orders. Only the date, region, category, status and payment filters apply to those two charts."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "rfm-customers",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_customers",
+                  "fields": [
+                    {
+                      "name": "rfm_segment",
+                      "expression": "`rfm_segment`"
+                    },
+                    {
+                      "name": "count(customer_id)",
+                      "expression": "COUNT(`customer_id`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "rfm_segment",
+                  "displayName": "RFM segment",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "Champion",
+                        "Loyal",
+                        "At-risk",
+                        "Lost",
+                        "No Orders"
+                      ]
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "count(customer_id)",
+                  "displayName": "Customers",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Customers by RFM segment"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 6,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "seg-revenue",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "segment_at_order",
+                      "expression": "`segment_at_order`"
+                    },
+                    {
+                      "name": "measure(Net Revenue)",
+                      "expression": "MEASURE(`Net Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "segment_at_order",
+                  "displayName": "Segment",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "Regular",
+                        "Premium",
+                        "VIP"
+                      ]
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Net Revenue)",
+                  "displayName": "Net revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Net revenue by segment at order time"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 3,
+            "width": 6,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "rfm-ltv",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_customers",
+                  "fields": [
+                    {
+                      "name": "rfm_segment",
+                      "expression": "`rfm_segment`"
+                    },
+                    {
+                      "name": "sum(lifetime_value)",
+                      "expression": "SUM(`lifetime_value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "rfm_segment",
+                  "displayName": "RFM segment",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "Champion",
+                        "Loyal",
+                        "At-risk",
+                        "Lost",
+                        "No Orders"
+                      ]
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(lifetime_value)",
+                  "displayName": "Lifetime value",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Lifetime value by RFM segment"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "seg-aov",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "segment_at_order",
+                      "expression": "`segment_at_order`"
+                    },
+                    {
+                      "name": "measure(Avg Order Value)",
+                      "expression": "MEASURE(`Avg Order Value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "segment_at_order",
+                  "displayName": "Segment",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "Regular",
+                        "Premium",
+                        "VIP"
+                      ]
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Avg Order Value)",
+                  "displayName": "Avg order value",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Avg order value by segment at order time"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 8,
+            "width": 6,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "top-customers",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_top_customers",
+                  "fields": [
+                    {
+                      "name": "full_name",
+                      "expression": "`full_name`"
+                    },
+                    {
+                      "name": "city",
+                      "expression": "`city`"
+                    },
+                    {
+                      "name": "state",
+                      "expression": "`state`"
+                    },
+                    {
+                      "name": "segment",
+                      "expression": "`segment`"
+                    },
+                    {
+                      "name": "rfm_segment",
+                      "expression": "`rfm_segment`"
+                    },
+                    {
+                      "name": "total_orders",
+                      "expression": "`total_orders`"
+                    },
+                    {
+                      "name": "lifetime_value",
+                      "expression": "`lifetime_value`"
+                    },
+                    {
+                      "name": "last_order_date",
+                      "expression": "`last_order_date`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "full_name",
+                    "displayName": "Customer"
+                  },
+                  {
+                    "fieldName": "city",
+                    "displayName": "City"
+                  },
+                  {
+                    "fieldName": "state",
+                    "displayName": "State"
+                  },
+                  {
+                    "fieldName": "segment",
+                    "displayName": "Segment"
+                  },
+                  {
+                    "fieldName": "rfm_segment",
+                    "displayName": "RFM segment"
+                  },
+                  {
+                    "fieldName": "total_orders",
+                    "displayName": "Orders"
+                  },
+                  {
+                    "fieldName": "lifetime_value",
+                    "displayName": "Lifetime value",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact",
+                      "decimalPlaces": {
+                        "type": "max",
+                        "places": 2
+                      }
+                    }
+                  },
+                  {
+                    "fieldName": "last_order_date",
+                    "displayName": "Last order"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Top 20 customers by lifetime value"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 13,
+            "width": 12,
+            "height": 7
+          }
+        }
+      ]
+    },
+    {
+      "name": "filters",
+      "displayName": "Filters",
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1",
+      "layout": [
+        {
+          "widget": {
+            "name": "flt-date",
+            "queries": [
+              {
+                "name": "q_flt-date_0",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "order_date",
+                      "expression": "`order_date`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-date-range-picker",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "order_date",
+                    "displayName": "Order date",
+                    "queryName": "q_flt-date_0"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Order date"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "flt-region",
+            "queries": [
+              {
+                "name": "q_flt-region_0",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "q_flt-region_1",
+                "query": {
+                  "datasetName": "ds_stores",
+                  "fields": [
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "region",
+                    "displayName": "Region",
+                    "queryName": "q_flt-region_0"
+                  },
+                  {
+                    "fieldName": "region",
+                    "displayName": "Region",
+                    "queryName": "q_flt-region_1"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Region"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 0,
+            "width": 4,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "flt-category",
+            "queries": [
+              {
+                "name": "q_flt-category_0",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "category",
+                      "expression": "`category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "q_flt-category_1",
+                "query": {
+                  "datasetName": "ds_depts",
+                  "fields": [
+                    {
+                      "name": "category",
+                      "expression": "`category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "category",
+                    "displayName": "Department category",
+                    "queryName": "q_flt-category_0"
+                  },
+                  {
+                    "fieldName": "category",
+                    "displayName": "Department category",
+                    "queryName": "q_flt-category_1"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Department category"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 0,
+            "width": 4,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "flt-status",
+            "queries": [
+              {
+                "name": "q_flt-status_0",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "status",
+                      "expression": "`status`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "status",
+                    "displayName": "Order status",
+                    "queryName": "q_flt-status_0"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Order status"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 4,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "flt-payment",
+            "queries": [
+              {
+                "name": "q_flt-payment_0",
+                "query": {
+                  "datasetName": "ds_orders",
+                  "fields": [
+                    {
+                      "name": "payment_method",
+                      "expression": "`payment_method`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "payment_method",
+                    "displayName": "Payment method",
+                    "queryName": "q_flt-payment_0"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Payment method"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 2,
+            "width": 4,
+            "height": 2
+          }
+        }
+      ]
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "canvasBackgroundColor": {
+        "light": "#FCFCFC",
+        "dark": "#1F272D"
+      },
+      "widgetBackgroundColor": {
+        "light": "#FFFFFF",
+        "dark": "#11171C"
+      },
+      "widgetBorderColor": {
+        "light": "#FFFFFF",
+        "dark": "#11171C"
+      },
+      "fontColor": {
+        "light": "#11171C",
+        "dark": "#E8ECF0"
+      },
+      "selectionColor": {
+        "light": "#2272B4",
+        "dark": "#8ACAFF"
+      },
+      "visualizationColors": [
+        "#0072B2",
+        "#E69F00",
+        "#009E73",
+        "#CC79A7",
+        "#D55E00",
+        "#56B4E9",
+        "#F0E442"
+      ],
+      "widgetHeaderAlignment": "LEFT"
+    }
+  }
+}

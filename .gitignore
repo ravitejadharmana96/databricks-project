@@ -1,0 +1,16 @@
+# local environments and tooling
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+.ai-dev-kit/
+.databricks/
+.databricks-resources.json
+.mcp.json
+
+# secrets
+.env
+*.pem
+*.key

@@ -1,0 +1,1001 @@
+customer_id,first_name,last_name,email,phone,city,state,segment,signup_date,preferred_store_id,source_updated_date
+1,Li,Wilson,li.wilson1@example.com,+1-555-283-8079,Miami,FL,Regular,2022-01-21,716,2024-12-31
+2,Kenji,Sharma,kenji.sharma2@example.com,+1-555-815-1715,Chicago,IL,Premium,2021-10-08,281,2025-06-30
+3,Lucas,Sato,lucas.sato3@example.com,+1-555-782-2093,Dallas,TX,Regular,2022-06-08,931,2024-12-31
+4,Sophia,Wilson,sophia.wilson4@example.com,+1-555-666-2986,Phoenix,AZ,VIP,2020-11-09,774,2024-12-31
+5,Priya,Tanaka,priya.tanaka5@example.com,+1-555-898-6341,Phoenix,AZ,Premium,2021-11-06,259,2026-04-19
+6,Carlos,Tanaka,carlos.tanaka6@example.com,+1-555-573-1437,New York,NY,Regular,2025-03-06,391,2024-12-31
+7,John,Miller,john.miller7@example.com,+1-555-506-1618,Miami,FL,Regular,2021-04-14,880,2025-08-08
+8,Wei,Brown,wei.brown8@example.com,+1-555-866-8606,San Francisco,CA,Regular,2020-10-06,85,2024-12-31
+9,Ananya,Kim,ananya.kim9@example.com,+1-555-830-8171,Miami,FL,Regular,2023-02-17,862,2024-12-31
+10,Li,Wang,li.wang10@example.com,+1-555-721-2646,New York,NY,Regular,2021-05-23,548,2024-12-31
+11,Zara,Miller,zara.miller11@example.com,+1-555-179-1183,New York,NY,Regular,2021-09-20,452,2026-02-10
+12,Emma,Wang,emma.wang12@example.com,+1-555-831-1564,Miami,FL,Premium,2022-06-04,453,2024-12-31
+13,Omar,Johnson,omar.johnson13@example.com,+1-555-930-9566,San Francisco,CA,Regular,2021-02-25,400,2024-12-31
+14,Omar,Ali,omar.ali14@example.com,+1-555-153-1076,Columbus,OH,Regular,2024-03-25,786,2024-12-31
+15,Carlos,Lopez,carlos.lopez15@example.com,+1-555-344-4276,Houston,TX,Regular,2024-09-23,29,2024-12-31
+16,James,Brown,james.brown16@example.com,+1-555-796-2035,Miami,FL,Regular,2021-01-30,817,2024-12-31
+17,Mia,Wang,mia.wang17@example.com,+1-555-271-1721,Los Angeles,CA,Premium,2021-03-17,836,2025-08-17
+18,John,Brown,john.brown18@example.com,+1-555-741-4105,Denver,CO,Regular,2024-06-06,962,2024-12-31
+19,Olivia,Sharma,olivia.sharma19@example.com,+1-555-318-2734,Miami,FL,Premium,2021-12-12,16,2026-07-24
+20,Liam,Nguyen,liam.nguyen20@example.com,+1-555-112-7376,Houston,TX,Regular,2022-06-20,68,2024-12-31
+21,Mia,Khan,mia.khan21@example.com,+1-555-738-7045,San Francisco,CA,Regular,2022-06-14,421,2024-12-31
+22,Fatima,Costa,fatima.costa22@example.com,+1-555-204-9784,Columbus,OH,Premium,2021-12-03,258,2024-12-31
+23,Priya,Costa,priya.costa23@example.com,+1-555-746-7366,Houston,TX,Premium,2021-06-28,341,2026-05-15
+24,Li,Nguyen,li.nguyen24@example.com,+1-555-804-6209,Phoenix,AZ,VIP,2025-05-28,70,2024-12-31
+25,John,Smith,john.smith25@example.com,+1-555-699-8354,Columbus,OH,Regular,2022-08-10,516,2026-04-09
+26,Kenji,Smith,kenji.smith26@example.com,+1-555-121-3032,Phoenix,AZ,Premium,2024-10-21,776,2026-06-14
+27,Maria,Costa,maria.costa27@example.com,+1-555-161-3253,Boston,MA,Regular,2023-04-29,207,2024-12-31
+28,Wei,Miller,wei.miller28@example.com,+1-555-757-1621,Miami,FL,Premium,2024-12-22,757,2025-08-10
+29,John,Chen,john.chen29@example.com,+1-555-425-1648,Dallas,TX,Regular,2024-08-26,664,2024-12-31
+30,Fatima,Smith,fatima.smith30@example.com,+1-555-967-6427,Miami,FL,Regular,2022-04-23,553,2024-12-31
+31,Mary,Kim,mary.kim31@example.com,+1-555-920-4644,Miami,FL,Regular,2024-04-11,534,2024-12-31
+32,John,Wang,john.wang32@example.com,+1-555-744-1099,Columbus,OH,Regular,2025-07-06,72,2024-12-31
+33,Carlos,Johnson,carlos.johnson33@example.com,+1-555-244-4345,San Francisco,CA,Regular,2021-12-12,430,2026-03-01
+34,Ananya,Garcia,ananya.garcia34@example.com,+1-555-619-2280,Miami,FL,Regular,2025-03-28,319,2024-12-31
+35,Li,Garcia,li.garcia35@example.com,+1-555-534-3890,Miami,FL,Regular,2023-05-26,293,2024-12-31
+36,Kenji,Kumar,kenji.kumar36@example.com,+1-555-306-5454,Phoenix,AZ,Premium,2025-05-24,82,2026-05-15
+37,Emma,Miller,emma.miller37@example.com,+1-555-271-8712,Chicago,IL,Regular,2025-08-31,625,2024-12-31
+38,Zara,Wilson,zara.wilson38@example.com,+1-555-259-8897,Phoenix,AZ,Premium,2024-04-11,438,2025-07-05
+39,Raj,Ali,raj.ali39@example.com,+1-555-650-3503,Seattle,WA,Regular,2021-12-20,264,2024-12-31
+40,Liam,Kumar,liam.kumar40@example.com,+1-555-564-5640,Dallas,TX,Regular,2025-05-23,74,2024-12-31
+41,John,Chen,john.chen41@example.com,+1-555-580-4206,Los Angeles,CA,Regular,2022-02-15,5,2024-12-31
+42,James,Tanaka,james.tanaka42@example.com,+1-555-842-7131,Los Angeles,CA,Premium,2024-08-30,963,2026-04-21
+43,Liam,Davis,liam.davis43@example.com,+1-555-601-6043,Chicago,IL,Regular,2020-10-18,419,2024-12-31
+44,Mary,Sharma,mary.sharma44@example.com,+1-555-679-3660,Chicago,IL,Regular,2024-11-22,981,2024-12-31
+45,Ahmed,Davis,ahmed.davis45@example.com,+1-555-826-9005,Denver,CO,Regular,2024-02-17,714,2024-12-31
+46,Mary,Nguyen,mary.nguyen46@example.com,+1-555-534-5043,Chicago,IL,Premium,2020-05-21,944,2026-05-21
+47,Emma,Nguyen,emma.nguyen47@example.com,+1-555-792-1462,Denver,CO,Regular,2021-08-28,268,2026-05-20
+48,Yuki,Kumar,yuki.kumar48@example.com,+1-555-250-5166,Denver,CO,Regular,2021-10-23,13,2026-04-26
+49,Priya,Patel,priya.patel49@example.com,+1-555-828-7297,San Francisco,CA,Regular,2020-11-25,531,2024-12-31
+50,Carlos,Wilson,carlos.wilson50@example.com,+1-555-949-7993,Atlanta,GA,Regular,2023-05-22,513,2024-12-31
+51,Ananya,Kim,ananya.kim51@example.com,+1-555-700-6045,Chicago,IL,Premium,2020-12-30,112,2024-12-31
+52,Lucas,Silva,lucas.silva52@example.com,+1-555-916-6642,Phoenix,AZ,Premium,2023-01-06,767,2024-12-31
+53,Carlos,Miller,carlos.miller53@example.com,+1-555-415-1105,Los Angeles,CA,VIP,2025-07-07,2,2024-12-31
+54,Priya,Patel,priya.patel54@example.com,+1-555-813-7845,Phoenix,AZ,Regular,2023-03-27,751,2024-12-31
+55,Olivia,Wang,olivia.wang55@example.com,+1-555-483-4053,New York,NY,Premium,2022-03-22,499,2026-01-28
+56,Li,Tanaka,li.tanaka56@example.com,+1-555-561-4482,Boston,MA,Regular,2020-08-29,768,2024-12-31
+57,Li,Garcia,li.garcia57@example.com,+1-555-992-7697,Dallas,TX,Regular,2021-03-23,890,2024-12-31
+58,Lucas,Wang,lucas.wang58@example.com,+1-555-400-2404,Boston,MA,Regular,2023-02-07,66,2024-12-31
+59,John,Smith,john.smith59@example.com,+1-555-340-8829,Seattle,WA,Regular,2021-02-16,10,2024-12-31
+60,Mary,Khan,mary.khan60@example.com,+1-555-107-1685,Phoenix,AZ,Regular,2020-01-30,385,2024-12-31
+61,Yuki,Tanaka,yuki.tanaka61@example.com,+1-555-372-8961,Phoenix,AZ,Regular,2023-10-12,619,2024-12-31
+62,Olivia,Brown,olivia.brown62@example.com,+1-555-798-6620,Houston,TX,VIP,2022-09-08,964,2026-07-06
+63,Emma,Kim,emma.kim63@example.com,+1-555-487-1937,Chicago,IL,VIP,2023-09-14,826,2024-12-31
+64,Priya,Smith,priya.smith64@example.com,+1-555-991-7583,Columbus,OH,Premium,2021-07-22,27,2024-12-31
+65,Yuki,Sharma,yuki.sharma65@example.com,+1-555-386-5072,Denver,CO,Regular,2025-04-30,528,2024-12-31
+66,Olivia,Kim,olivia.kim66@example.com,+1-555-103-6278,Miami,FL,Regular,2024-01-15,895,2024-12-31
+67,Mary,Brown,mary.brown67@example.com,+1-555-554-4826,Seattle,WA,Regular,2024-06-27,757,2026-07-18
+68,Yuki,Patel,yuki.patel68@example.com,+1-555-538-8800,Houston,TX,VIP,2021-02-15,752,2024-12-31
+69,Liam,Ali,liam.ali69@example.com,+1-555-299-3345,Seattle,WA,Premium,2025-08-28,33,2024-12-31
+70,Wei,Singh,wei.singh70@example.com,+1-555-189-5937,Phoenix,AZ,Premium,2025-03-27,173,2026-04-29
+71,Noah,Sharma,noah.sharma71@example.com,+1-555-778-9858,Columbus,OH,Premium,2022-05-16,175,2025-09-08
+72,Mia,Patel,mia.patel72@example.com,+1-555-545-1478,Boston,MA,Regular,2023-08-30,925,2024-12-31
+73,Liam,Khan,liam.khan73@example.com,+1-555-836-5220,Miami,FL,Regular,2021-05-19,682,2024-12-31
+74,Wei,Sato,wei.sato74@example.com,+1-555-842-9060,San Francisco,CA,Regular,2023-09-25,893,2024-12-31
+75,Maria,Silva,maria.silva75@example.com,+1-555-715-2059,Phoenix,AZ,Regular,2024-03-24,933,2024-12-31
+76,Omar,Miller,omar.miller76@example.com,+1-555-757-8159,San Francisco,CA,Premium,2022-07-04,266,2024-12-31
+77,Priya,Ali,priya.ali77@example.com,+1-555-214-2460,Boston,MA,Regular,2022-02-09,763,2024-12-31
+78,Priya,Silva,priya.silva78@example.com,+1-555-230-6134,Columbus,OH,VIP,2020-01-07,319,2026-04-08
+79,Mary,Silva,mary.silva79@example.com,+1-555-294-7359,Denver,CO,VIP,2023-08-02,790,2026-01-29
+80,Emma,Kim,emma.kim80@example.com,+1-555-229-9515,Phoenix,AZ,Regular,2022-06-28,110,2024-12-31
+81,Liam,Smith,liam.smith81@example.com,+1-555-972-8546,Denver,CO,Regular,2023-04-30,858,2024-12-31
+82,Maria,Singh,maria.singh82@example.com,+1-555-566-3415,San Francisco,CA,Regular,2021-08-20,765,2024-12-31
+83,Mia,Johnson,mia.johnson83@example.com,+1-555-427-6060,Boston,MA,Regular,2021-05-20,281,2026-03-15
+84,Omar,Silva,omar.silva84@example.com,+1-555-746-4534,Columbus,OH,Premium,2024-03-22,61,2025-11-14
+85,John,Chen,john.chen85@example.com,+1-555-315-4687,Los Angeles,CA,Premium,2020-08-03,946,2024-12-31
+86,Li,Singh,li.singh86@example.com,+1-555-501-5900,Los Angeles,CA,VIP,2021-10-14,23,2024-12-31
+87,Ananya,Miller,ananya.miller87@example.com,+1-555-532-8756,Houston,TX,VIP,2024-05-22,401,2024-12-31
+88,Raj,Tanaka,raj.tanaka88@example.com,+1-555-389-5626,Los Angeles,CA,Regular,2022-03-10,718,2024-12-31
+89,Ananya,Miller,ananya.miller89@example.com,+1-555-234-6298,Boston,MA,Premium,2020-08-09,871,2024-12-31
+90,Omar,Ali,omar.ali90@example.com,+1-555-770-3681,Columbus,OH,Regular,2024-12-14,713,2024-12-31
+91,Sophia,Ali,sophia.ali91@example.com,+1-555-314-4573,Atlanta,GA,VIP,2022-03-12,753,2026-05-09
+92,Lucas,Smith,lucas.smith92@example.com,+1-555-843-2670,Houston,TX,Regular,2021-08-27,386,2024-12-31
+93,Olivia,Kim,olivia.kim93@example.com,+1-555-157-2573,Atlanta,GA,Regular,2025-04-24,184,2024-12-31
+94,Mary,Sharma,mary.sharma94@example.com,+1-555-765-6545,Denver,CO,Regular,2021-08-31,643,2024-12-31
+95,Zara,Miller,zara.miller95@example.com,+1-555-134-2946,Miami,FL,Regular,2025-06-24,310,2024-12-31
+96,Omar,Costa,omar.costa96@example.com,+1-555-768-7150,Atlanta,GA,Premium,2021-01-02,797,2024-12-31
+97,Noah,Nguyen,noah.nguyen97@example.com,+1-555-381-8292,Chicago,IL,Regular,2021-05-06,120,2024-12-31
+98,Raj,Sharma,raj.sharma98@example.com,+1-555-756-9351,Columbus,OH,Regular,2025-05-18,281,2024-12-31
+99,Omar,Sharma,omar.sharma99@example.com,+1-555-707-3967,Phoenix,AZ,Regular,2024-11-11,306,2024-12-31
+100,Kenji,Chen,kenji.chen100@example.com,+1-555-433-2040,Boston,MA,Premium,2022-01-27,416,2024-12-31
+101,Omar,Smith,omar.smith101@example.com,+1-555-669-9788,Chicago,IL,Premium,2025-06-24,66,2024-12-31
+102,Arjun,Silva,arjun.silva102@example.com,+1-555-830-3033,Denver,CO,Premium,2022-04-29,989,2024-12-31
+103,Mia,Sharma,mia.sharma103@example.com,+1-555-982-3948,Atlanta,GA,Premium,2025-01-05,820,2025-09-01
+104,John,Sharma,john.sharma104@example.com,+1-555-231-4378,New York,NY,Regular,2020-12-25,576,2024-12-31
+105,Ahmed,Johnson,ahmed.johnson105@example.com,+1-555-227-9292,Boston,MA,Regular,2021-12-03,434,2024-12-31
+106,Mia,Smith,mia.smith106@example.com,+1-555-407-1756,Miami,FL,VIP,2023-04-16,675,2024-12-31
+107,Ananya,Kumar,ananya.kumar107@example.com,+1-555-690-9035,Atlanta,GA,Regular,2023-12-13,621,2024-12-31
+108,Ananya,Tanaka,ananya.tanaka108@example.com,+1-555-804-2622,Miami,FL,Regular,2020-07-02,243,2024-12-31
+109,Mary,Garcia,mary.garcia109@example.com,+1-555-406-4526,Atlanta,GA,VIP,2022-06-03,606,2024-12-31
+110,Emma,Khan,emma.khan110@example.com,+1-555-846-7914,Atlanta,GA,Premium,2022-11-10,267,2025-08-02
+111,Liam,Nguyen,liam.nguyen111@example.com,+1-555-509-8472,Atlanta,GA,Regular,2022-11-07,693,2024-12-31
+112,Olivia,Chen,olivia.chen112@example.com,+1-555-308-2156,Denver,CO,Regular,2023-01-08,649,2024-12-31
+113,Omar,Nguyen,omar.nguyen113@example.com,+1-555-831-7097,Miami,FL,Regular,2025-09-25,620,2024-12-31
+114,Li,Wilson,li.wilson114@example.com,+1-555-423-8104,Miami,FL,Regular,2022-10-10,80,2026-04-18
+115,Ahmed,Sharma,ahmed.sharma115@example.com,+1-555-212-9984,Denver,CO,Regular,2023-09-11,656,2024-12-31
+116,Raj,Davis,raj.davis116@example.com,+1-555-896-5476,Houston,TX,Regular,2022-07-13,281,2024-12-31
+117,James,Sharma,james.sharma117@example.com,+1-555-327-7203,Chicago,IL,VIP,2021-05-20,751,2026-02-14
+118,Arjun,Ali,arjun.ali118@example.com,+1-555-941-9021,Seattle,WA,Regular,2023-11-30,718,2024-12-31
+119,Kenji,Ali,kenji.ali119@example.com,+1-555-377-2623,Denver,CO,Premium,2021-11-30,326,2024-12-31
+120,Liam,Wang,liam.wang120@example.com,+1-555-925-9711,Houston,TX,Regular,2024-07-07,489,2024-12-31
+121,Kenji,Chen,kenji.chen121@example.com,+1-555-109-9414,Dallas,TX,Premium,2021-06-01,147,2024-12-31
+122,Liam,Silva,liam.silva122@example.com,+1-555-373-1866,Los Angeles,CA,Premium,2024-02-25,725,2024-12-31
+123,Maria,Kim,maria.kim123@example.com,+1-555-528-8500,Seattle,WA,Regular,2023-12-20,818,2024-12-31
+124,Noah,Tanaka,noah.tanaka124@example.com,+1-555-382-8008,Atlanta,GA,Regular,2022-07-26,641,2026-06-15
+125,Lucas,Patel,lucas.patel125@example.com,+1-555-516-6123,Dallas,TX,Premium,2020-11-21,79,2024-12-31
+126,Zara,Lopez,zara.lopez126@example.com,+1-555-269-1940,Boston,MA,Regular,2023-03-16,568,2024-12-31
+127,Sophia,Smith,sophia.smith127@example.com,+1-555-793-9334,Chicago,IL,VIP,2021-07-12,492,2024-12-31
+128,Sophia,Tanaka,sophia.tanaka128@example.com,+1-555-793-9722,San Francisco,CA,Premium,2024-07-18,15,2025-06-02
+129,Yuki,Garcia,yuki.garcia129@example.com,+1-555-107-7962,Los Angeles,CA,Premium,2023-11-14,251,2024-12-31
+130,Zara,Kim,zara.kim130@example.com,+1-555-800-1693,Denver,CO,Regular,2021-11-21,691,2024-12-31
+131,Arjun,Lopez,arjun.lopez131@example.com,+1-555-176-7013,Atlanta,GA,Premium,2023-12-18,391,2025-07-13
+132,Mary,Wilson,mary.wilson132@example.com,+1-555-488-3793,Columbus,OH,Regular,2021-04-08,347,2024-12-31
+133,Mia,Lopez,mia.lopez133@example.com,+1-555-971-2931,Dallas,TX,Regular,2025-06-01,301,2025-08-13
+134,Ahmed,Garcia,ahmed.garcia134@example.com,+1-555-855-7449,New York,NY,Regular,2023-06-02,952,2026-04-19
+135,Lucas,Tanaka,lucas.tanaka135@example.com,+1-555-574-8999,New York,NY,Regular,2020-01-25,631,2024-12-31
+136,Noah,Brown,noah.brown136@example.com,+1-555-462-2755,Dallas,TX,Regular,2022-02-01,412,2024-12-31
+137,Emma,Smith,emma.smith137@example.com,+1-555-541-9061,Boston,MA,Regular,2021-09-21,421,2024-12-31
+138,Priya,Singh,priya.singh138@example.com,+1-555-259-5098,New York,NY,Regular,2024-06-07,384,2024-12-31
+139,Fatima,Davis,fatima.davis139@example.com,+1-555-286-9788,Los Angeles,CA,Premium,2021-03-21,450,2026-04-18
+140,Mia,Kumar,mia.kumar140@example.com,+1-555-243-6795,Atlanta,GA,Premium,2020-01-24,368,2024-12-31
+141,Omar,Garcia,omar.garcia141@example.com,+1-555-294-5667,Boston,MA,Regular,2024-06-04,432,2024-12-31
+142,Zara,Brown,zara.brown142@example.com,+1-555-264-4260,San Francisco,CA,VIP,2022-12-24,122,2026-05-31
+143,Olivia,Singh,olivia.singh143@example.com,+1-555-607-3087,Denver,CO,Regular,2024-06-25,514,2024-12-31
+144,Zara,Miller,zara.miller144@example.com,+1-555-212-2767,Atlanta,GA,VIP,2021-05-31,160,2025-07-24
+145,Emma,Tanaka,emma.tanaka145@example.com,+1-555-885-4874,New York,NY,Regular,2023-11-02,440,2024-12-31
+146,Yuki,Smith,yuki.smith146@example.com,+1-555-591-5742,Chicago,IL,Premium,2020-12-04,780,2025-10-14
+147,Olivia,Lopez,olivia.lopez147@example.com,+1-555-256-9376,Seattle,WA,Premium,2023-02-25,786,2026-02-13
+148,Priya,Khan,priya.khan148@example.com,+1-555-353-8031,Los Angeles,CA,Regular,2021-02-26,718,2024-12-31
+149,Zara,Tanaka,zara.tanaka149@example.com,+1-555-285-4091,Seattle,WA,VIP,2021-09-01,235,2024-12-31
+150,Priya,Chen,priya.chen150@example.com,+1-555-139-5486,Chicago,IL,VIP,2021-08-21,437,2024-12-31
+151,James,Costa,james.costa151@example.com,+1-555-193-1834,Miami,FL,Regular,2023-06-09,717,2024-12-31
+152,Lucas,Lopez,lucas.lopez152@example.com,+1-555-444-7980,San Francisco,CA,Regular,2025-09-19,438,2025-06-24
+153,Lucas,Johnson,lucas.johnson153@example.com,+1-555-212-5411,Dallas,TX,Regular,2023-12-08,729,2024-12-31
+154,Olivia,Lopez,olivia.lopez154@example.com,+1-555-148-3977,Houston,TX,Regular,2020-08-01,677,2024-12-31
+155,Zara,Brown,zara.brown155@example.com,+1-555-392-8734,Miami,FL,Regular,2021-02-16,63,2026-02-04
+156,Li,Khan,li.khan156@example.com,+1-555-472-6476,Columbus,OH,Regular,2021-01-31,686,2024-12-31
+157,James,Kim,james.kim157@example.com,+1-555-888-3134,Denver,CO,Regular,2024-01-20,761,2024-12-31
+158,Kenji,Tanaka,kenji.tanaka158@example.com,+1-555-480-4903,Seattle,WA,Regular,2022-05-10,599,2024-12-31
+159,Liam,Patel,liam.patel159@example.com,+1-555-233-2971,Boston,MA,Regular,2022-02-19,198,2024-12-31
+160,Omar,Kumar,omar.kumar160@example.com,+1-555-176-9955,Columbus,OH,Regular,2023-05-19,743,2026-02-15
+161,Sophia,Garcia,sophia.garcia161@example.com,+1-555-838-3517,Denver,CO,Regular,2022-02-24,429,2024-12-31
+162,Ananya,Khan,ananya.khan162@example.com,+1-555-973-6690,Phoenix,AZ,Premium,2025-01-10,645,2024-12-31
+163,Omar,Sharma,omar.sharma163@example.com,+1-555-169-8910,Chicago,IL,Regular,2025-08-25,810,2024-12-31
+164,James,Wang,james.wang164@example.com,+1-555-380-3112,Seattle,WA,Regular,2020-09-06,814,2024-12-31
+165,Omar,Garcia,omar.garcia165@example.com,+1-555-934-7512,Los Angeles,CA,Regular,2020-11-03,170,2024-12-31
+166,Noah,Tanaka,noah.tanaka166@example.com,+1-555-675-7393,Chicago,IL,Regular,2023-01-17,212,2024-12-31
+167,Li,Smith,li.smith167@example.com,+1-555-685-4568,Columbus,OH,Premium,2020-02-06,901,2025-12-25
+168,Arjun,Kumar,arjun.kumar168@example.com,+1-555-824-9602,Denver,CO,Regular,2022-06-21,304,2024-12-31
+169,Omar,Khan,omar.khan169@example.com,+1-555-221-3803,Denver,CO,Regular,2022-09-02,769,2025-11-21
+170,Mary,Nguyen,mary.nguyen170@example.com,+1-555-384-3178,Atlanta,GA,Regular,2020-07-30,658,2024-12-31
+171,Maria,Garcia,maria.garcia171@example.com,+1-555-218-1022,Denver,CO,Regular,2024-02-20,333,2024-12-31
+172,Raj,Sato,raj.sato172@example.com,+1-555-839-3189,Dallas,TX,Regular,2023-04-22,333,2024-12-31
+173,Mary,Nguyen,mary.nguyen173@example.com,+1-555-943-6824,New York,NY,Regular,2023-02-19,181,2024-12-31
+174,Ahmed,Smith,ahmed.smith174@example.com,+1-555-773-2743,Boston,MA,Premium,2024-04-13,969,2026-05-05
+175,Lucas,Khan,lucas.khan175@example.com,+1-555-749-4377,San Francisco,CA,Premium,2022-06-22,333,2024-12-31
+176,Ahmed,Garcia,ahmed.garcia176@example.com,+1-555-744-7479,Seattle,WA,Regular,2022-08-07,748,2024-12-31
+177,Zara,Wilson,zara.wilson177@example.com,+1-555-251-8848,Houston,TX,Regular,2022-01-13,471,2024-12-31
+178,Li,Wang,li.wang178@example.com,+1-555-683-9036,Miami,FL,VIP,2022-01-08,664,2024-12-31
+179,Fatima,Smith,fatima.smith179@example.com,+1-555-266-3911,Dallas,TX,Premium,2022-02-08,72,2024-12-31
+180,Wei,Patel,wei.patel180@example.com,+1-555-351-8455,Chicago,IL,VIP,2024-07-06,103,2026-06-21
+181,Zara,Tanaka,zara.tanaka181@example.com,+1-555-844-1193,Atlanta,GA,Regular,2024-03-27,394,2024-12-31
+182,James,Sharma,james.sharma182@example.com,+1-555-881-1716,New York,NY,Regular,2020-12-08,275,2024-12-31
+183,Wei,Nguyen,wei.nguyen183@example.com,+1-555-113-1153,Seattle,WA,VIP,2021-03-11,556,2024-12-31
+184,Zara,Brown,zara.brown184@example.com,+1-555-187-4314,Los Angeles,CA,Regular,2024-12-24,836,2024-12-31
+185,Li,Ali,li.ali185@example.com,+1-555-590-3531,Houston,TX,Regular,2022-12-31,643,2024-12-31
+186,Ananya,Sharma,ananya.sharma186@example.com,+1-555-944-1729,New York,NY,Premium,2023-04-30,106,2026-02-12
+187,Arjun,Wilson,arjun.wilson187@example.com,+1-555-101-4675,Atlanta,GA,Regular,2024-10-15,395,2024-12-31
+188,Wei,Davis,wei.davis188@example.com,+1-555-393-4700,San Francisco,CA,VIP,2024-04-24,704,2024-12-31
+189,Omar,Sharma,omar.sharma189@example.com,+1-555-273-2804,Columbus,OH,Regular,2023-02-28,366,2024-12-31
+190,Raj,Costa,raj.costa190@example.com,+1-555-221-6906,Houston,TX,VIP,2020-12-13,918,2024-12-31
+191,Mary,Costa,mary.costa191@example.com,+1-555-282-8022,Atlanta,GA,Regular,2022-01-12,696,2024-12-31
+192,Olivia,Chen,olivia.chen192@example.com,+1-555-803-5940,San Francisco,CA,Regular,2023-03-21,357,2024-12-31
+193,Priya,Khan,priya.khan193@example.com,+1-555-777-7047,Columbus,OH,VIP,2020-11-08,808,2024-12-31
+194,James,Chen,james.chen194@example.com,+1-555-771-3401,Phoenix,AZ,Premium,2024-05-18,458,2025-08-04
+195,Zara,Singh,zara.singh195@example.com,+1-555-215-8003,Boston,MA,VIP,2023-02-14,149,2024-12-31
+196,Raj,Brown,raj.brown196@example.com,+1-555-286-7308,Atlanta,GA,Regular,2025-07-17,435,2024-12-31
+197,Sophia,Wilson,sophia.wilson197@example.com,+1-555-912-6463,Seattle,WA,Regular,2022-10-04,393,2024-12-31
+198,Olivia,Sato,olivia.sato198@example.com,+1-555-651-9745,Columbus,OH,Regular,2022-07-31,394,2024-12-31
+199,Raj,Silva,raj.silva199@example.com,+1-555-531-9633,Los Angeles,CA,Regular,2022-06-17,720,2024-12-31
+200,Raj,Lopez,raj.lopez200@example.com,+1-555-102-4330,Houston,TX,VIP,2020-03-11,372,2024-12-31
+201,Ananya,Singh,ananya.singh201@example.com,+1-555-212-1976,Atlanta,GA,VIP,2024-01-18,870,2026-02-26
+202,Wei,Ali,wei.ali202@example.com,+1-555-247-7898,Columbus,OH,Regular,2022-07-08,58,2024-12-31
+203,Zara,Chen,zara.chen203@example.com,+1-555-812-3344,Boston,MA,Premium,2020-04-17,713,2026-05-16
+204,Olivia,Davis,olivia.davis204@example.com,+1-555-818-2736,New York,NY,Premium,2020-10-29,489,2026-06-27
+205,Yuki,Wang,yuki.wang205@example.com,+1-555-250-6984,New York,NY,Regular,2022-09-30,79,2024-12-31
+206,James,Silva,james.silva206@example.com,+1-555-253-3988,Chicago,IL,Premium,2021-07-27,767,2025-06-20
+207,Arjun,Ali,arjun.ali207@example.com,+1-555-521-6526,Columbus,OH,Regular,2020-02-24,294,2024-12-31
+208,Priya,Chen,priya.chen208@example.com,+1-555-757-1526,New York,NY,Regular,2021-12-11,516,2024-12-31
+209,Li,Smith,li.smith209@example.com,+1-555-952-7940,Denver,CO,Premium,2025-02-03,568,2025-09-07
+210,Omar,Khan,omar.khan210@example.com,+1-555-613-6014,Seattle,WA,Premium,2024-10-01,954,2024-12-31
+211,Li,Khan,li.khan211@example.com,+1-555-634-7185,Boston,MA,VIP,2021-05-27,761,2025-11-09
+212,Carlos,Miller,carlos.miller212@example.com,+1-555-157-4586,Seattle,WA,Regular,2020-11-12,837,2024-12-31
+213,Omar,Kumar,omar.kumar213@example.com,+1-555-420-7637,Columbus,OH,Premium,2021-11-06,56,2024-12-31
+214,Emma,Nguyen,emma.nguyen214@example.com,+1-555-299-5422,Chicago,IL,Regular,2020-11-14,511,2026-05-12
+215,Yuki,Brown,yuki.brown215@example.com,+1-555-345-5623,New York,NY,Regular,2021-03-12,67,2024-12-31
+216,Carlos,Costa,carlos.costa216@example.com,+1-555-874-6064,New York,NY,Regular,2022-04-06,654,2024-12-31
+217,Mary,Lopez,mary.lopez217@example.com,+1-555-187-1735,Dallas,TX,Regular,2025-06-04,47,2024-12-31
+218,Mary,Brown,mary.brown218@example.com,+1-555-416-1138,Dallas,TX,VIP,2023-03-02,982,2026-02-14
+219,Liam,Tanaka,liam.tanaka219@example.com,+1-555-422-7400,Miami,FL,VIP,2021-06-14,720,2026-06-28
+220,Mia,Sharma,mia.sharma220@example.com,+1-555-517-9250,Houston,TX,Regular,2021-09-07,25,2024-12-31
+221,Kenji,Miller,kenji.miller221@example.com,+1-555-700-1612,Columbus,OH,Regular,2021-09-12,699,2024-12-31
+222,Noah,Patel,noah.patel222@example.com,+1-555-195-4794,San Francisco,CA,Premium,2021-07-30,788,2024-12-31
+223,Omar,Wang,omar.wang223@example.com,+1-555-628-9573,Denver,CO,VIP,2023-10-30,459,2024-12-31
+224,Wei,Brown,wei.brown224@example.com,+1-555-468-8059,Dallas,TX,Regular,2024-05-06,245,2024-12-31
+225,Carlos,Costa,carlos.costa225@example.com,+1-555-176-3496,Seattle,WA,Regular,2025-07-30,100,2024-12-31
+226,James,Chen,james.chen226@example.com,+1-555-991-6071,Phoenix,AZ,Premium,2020-12-23,511,2025-11-08
+227,Priya,Kumar,priya.kumar227@example.com,+1-555-273-5843,Houston,TX,Regular,2023-02-21,591,2024-12-31
+228,Emma,Davis,emma.davis228@example.com,+1-555-172-3935,Boston,MA,Premium,2025-03-02,265,2024-12-31
+229,Sophia,Khan,sophia.khan229@example.com,+1-555-997-8242,San Francisco,CA,Regular,2021-07-29,963,2025-12-09
+230,Priya,Silva,priya.silva230@example.com,+1-555-140-6955,Columbus,OH,Premium,2024-06-30,419,2024-12-31
+231,Yuki,Kim,yuki.kim231@example.com,+1-555-551-7008,Atlanta,GA,Premium,2023-07-08,383,2025-08-03
+232,Raj,Kim,raj.kim232@example.com,+1-555-618-8374,Chicago,IL,Regular,2020-06-23,636,2024-12-31
+233,Lucas,Johnson,lucas.johnson233@example.com,+1-555-909-5011,Los Angeles,CA,Regular,2020-02-02,159,2024-12-31
+234,Priya,Ali,priya.ali234@example.com,+1-555-262-7541,Chicago,IL,VIP,2022-07-02,398,2026-03-05
+235,Noah,Kim,noah.kim235@example.com,+1-555-457-8632,Boston,MA,Regular,2025-03-19,112,2024-12-31
+236,Raj,Wang,raj.wang236@example.com,+1-555-210-7503,Chicago,IL,Premium,2022-03-28,412,2026-04-17
+237,John,Patel,john.patel237@example.com,+1-555-450-8967,New York,NY,Regular,2025-05-04,118,2026-07-17
+238,Ahmed,Kumar,ahmed.kumar238@example.com,+1-555-658-3551,New York,NY,VIP,2021-08-19,656,2024-12-31
+239,Carlos,Brown,carlos.brown239@example.com,+1-555-132-7230,Seattle,WA,Regular,2024-01-20,809,2024-12-31
+240,Olivia,Singh,olivia.singh240@example.com,+1-555-155-4465,Miami,FL,Premium,2024-09-28,277,2024-12-31
+241,Ahmed,Nguyen,ahmed.nguyen241@example.com,+1-555-185-3322,Atlanta,GA,Regular,2024-07-17,84,2024-12-31
+242,Fatima,Kumar,fatima.kumar242@example.com,+1-555-637-4507,Chicago,IL,Premium,2022-11-28,189,2026-04-21
+243,Mary,Patel,mary.patel243@example.com,+1-555-450-5864,Miami,FL,Regular,2023-12-01,965,2026-06-02
+244,Olivia,Singh,olivia.singh244@example.com,+1-555-648-3632,Columbus,OH,VIP,2024-11-24,364,2024-12-31
+245,Omar,Silva,omar.silva245@example.com,+1-555-942-1162,Chicago,IL,Regular,2022-03-24,80,2024-12-31
+246,Zara,Kim,zara.kim246@example.com,+1-555-731-3369,Seattle,WA,Regular,2023-07-20,15,2024-12-31
+247,Wei,Kumar,wei.kumar247@example.com,+1-555-611-6184,Atlanta,GA,Regular,2024-07-22,270,2024-12-31
+248,Arjun,Smith,arjun.smith248@example.com,+1-555-952-3059,Columbus,OH,Regular,2021-02-03,38,2024-12-31
+249,Carlos,Garcia,carlos.garcia249@example.com,+1-555-813-9947,Chicago,IL,Premium,2024-03-26,222,2024-12-31
+250,Emma,Garcia,emma.garcia250@example.com,+1-555-795-1235,Miami,FL,Regular,2024-01-30,17,2024-12-31
+251,Fatima,Ali,fatima.ali251@example.com,+1-555-938-3043,Denver,CO,Premium,2025-02-10,424,2025-08-22
+252,Olivia,Davis,olivia.davis252@example.com,+1-555-948-9887,Houston,TX,Regular,2023-10-07,117,2024-12-31
+253,Li,Kumar,li.kumar253@example.com,+1-555-482-3898,Chicago,IL,Regular,2021-10-28,556,2024-12-31
+254,Olivia,Miller,olivia.miller254@example.com,+1-555-965-8167,Dallas,TX,Regular,2021-02-10,90,2024-12-31
+255,Priya,Patel,priya.patel255@example.com,+1-555-116-7738,San Francisco,CA,Regular,2021-02-12,649,2024-12-31
+256,Noah,Tanaka,noah.tanaka256@example.com,+1-555-925-1534,Seattle,WA,Regular,2024-09-18,217,2024-12-31
+257,Maria,Kumar,maria.kumar257@example.com,+1-555-490-2875,Denver,CO,Regular,2025-04-07,974,2024-12-31
+258,Priya,Davis,priya.davis258@example.com,+1-555-575-7765,Phoenix,AZ,Premium,2024-06-09,8,2024-12-31
+259,Emma,Lopez,emma.lopez259@example.com,+1-555-390-5384,Denver,CO,Premium,2022-12-19,315,2024-12-31
+260,Olivia,Kim,olivia.kim260@example.com,+1-555-104-7792,Miami,FL,Regular,2020-04-17,158,2024-12-31
+261,Emma,Tanaka,emma.tanaka261@example.com,+1-555-714-6201,Los Angeles,CA,Regular,2024-10-27,248,2024-12-31
+262,Ananya,Miller,ananya.miller262@example.com,+1-555-731-7444,Miami,FL,Premium,2024-10-23,132,2024-12-31
+263,Lucas,Miller,lucas.miller263@example.com,+1-555-277-7604,Los Angeles,CA,Premium,2021-10-10,448,2024-12-31
+264,Maria,Sharma,maria.sharma264@example.com,+1-555-920-3069,Los Angeles,CA,Premium,2024-05-24,864,2026-01-16
+265,Lucas,Khan,lucas.khan265@example.com,+1-555-262-6282,Dallas,TX,Regular,2021-01-17,27,2025-06-26
+266,Olivia,Smith,olivia.smith266@example.com,+1-555-888-3507,San Francisco,CA,Regular,2020-11-18,586,2024-12-31
+267,Liam,Smith,liam.smith267@example.com,+1-555-851-3138,Los Angeles,CA,VIP,2024-01-06,192,2024-12-31
+268,Maria,Nguyen,maria.nguyen268@example.com,+1-555-404-4175,Miami,FL,Regular,2022-10-01,744,2024-12-31
+269,Liam,Khan,liam.khan269@example.com,+1-555-152-5505,San Francisco,CA,Regular,2021-08-11,643,2024-12-31
+270,James,Nguyen,james.nguyen270@example.com,+1-555-987-2694,Seattle,WA,Regular,2021-05-17,110,2024-12-31
+271,Wei,Ali,wei.ali271@example.com,+1-555-284-2520,Dallas,TX,Regular,2024-01-20,935,2024-12-31
+272,Carlos,Miller,carlos.miller272@example.com,+1-555-602-1359,Boston,MA,Regular,2025-06-15,983,2024-12-31
+273,Lucas,Patel,lucas.patel273@example.com,+1-555-803-7879,Miami,FL,Premium,2023-07-08,649,2025-09-03
+274,Noah,Wang,noah.wang274@example.com,+1-555-405-1166,New York,NY,Premium,2020-05-08,121,2026-03-08
+275,John,Davis,john.davis275@example.com,+1-555-728-9953,Columbus,OH,Regular,2022-11-08,949,2024-12-31
+276,Priya,Garcia,priya.garcia276@example.com,+1-555-130-9781,Seattle,WA,Regular,2025-09-27,780,2024-12-31
+277,Wei,Garcia,wei.garcia277@example.com,+1-555-217-4554,Houston,TX,Regular,2021-07-21,226,2024-12-31
+278,Raj,Chen,raj.chen278@example.com,+1-555-380-8890,Dallas,TX,Regular,2021-01-11,357,2024-12-31
+279,Omar,Sato,omar.sato279@example.com,+1-555-401-8652,San Francisco,CA,VIP,2025-07-23,447,2025-12-30
+280,Arjun,Miller,arjun.miller280@example.com,+1-555-356-3833,Miami,FL,Regular,2023-02-25,985,2024-12-31
+281,Liam,Sharma,liam.sharma281@example.com,+1-555-912-6105,Seattle,WA,Regular,2022-04-23,977,2024-12-31
+282,Zara,Singh,zara.singh282@example.com,+1-555-556-7942,Atlanta,GA,Regular,2023-01-17,836,2026-07-26
+283,John,Costa,john.costa283@example.com,+1-555-721-7275,Boston,MA,Premium,2023-12-16,383,2026-07-01
+284,Lucas,Patel,lucas.patel284@example.com,+1-555-271-1553,Denver,CO,VIP,2022-11-02,601,2026-07-18
+285,Olivia,Ali,olivia.ali285@example.com,+1-555-946-9691,Seattle,WA,Regular,2020-05-02,118,2024-12-31
+286,Li,Brown,li.brown286@example.com,+1-555-909-4046,Chicago,IL,Regular,2020-10-24,221,2024-12-31
+287,Mia,Davis,mia.davis287@example.com,+1-555-248-6151,Houston,TX,Regular,2023-07-28,705,2024-12-31
+288,James,Brown,james.brown288@example.com,+1-555-576-6268,Miami,FL,VIP,2020-09-28,395,2026-07-18
+289,Fatima,Costa,fatima.costa289@example.com,+1-555-639-4562,Miami,FL,Regular,2023-02-12,734,2024-12-31
+290,Yuki,Kim,yuki.kim290@example.com,+1-555-687-7909,Boston,MA,Regular,2024-11-17,326,2024-12-31
+291,John,Garcia,john.garcia291@example.com,+1-555-150-9092,Miami,FL,Regular,2023-01-29,432,2024-12-31
+292,Priya,Sharma,priya.sharma292@example.com,+1-555-275-6355,Columbus,OH,Regular,2022-08-26,591,2024-12-31
+293,James,Ali,james.ali293@example.com,+1-555-759-1076,New York,NY,Premium,2023-03-10,135,2024-12-31
+294,Liam,Johnson,liam.johnson294@example.com,+1-555-640-1640,Denver,CO,Regular,2020-03-07,72,2024-12-31
+295,Sophia,Sharma,sophia.sharma295@example.com,+1-555-525-5931,Phoenix,AZ,Regular,2023-11-17,410,2024-12-31
+296,Raj,Sato,raj.sato296@example.com,+1-555-420-9090,Phoenix,AZ,Regular,2024-05-30,306,2024-12-31
+297,Omar,Kumar,omar.kumar297@example.com,+1-555-969-2989,Columbus,OH,Premium,2021-02-24,576,2026-06-23
+298,Maria,Johnson,maria.johnson298@example.com,+1-555-242-2722,New York,NY,VIP,2024-11-19,232,2024-12-31
+299,Li,Patel,li.patel299@example.com,+1-555-841-7043,Miami,FL,Premium,2020-01-21,957,2024-12-31
+300,Omar,Johnson,omar.johnson300@example.com,+1-555-903-1705,Dallas,TX,Regular,2023-05-31,77,2024-12-31
+301,Ahmed,Brown,ahmed.brown301@example.com,+1-555-727-7218,Los Angeles,CA,Regular,2021-11-28,948,2024-12-31
+302,Wei,Silva,wei.silva302@example.com,+1-555-222-3069,Columbus,OH,Regular,2021-08-29,502,2026-01-25
+303,Kenji,Wilson,kenji.wilson303@example.com,+1-555-557-3004,San Francisco,CA,Regular,2022-09-12,592,2024-12-31
+304,Sophia,Kim,sophia.kim304@example.com,+1-555-387-6274,Columbus,OH,Premium,2025-05-31,232,2024-12-31
+305,Raj,Khan,raj.khan305@example.com,+1-555-403-2356,Phoenix,AZ,Premium,2022-09-19,676,2025-07-17
+306,Lucas,Garcia,lucas.garcia306@example.com,+1-555-179-2231,Los Angeles,CA,VIP,2020-09-03,218,2024-12-31
+307,James,Kim,james.kim307@example.com,+1-555-579-7308,Miami,FL,Premium,2021-03-04,349,2025-11-08
+308,Carlos,Silva,carlos.silva308@example.com,+1-555-640-9420,Phoenix,AZ,Premium,2023-07-01,726,2024-12-31
+309,Noah,Nguyen,noah.nguyen309@example.com,+1-555-968-9265,Atlanta,GA,Regular,2021-06-16,225,2024-12-31
+310,Emma,Miller,emma.miller310@example.com,+1-555-988-9412,Columbus,OH,Regular,2024-06-27,193,2024-12-31
+311,Raj,Khan,raj.khan311@example.com,+1-555-268-6032,Chicago,IL,VIP,2021-02-22,151,2024-12-31
+312,Noah,Sharma,noah.sharma312@example.com,+1-555-212-4941,Los Angeles,CA,Regular,2025-03-02,192,2024-12-31
+313,Ahmed,Smith,ahmed.smith313@example.com,+1-555-777-9698,Columbus,OH,Regular,2022-12-23,122,2024-12-31
+314,Ananya,Patel,ananya.patel314@example.com,+1-555-541-4474,Houston,TX,Regular,2025-08-18,442,2025-10-08
+315,Arjun,Brown,arjun.brown315@example.com,+1-555-551-5466,New York,NY,Regular,2020-07-20,665,2024-12-31
+316,Liam,Wilson,liam.wilson316@example.com,+1-555-401-4103,Miami,FL,Regular,2023-02-04,543,2024-12-31
+317,Yuki,Singh,yuki.singh317@example.com,+1-555-543-2788,Denver,CO,Regular,2022-10-16,982,2024-12-31
+318,Priya,Lopez,priya.lopez318@example.com,+1-555-154-1584,Boston,MA,Regular,2022-09-04,187,2025-12-24
+319,Ananya,Sharma,ananya.sharma319@example.com,+1-555-331-7628,Dallas,TX,Regular,2021-02-18,226,2024-12-31
+320,Zara,Khan,zara.khan320@example.com,+1-555-310-3802,Columbus,OH,Premium,2023-11-24,653,2024-12-31
+321,Fatima,Costa,fatima.costa321@example.com,+1-555-851-1050,Dallas,TX,Premium,2025-08-23,930,2025-12-02
+322,Omar,Costa,omar.costa322@example.com,+1-555-856-6002,Columbus,OH,Premium,2022-09-04,175,2024-12-31
+323,John,Kim,john.kim323@example.com,+1-555-270-4069,Boston,MA,Regular,2025-02-07,146,2024-12-31
+324,James,Kim,james.kim324@example.com,+1-555-538-6473,Columbus,OH,Regular,2022-12-16,903,2024-12-31
+325,Raj,Wang,raj.wang325@example.com,+1-555-878-1159,San Francisco,CA,Regular,2025-04-24,598,2024-12-31
+326,James,Singh,james.singh326@example.com,+1-555-583-2792,Miami,FL,Regular,2020-03-12,581,2024-12-31
+327,Mia,Ali,mia.ali327@example.com,+1-555-637-9243,Miami,FL,Regular,2021-08-23,794,2024-12-31
+328,Priya,Sharma,priya.sharma328@example.com,+1-555-923-6499,Dallas,TX,Regular,2023-12-07,559,2024-12-31
+329,Ahmed,Kim,ahmed.kim329@example.com,+1-555-359-6968,Columbus,OH,Regular,2023-12-15,309,2024-12-31
+330,Omar,Brown,omar.brown330@example.com,+1-555-893-8935,Denver,CO,Regular,2020-03-25,152,2024-12-31
+331,Olivia,Lopez,olivia.lopez331@example.com,+1-555-245-6852,San Francisco,CA,Regular,2022-09-27,592,2024-12-31
+332,Zara,Wilson,zara.wilson332@example.com,+1-555-311-2462,Houston,TX,Regular,2024-03-27,501,2025-09-25
+333,Priya,Khan,priya.khan333@example.com,+1-555-795-9927,New York,NY,Premium,2025-01-14,364,2025-11-03
+334,Arjun,Wang,arjun.wang334@example.com,+1-555-795-6715,Dallas,TX,VIP,2024-05-20,604,2026-03-26
+335,Olivia,Khan,olivia.khan335@example.com,+1-555-295-1673,Dallas,TX,Regular,2023-11-07,855,2024-12-31
+336,Yuki,Sharma,yuki.sharma336@example.com,+1-555-914-8455,Chicago,IL,Regular,2023-11-22,821,2025-10-03
+337,Priya,Smith,priya.smith337@example.com,+1-555-801-3410,Columbus,OH,Regular,2021-09-07,536,2024-12-31
+338,Fatima,Costa,fatima.costa338@example.com,+1-555-780-3664,Denver,CO,Regular,2023-03-26,67,2024-12-31
+339,Fatima,Smith,fatima.smith339@example.com,+1-555-141-4560,Columbus,OH,Regular,2021-05-20,55,2024-12-31
+340,Sophia,Ali,sophia.ali340@example.com,+1-555-540-6771,New York,NY,Regular,2020-01-03,52,2024-12-31
+341,Ahmed,Chen,ahmed.chen341@example.com,+1-555-999-5641,Houston,TX,Premium,2025-08-18,682,2024-12-31
+342,Ananya,Chen,ananya.chen342@example.com,+1-555-830-5434,Boston,MA,Regular,2022-03-16,64,2026-02-28
+343,Kenji,Patel,kenji.patel343@example.com,+1-555-324-1526,Dallas,TX,Premium,2023-12-23,255,2026-07-04
+344,Mia,Nguyen,mia.nguyen344@example.com,+1-555-532-7539,Chicago,IL,VIP,2021-02-05,915,2025-09-09
+345,Ahmed,Ali,ahmed.ali345@example.com,+1-555-418-3839,Seattle,WA,Regular,2023-08-13,824,2024-12-31
+346,Kenji,Chen,kenji.chen346@example.com,+1-555-886-4268,San Francisco,CA,Regular,2024-09-01,568,2024-12-31
+347,Carlos,Ali,carlos.ali347@example.com,+1-555-187-5871,Dallas,TX,Regular,2025-03-03,559,2024-12-31
+348,Li,Miller,li.miller348@example.com,+1-555-996-8158,Phoenix,AZ,Premium,2024-12-15,711,2026-06-02
+349,John,Tanaka,john.tanaka349@example.com,+1-555-829-6858,San Francisco,CA,Regular,2024-10-17,478,2024-12-31
+350,Olivia,Wilson,olivia.wilson350@example.com,+1-555-128-1432,Columbus,OH,VIP,2024-09-20,91,2024-12-31
+351,Wei,Costa,wei.costa351@example.com,+1-555-905-4975,Dallas,TX,Regular,2024-03-08,131,2024-12-31
+352,Yuki,Sato,yuki.sato352@example.com,+1-555-998-5806,Seattle,WA,Regular,2024-05-27,129,2024-12-31
+353,Liam,Kim,liam.kim353@example.com,+1-555-573-9487,New York,NY,Regular,2020-08-10,87,2024-12-31
+354,Mary,Khan,mary.khan354@example.com,+1-555-209-6463,San Francisco,CA,Premium,2023-04-05,580,2026-05-18
+355,Sophia,Brown,sophia.brown355@example.com,+1-555-224-9369,New York,NY,Premium,2020-08-05,719,2024-12-31
+356,Carlos,Tanaka,carlos.tanaka356@example.com,+1-555-675-9115,Atlanta,GA,Regular,2021-09-25,309,2024-12-31
+357,Lucas,Ali,lucas.ali357@example.com,+1-555-106-8945,Dallas,TX,Regular,2022-04-02,118,2026-06-16
+358,Raj,Smith,raj.smith358@example.com,+1-555-718-2983,Atlanta,GA,Regular,2022-10-09,210,2024-12-31
+359,Priya,Singh,priya.singh359@example.com,+1-555-952-9287,New York,NY,Regular,2020-08-15,949,2024-12-31
+360,Priya,Ali,priya.ali360@example.com,+1-555-595-4015,Chicago,IL,Premium,2022-12-02,842,2024-12-31
+361,Yuki,Kim,yuki.kim361@example.com,+1-555-979-3018,Columbus,OH,Regular,2020-03-29,190,2024-12-31
+362,Wei,Kim,wei.kim362@example.com,+1-555-274-9380,Miami,FL,Premium,2022-03-31,28,2026-01-10
+363,Sophia,Ali,sophia.ali363@example.com,+1-555-783-2638,Dallas,TX,VIP,2025-07-12,377,2024-12-31
+364,Mia,Khan,mia.khan364@example.com,+1-555-495-2758,Chicago,IL,Regular,2024-10-06,152,2024-12-31
+365,James,Ali,james.ali365@example.com,+1-555-223-7380,Columbus,OH,Regular,2023-05-25,115,2025-07-25
+366,Lucas,Nguyen,lucas.nguyen366@example.com,+1-555-734-8282,San Francisco,CA,Regular,2023-12-23,986,2024-12-31
+367,Wei,Kumar,wei.kumar367@example.com,+1-555-569-5536,Atlanta,GA,Regular,2021-10-10,367,2026-04-21
+368,Arjun,Tanaka,arjun.tanaka368@example.com,+1-555-457-9602,New York,NY,Premium,2020-09-14,179,2026-03-30
+369,Lucas,Chen,lucas.chen369@example.com,+1-555-771-6558,Houston,TX,Regular,2021-07-27,286,2024-12-31
+370,Mia,Ali,mia.ali370@example.com,+1-555-169-8925,Chicago,IL,Regular,2025-04-16,621,2024-12-31
+371,Mia,Wang,mia.wang371@example.com,+1-555-825-9306,Seattle,WA,Premium,2022-11-27,133,2024-12-31
+372,Omar,Brown,omar.brown372@example.com,+1-555-694-6703,Seattle,WA,Regular,2024-07-11,973,2026-07-21
+373,Mary,Smith,mary.smith373@example.com,+1-555-262-4796,Los Angeles,CA,Regular,2021-03-11,512,2024-12-31
+374,Mia,Singh,mia.singh374@example.com,+1-555-878-4793,Houston,TX,VIP,2022-08-27,108,2024-12-31
+375,Li,Miller,li.miller375@example.com,+1-555-530-2054,Phoenix,AZ,Regular,2022-10-22,118,2024-12-31
+376,Mary,Patel,mary.patel376@example.com,+1-555-881-7132,Columbus,OH,Regular,2020-04-30,946,2024-12-31
+377,Li,Brown,li.brown377@example.com,+1-555-815-8364,Phoenix,AZ,Regular,2022-03-29,201,2025-11-12
+378,Ahmed,Singh,ahmed.singh378@example.com,+1-555-795-5687,Columbus,OH,Regular,2021-10-25,445,2024-12-31
+379,Arjun,Garcia,arjun.garcia379@example.com,+1-555-696-1397,Boston,MA,Regular,2021-01-29,209,2024-12-31
+380,Mary,Chen,mary.chen380@example.com,+1-555-468-7685,New York,NY,Premium,2020-10-21,349,2026-01-27
+381,Li,Kim,li.kim381@example.com,+1-555-845-9653,Los Angeles,CA,Regular,2022-04-29,585,2024-12-31
+382,Sophia,Tanaka,sophia.tanaka382@example.com,+1-555-465-3258,Houston,TX,Premium,2024-12-02,438,2024-12-31
+383,Lucas,Miller,lucas.miller383@example.com,+1-555-682-2280,Miami,FL,Regular,2023-05-06,104,2026-06-20
+384,Priya,Singh,priya.singh384@example.com,+1-555-152-9856,Columbus,OH,Regular,2022-07-06,842,2026-05-22
+385,Fatima,Khan,fatima.khan385@example.com,+1-555-820-6863,Chicago,IL,Regular,2021-10-08,992,2024-12-31
+386,Fatima,Patel,fatima.patel386@example.com,+1-555-689-4955,Denver,CO,Premium,2025-08-10,320,2024-12-31
+387,Liam,Costa,liam.costa387@example.com,+1-555-659-2816,New York,NY,Regular,2022-12-13,669,2024-12-31
+388,James,Johnson,james.johnson388@example.com,+1-555-531-5274,Houston,TX,Regular,2020-08-31,143,2024-12-31
+389,Carlos,Sato,carlos.sato389@example.com,+1-555-437-2021,Los Angeles,CA,Regular,2020-10-25,825,2024-12-31
+390,Kenji,Costa,kenji.costa390@example.com,+1-555-955-1579,Los Angeles,CA,Regular,2020-10-16,973,2024-12-31
+391,Olivia,Costa,olivia.costa391@example.com,+1-555-727-2320,Los Angeles,CA,Premium,2025-05-15,970,2024-12-31
+392,Wei,Khan,wei.khan392@example.com,+1-555-142-2704,Los Angeles,CA,Regular,2025-09-10,231,2024-12-31
+393,Lucas,Davis,lucas.davis393@example.com,+1-555-589-5971,Chicago,IL,VIP,2022-07-21,22,2026-03-07
+394,Mary,Smith,mary.smith394@example.com,+1-555-900-4214,Phoenix,AZ,Regular,2024-04-02,699,2024-12-31
+395,Mia,Smith,mia.smith395@example.com,+1-555-593-1854,Denver,CO,Regular,2024-03-25,713,2024-12-31
+396,Wei,Wilson,wei.wilson396@example.com,+1-555-537-3257,Los Angeles,CA,Regular,2021-04-28,919,2024-12-31
+397,Yuki,Davis,yuki.davis397@example.com,+1-555-298-6621,Houston,TX,Regular,2020-08-25,244,2024-12-31
+398,Maria,Patel,maria.patel398@example.com,+1-555-110-4721,Seattle,WA,Regular,2020-07-06,822,2024-12-31
+399,James,Lopez,james.lopez399@example.com,+1-555-178-1928,New York,NY,Regular,2022-01-09,290,2024-12-31
+400,Mary,Brown,mary.brown400@example.com,+1-555-716-5001,Houston,TX,VIP,2021-06-15,621,2024-12-31
+401,Liam,Singh,liam.singh401@example.com,+1-555-225-2258,San Francisco,CA,Regular,2022-04-23,507,2024-12-31
+402,Omar,Davis,omar.davis402@example.com,+1-555-554-5959,Miami,FL,VIP,2023-04-13,890,2024-12-31
+403,Lucas,Lopez,lucas.lopez403@example.com,+1-555-373-6224,Denver,CO,Regular,2025-08-24,107,2024-12-31
+404,Mary,Davis,mary.davis404@example.com,+1-555-822-8966,Chicago,IL,Regular,2022-04-13,934,2024-12-31
+405,Wei,Tanaka,wei.tanaka405@example.com,+1-555-412-4453,Miami,FL,Regular,2021-08-04,37,2024-12-31
+406,Maria,Kumar,maria.kumar406@example.com,+1-555-882-8434,San Francisco,CA,VIP,2020-03-28,511,2024-12-31
+407,Mary,Khan,mary.khan407@example.com,+1-555-702-7294,Dallas,TX,Premium,2020-12-12,62,2026-07-12
+408,Ahmed,Costa,ahmed.costa408@example.com,+1-555-607-1308,Chicago,IL,Premium,2024-04-24,455,2024-12-31
+409,Mary,Lopez,mary.lopez409@example.com,+1-555-488-4021,Miami,FL,Premium,2020-08-02,677,2025-12-16
+410,Fatima,Johnson,fatima.johnson410@example.com,+1-555-881-6698,Phoenix,AZ,VIP,2023-10-09,945,2025-09-22
+411,Ahmed,Silva,ahmed.silva411@example.com,+1-555-875-1448,Miami,FL,Regular,2024-11-12,887,2024-12-31
+412,Olivia,Johnson,olivia.johnson412@example.com,+1-555-211-7358,Phoenix,AZ,VIP,2023-03-23,880,2024-12-31
+413,Ananya,Kumar,ananya.kumar413@example.com,+1-555-686-9501,Chicago,IL,Regular,2024-04-10,479,2024-12-31
+414,Zara,Lopez,zara.lopez414@example.com,+1-555-115-5598,Atlanta,GA,Premium,2023-01-28,88,2024-12-31
+415,Maria,Sato,maria.sato415@example.com,+1-555-445-7465,Dallas,TX,Regular,2023-01-28,371,2024-12-31
+416,Ahmed,Kim,ahmed.kim416@example.com,+1-555-901-1202,Dallas,TX,Regular,2023-08-07,857,2024-12-31
+417,Ahmed,Wang,ahmed.wang417@example.com,+1-555-573-1282,Columbus,OH,Regular,2025-03-25,38,2024-12-31
+418,Emma,Singh,emma.singh418@example.com,+1-555-964-4569,San Francisco,CA,Regular,2020-11-21,284,2024-12-31
+419,Yuki,Sato,yuki.sato419@example.com,+1-555-165-8216,Houston,TX,Regular,2023-02-05,266,2024-12-31
+420,Sophia,Chen,sophia.chen420@example.com,+1-555-745-3858,Miami,FL,Regular,2020-07-22,239,2024-12-31
+421,Priya,Nguyen,priya.nguyen421@example.com,+1-555-288-9302,New York,NY,Premium,2023-07-23,43,2024-12-31
+422,Ananya,Lopez,ananya.lopez422@example.com,+1-555-831-5244,New York,NY,VIP,2020-03-07,695,2024-12-31
+423,Emma,Sato,emma.sato423@example.com,+1-555-145-4845,Los Angeles,CA,Regular,2020-11-13,520,2024-12-31
+424,Noah,Sharma,noah.sharma424@example.com,+1-555-179-4882,Denver,CO,Regular,2024-03-01,557,2025-09-20
+425,Mia,Wilson,mia.wilson425@example.com,+1-555-757-7987,Boston,MA,Premium,2021-08-09,26,2024-12-31
+426,John,Costa,john.costa426@example.com,+1-555-468-6488,Phoenix,AZ,VIP,2024-03-14,482,2024-12-31
+427,Fatima,Costa,fatima.costa427@example.com,+1-555-264-7034,New York,NY,Regular,2021-09-06,934,2024-12-31
+428,Kenji,Smith,kenji.smith428@example.com,+1-555-723-4464,Boston,MA,Premium,2025-09-23,733,2024-12-31
+429,Zara,Tanaka,zara.tanaka429@example.com,+1-555-695-6636,Phoenix,AZ,VIP,2024-03-31,851,2024-12-31
+430,Kenji,Johnson,kenji.johnson430@example.com,+1-555-843-3458,San Francisco,CA,Regular,2020-11-17,979,2024-12-31
+431,Raj,Lopez,raj.lopez431@example.com,+1-555-615-9982,Seattle,WA,Premium,2021-05-11,868,2024-12-31
+432,Arjun,Johnson,arjun.johnson432@example.com,+1-555-583-9592,Seattle,WA,Premium,2023-07-22,276,2025-06-07
+433,Carlos,Silva,carlos.silva433@example.com,+1-555-349-6385,Dallas,TX,Premium,2024-01-22,237,2026-05-12
+434,Noah,Brown,noah.brown434@example.com,+1-555-218-4949,Los Angeles,CA,Regular,2024-08-06,371,2024-12-31
+435,Raj,Davis,raj.davis435@example.com,+1-555-617-2252,Denver,CO,Premium,2025-06-06,620,2024-12-31
+436,Maria,Kumar,maria.kumar436@example.com,+1-555-528-4764,Phoenix,AZ,Regular,2021-05-28,948,2024-12-31
+437,Ananya,Lopez,ananya.lopez437@example.com,+1-555-517-3263,Phoenix,AZ,Regular,2023-03-21,350,2024-12-31
+438,John,Sharma,john.sharma438@example.com,+1-555-518-7898,Boston,MA,Regular,2021-08-30,590,2024-12-31
+439,Sophia,Nguyen,sophia.nguyen439@example.com,+1-555-302-3947,Phoenix,AZ,Premium,2020-03-04,171,2024-12-31
+440,Priya,Wilson,priya.wilson440@example.com,+1-555-883-8698,Dallas,TX,Premium,2021-06-01,891,2024-12-31
+441,Mary,Wilson,mary.wilson441@example.com,+1-555-806-3735,New York,NY,VIP,2021-06-26,528,2024-12-31
+442,Arjun,Miller,arjun.miller442@example.com,+1-555-462-3088,Chicago,IL,Regular,2022-09-15,730,2024-12-31
+443,Fatima,Sharma,fatima.sharma443@example.com,+1-555-944-6515,Houston,TX,Regular,2021-03-17,740,2024-12-31
+444,Mary,Patel,mary.patel444@example.com,+1-555-463-8354,Los Angeles,CA,Premium,2025-01-16,759,2024-12-31
+445,Olivia,Ali,olivia.ali445@example.com,+1-555-588-3205,Los Angeles,CA,Premium,2025-09-17,86,2025-12-01
+446,Wei,Smith,wei.smith446@example.com,+1-555-707-7060,Seattle,WA,Regular,2025-01-31,389,2024-12-31
+447,John,Kumar,john.kumar447@example.com,+1-555-620-5576,Atlanta,GA,VIP,2021-01-31,238,2024-12-31
+448,Fatima,Singh,fatima.singh448@example.com,+1-555-149-9481,Houston,TX,Premium,2025-09-12,865,2024-12-31
+449,Olivia,Ali,olivia.ali449@example.com,+1-555-493-6219,Houston,TX,VIP,2021-08-09,43,2026-07-07
+450,Zara,Garcia,zara.garcia450@example.com,+1-555-631-5558,Chicago,IL,Regular,2023-07-11,102,2024-12-31
+451,Emma,Ali,emma.ali451@example.com,+1-555-221-5716,Atlanta,GA,Regular,2024-12-02,230,2024-12-31
+452,Li,Ali,li.ali452@example.com,+1-555-720-2738,Dallas,TX,VIP,2023-02-15,145,2026-03-24
+453,Priya,Garcia,priya.garcia453@example.com,+1-555-958-9334,Denver,CO,Premium,2020-04-22,613,2024-12-31
+454,Mary,Sato,mary.sato454@example.com,+1-555-918-4197,Denver,CO,Regular,2020-04-15,379,2024-12-31
+455,Carlos,Ali,carlos.ali455@example.com,+1-555-536-8288,Seattle,WA,Regular,2025-02-01,303,2024-12-31
+456,Priya,Sharma,priya.sharma456@example.com,+1-555-542-9081,Columbus,OH,Regular,2021-07-14,286,2024-12-31
+457,Zara,Kim,zara.kim457@example.com,+1-555-462-2295,Boston,MA,Premium,2022-06-30,745,2024-12-31
+458,Raj,Brown,raj.brown458@example.com,+1-555-619-6494,Atlanta,GA,Regular,2025-10-01,689,2024-12-31
+459,Raj,Brown,raj.brown459@example.com,+1-555-543-2645,New York,NY,VIP,2023-07-24,195,2024-12-31
+460,Ananya,Kim,ananya.kim460@example.com,+1-555-136-1130,San Francisco,CA,Regular,2024-03-20,894,2024-12-31
+461,Maria,Kim,maria.kim461@example.com,+1-555-371-8702,Miami,FL,Regular,2022-02-05,752,2024-12-31
+462,Sophia,Ali,sophia.ali462@example.com,+1-555-303-2453,Atlanta,GA,VIP,2022-05-27,4,2024-12-31
+463,Olivia,Patel,olivia.patel463@example.com,+1-555-671-4416,Columbus,OH,Premium,2020-06-07,429,2024-12-31
+464,Omar,Khan,omar.khan464@example.com,+1-555-489-4845,Seattle,WA,Premium,2025-06-06,544,2026-03-16
+465,Mia,Wang,mia.wang465@example.com,+1-555-960-4799,Dallas,TX,Premium,2025-06-09,502,2024-12-31
+466,Lucas,Miller,lucas.miller466@example.com,+1-555-465-9903,Seattle,WA,Regular,2021-01-30,225,2024-12-31
+467,Priya,Ali,priya.ali467@example.com,+1-555-557-6331,Chicago,IL,Regular,2024-10-06,119,2024-12-31
+468,Li,Kumar,li.kumar468@example.com,+1-555-776-2860,Los Angeles,CA,Premium,2024-06-18,722,2025-11-17
+469,Wei,Singh,wei.singh469@example.com,+1-555-984-9014,Phoenix,AZ,Regular,2022-08-19,30,2024-12-31
+470,Fatima,Khan,fatima.khan470@example.com,+1-555-320-7701,Denver,CO,Regular,2023-08-16,268,2024-12-31
+471,Mia,Brown,mia.brown471@example.com,+1-555-500-8240,Chicago,IL,Regular,2022-12-03,935,2024-12-31
+472,Mary,Khan,mary.khan472@example.com,+1-555-845-4587,Columbus,OH,Regular,2020-07-05,316,2024-12-31
+473,Noah,Wilson,noah.wilson473@example.com,+1-555-686-3728,Miami,FL,Regular,2021-03-27,971,2024-12-31
+474,Yuki,Costa,yuki.costa474@example.com,+1-555-232-9843,Houston,TX,Regular,2020-03-27,822,2024-12-31
+475,Liam,Patel,liam.patel475@example.com,+1-555-821-6460,Phoenix,AZ,Premium,2020-09-16,671,2024-12-31
+476,Mary,Tanaka,mary.tanaka476@example.com,+1-555-470-9773,Miami,FL,Regular,2021-10-05,859,2024-12-31
+477,Ananya,Miller,ananya.miller477@example.com,+1-555-334-5754,Los Angeles,CA,Premium,2024-03-11,340,2024-12-31
+478,Olivia,Garcia,olivia.garcia478@example.com,+1-555-850-5074,Denver,CO,VIP,2020-05-27,866,2025-08-05
+479,James,Tanaka,james.tanaka479@example.com,+1-555-613-7519,Boston,MA,Premium,2020-06-22,161,2024-12-31
+480,Fatima,Ali,fatima.ali480@example.com,+1-555-335-5051,New York,NY,Premium,2021-05-21,833,2026-03-07
+481,Liam,Nguyen,liam.nguyen481@example.com,+1-555-234-5423,Chicago,IL,Premium,2020-11-09,76,2024-12-31
+482,Arjun,Wilson,arjun.wilson482@example.com,+1-555-115-9875,New York,NY,Premium,2021-09-13,98,2026-06-28
+483,Zara,Silva,zara.silva483@example.com,+1-555-500-4183,Phoenix,AZ,Premium,2023-07-02,804,2024-12-31
+484,John,Wilson,john.wilson484@example.com,+1-555-861-1383,Denver,CO,Regular,2025-02-22,208,2024-12-31
+485,Priya,Khan,priya.khan485@example.com,+1-555-690-8723,San Francisco,CA,Regular,2024-10-25,96,2024-12-31
+486,Maria,Wilson,maria.wilson486@example.com,+1-555-385-8919,Denver,CO,Regular,2025-09-06,251,2024-12-31
+487,Liam,Smith,liam.smith487@example.com,+1-555-845-7449,Columbus,OH,VIP,2021-03-19,464,2024-12-31
+488,Maria,Silva,maria.silva488@example.com,+1-555-506-4802,New York,NY,Premium,2025-05-06,577,2026-05-02
+489,Priya,Nguyen,priya.nguyen489@example.com,+1-555-440-3355,Dallas,TX,VIP,2020-12-08,98,2025-11-06
+490,Ananya,Wang,ananya.wang490@example.com,+1-555-985-9025,Miami,FL,Regular,2020-12-09,145,2024-12-31
+491,Liam,Costa,liam.costa491@example.com,+1-555-635-4808,Columbus,OH,Regular,2025-07-14,259,2024-12-31
+492,Olivia,Ali,olivia.ali492@example.com,+1-555-445-3467,Los Angeles,CA,Regular,2024-07-23,893,2024-12-31
+493,James,Khan,james.khan493@example.com,+1-555-314-9007,Boston,MA,Regular,2023-07-06,983,2026-01-02
+494,Lucas,Lopez,lucas.lopez494@example.com,+1-555-572-8913,Houston,TX,Regular,2020-11-29,944,2024-12-31
+495,Priya,Wilson,priya.wilson495@example.com,+1-555-179-7155,Los Angeles,CA,Premium,2020-02-25,166,2026-05-04
+496,Arjun,Sharma,arjun.sharma496@example.com,+1-555-302-8169,Atlanta,GA,Premium,2021-04-10,40,2024-12-31
+497,Olivia,Singh,olivia.singh497@example.com,+1-555-741-9594,Atlanta,GA,Premium,2024-09-08,409,2025-08-17
+498,James,Ali,james.ali498@example.com,+1-555-545-5820,Boston,MA,Premium,2023-01-15,686,2025-08-02
+499,John,Costa,john.costa499@example.com,+1-555-677-3718,Houston,TX,Regular,2022-04-17,823,2024-12-31
+500,Yuki,Davis,yuki.davis500@example.com,+1-555-719-5116,Denver,CO,Regular,2022-05-12,959,2024-12-31
+501,John,Chen,john.chen501@example.com,+1-555-636-8763,Atlanta,GA,Regular,2024-09-01,184,2024-12-31
+502,Wei,Singh,wei.singh502@example.com,+1-555-105-6109,Boston,MA,Premium,2022-03-27,711,2024-12-31
+503,Priya,Sato,priya.sato503@example.com,+1-555-438-2551,Columbus,OH,Regular,2025-04-03,609,2024-12-31
+504,Li,Patel,li.patel504@example.com,+1-555-751-4703,Houston,TX,Regular,2020-02-27,951,2024-12-31
+505,Carlos,Khan,carlos.khan505@example.com,+1-555-940-7982,Dallas,TX,Regular,2023-06-06,377,2024-12-31
+506,Yuki,Miller,yuki.miller506@example.com,+1-555-674-9864,New York,NY,Premium,2022-04-09,667,2026-05-18
+507,Kenji,Chen,kenji.chen507@example.com,+1-555-848-4546,Dallas,TX,Regular,2022-12-12,578,2026-04-04
+508,Priya,Chen,priya.chen508@example.com,+1-555-634-7274,Phoenix,AZ,Regular,2023-02-09,990,2024-12-31
+509,Zara,Costa,zara.costa509@example.com,+1-555-584-4429,San Francisco,CA,Premium,2022-08-07,222,2026-01-11
+510,Raj,Costa,raj.costa510@example.com,+1-555-246-3700,Atlanta,GA,Regular,2020-01-02,332,2024-12-31
+511,Raj,Johnson,raj.johnson511@example.com,+1-555-623-8203,Atlanta,GA,Premium,2025-04-16,335,2026-07-16
+512,Fatima,Tanaka,fatima.tanaka512@example.com,+1-555-220-4944,Phoenix,AZ,Regular,2024-03-25,793,2024-12-31
+513,Liam,Singh,liam.singh513@example.com,+1-555-419-9552,Houston,TX,Regular,2020-11-16,905,2024-12-31
+514,Yuki,Garcia,yuki.garcia514@example.com,+1-555-748-5550,San Francisco,CA,Premium,2024-11-25,574,2026-04-04
+515,Noah,Singh,noah.singh515@example.com,+1-555-907-5104,Los Angeles,CA,Regular,2024-11-18,668,2024-12-31
+516,Emma,Wang,emma.wang516@example.com,+1-555-986-6991,New York,NY,Premium,2023-11-18,746,2024-12-31
+517,Olivia,Garcia,olivia.garcia517@example.com,+1-555-673-4129,Seattle,WA,Regular,2022-01-03,956,2024-12-31
+518,Zara,Smith,zara.smith518@example.com,+1-555-552-6914,Miami,FL,Regular,2020-01-23,601,2024-12-31
+519,Fatima,Brown,fatima.brown519@example.com,+1-555-477-5157,Boston,MA,Regular,2020-02-23,270,2025-10-16
+520,Ahmed,Johnson,ahmed.johnson520@example.com,+1-555-381-8843,San Francisco,CA,Regular,2022-11-02,281,2024-12-31
+521,Lucas,Johnson,lucas.johnson521@example.com,+1-555-943-1498,Atlanta,GA,Premium,2025-04-12,623,2026-03-20
+522,Lucas,Kumar,lucas.kumar522@example.com,+1-555-277-8756,Columbus,OH,Premium,2021-03-01,40,2024-12-31
+523,Emma,Smith,emma.smith523@example.com,+1-555-830-3509,Seattle,WA,Premium,2021-12-25,892,2024-12-31
+524,Wei,Patel,wei.patel524@example.com,+1-555-954-2956,Chicago,IL,Regular,2020-09-12,322,2024-12-31
+525,Priya,Sato,priya.sato525@example.com,+1-555-973-4181,Dallas,TX,Regular,2020-03-09,341,2024-12-31
+526,Mia,Brown,mia.brown526@example.com,+1-555-273-7000,Los Angeles,CA,Regular,2024-07-09,427,2024-12-31
+527,Mia,Kim,mia.kim527@example.com,+1-555-166-4161,New York,NY,Premium,2025-08-16,152,2024-12-31
+528,Zara,Khan,zara.khan528@example.com,+1-555-276-8264,Chicago,IL,Regular,2022-03-24,706,2025-07-15
+529,Arjun,Wilson,arjun.wilson529@example.com,+1-555-750-1052,Atlanta,GA,Regular,2023-12-07,121,2024-12-31
+530,John,Kumar,john.kumar530@example.com,+1-555-956-2410,Seattle,WA,Regular,2025-03-11,91,2024-12-31
+531,Priya,Patel,priya.patel531@example.com,+1-555-847-2415,Atlanta,GA,Regular,2020-03-23,786,2024-12-31
+532,Li,Smith,li.smith532@example.com,+1-555-753-7136,Miami,FL,Regular,2022-10-07,316,2024-12-31
+533,Mia,Nguyen,mia.nguyen533@example.com,+1-555-865-3174,Miami,FL,Regular,2024-04-02,723,2024-12-31
+534,Fatima,Wang,fatima.wang534@example.com,+1-555-243-6169,Dallas,TX,Regular,2022-02-10,280,2024-12-31
+535,Carlos,Wang,carlos.wang535@example.com,+1-555-365-8202,Dallas,TX,Regular,2025-06-29,364,2024-12-31
+536,Kenji,Davis,kenji.davis536@example.com,+1-555-890-9569,Houston,TX,Regular,2021-11-29,38,2024-12-31
+537,Kenji,Miller,kenji.miller537@example.com,+1-555-650-4451,Atlanta,GA,VIP,2024-11-12,288,2026-02-21
+538,Lucas,Kim,lucas.kim538@example.com,+1-555-395-4398,Phoenix,AZ,Regular,2025-08-25,565,2024-12-31
+539,Zara,Khan,zara.khan539@example.com,+1-555-625-4452,Boston,MA,Regular,2025-03-30,268,2024-12-31
+540,Mary,Sharma,mary.sharma540@example.com,+1-555-774-4054,Denver,CO,Regular,2025-03-28,601,2024-12-31
+541,John,Davis,john.davis541@example.com,+1-555-486-1554,Seattle,WA,Premium,2021-03-04,645,2026-04-08
+542,Emma,Smith,emma.smith542@example.com,+1-555-531-8790,Atlanta,GA,Regular,2021-02-14,206,2025-09-01
+543,Emma,Ali,emma.ali543@example.com,+1-555-578-9958,New York,NY,Regular,2020-03-30,450,2026-05-28
+544,Yuki,Kumar,yuki.kumar544@example.com,+1-555-689-8126,Seattle,WA,Premium,2025-04-23,855,2024-12-31
+545,Maria,Khan,maria.khan545@example.com,+1-555-482-6535,Los Angeles,CA,Premium,2024-07-01,308,2025-08-01
+546,Mary,Lopez,mary.lopez546@example.com,+1-555-619-2767,Phoenix,AZ,Regular,2023-01-08,977,2024-12-31
+547,Kenji,Miller,kenji.miller547@example.com,+1-555-129-3687,Seattle,WA,Regular,2023-05-16,908,2024-12-31
+548,Yuki,Tanaka,yuki.tanaka548@example.com,+1-555-681-3286,Miami,FL,Regular,2023-09-26,808,2024-12-31
+549,Mary,Patel,mary.patel549@example.com,+1-555-911-3317,Dallas,TX,Premium,2025-02-21,406,2024-12-31
+550,Li,Kumar,li.kumar550@example.com,+1-555-774-3416,New York,NY,Regular,2021-12-05,309,2024-12-31
+551,Fatima,Patel,fatima.patel551@example.com,+1-555-341-4331,Atlanta,GA,Premium,2022-09-29,942,2025-06-25
+552,Mia,Sato,mia.sato552@example.com,+1-555-483-1081,Phoenix,AZ,Regular,2023-11-12,103,2024-12-31
+553,Sophia,Sato,sophia.sato553@example.com,+1-555-503-4481,San Francisco,CA,Premium,2024-03-21,852,2024-12-31
+554,Noah,Lopez,noah.lopez554@example.com,+1-555-198-7350,Miami,FL,Regular,2021-06-30,410,2025-10-31
+555,John,Ali,john.ali555@example.com,+1-555-847-7956,San Francisco,CA,Regular,2020-10-20,356,2024-12-31
+556,Sophia,Kim,sophia.kim556@example.com,+1-555-700-1440,Los Angeles,CA,Regular,2021-12-30,787,2024-12-31
+557,Maria,Davis,maria.davis557@example.com,+1-555-448-9215,Houston,TX,Premium,2024-06-18,937,2024-12-31
+558,Raj,Nguyen,raj.nguyen558@example.com,+1-555-241-9191,Miami,FL,Regular,2022-05-15,310,2024-12-31
+559,Olivia,Patel,olivia.patel559@example.com,+1-555-493-3947,Houston,TX,Regular,2023-03-13,319,2024-12-31
+560,Liam,Kim,liam.kim560@example.com,+1-555-135-5276,Columbus,OH,VIP,2024-09-23,184,2024-12-31
+561,Li,Miller,li.miller561@example.com,+1-555-629-2743,San Francisco,CA,Regular,2020-12-04,355,2024-12-31
+562,Mia,Sharma,mia.sharma562@example.com,+1-555-983-7626,San Francisco,CA,Premium,2020-02-20,165,2024-12-31
+563,John,Chen,john.chen563@example.com,+1-555-619-7291,Boston,MA,Regular,2020-02-17,498,2025-11-21
+564,Lucas,Kim,lucas.kim564@example.com,+1-555-532-1893,Chicago,IL,Regular,2022-11-25,760,2024-12-31
+565,Lucas,Sharma,lucas.sharma565@example.com,+1-555-926-8377,Seattle,WA,Regular,2025-04-23,730,2024-12-31
+566,John,Sato,john.sato566@example.com,+1-555-214-3930,Houston,TX,VIP,2024-04-19,892,2024-12-31
+567,Mia,Patel,mia.patel567@example.com,+1-555-107-6523,Atlanta,GA,VIP,2022-11-22,203,2024-12-31
+568,Arjun,Costa,arjun.costa568@example.com,+1-555-993-8454,Seattle,WA,Regular,2025-03-18,289,2025-11-19
+569,Mary,Sharma,mary.sharma569@example.com,+1-555-571-7014,Columbus,OH,Regular,2024-02-21,259,2024-12-31
+570,Olivia,Brown,olivia.brown570@example.com,+1-555-403-1385,San Francisco,CA,Regular,2022-01-02,301,2024-12-31
+571,Emma,Wilson,emma.wilson571@example.com,+1-555-557-6318,New York,NY,Regular,2020-05-25,611,2024-12-31
+572,Priya,Davis,priya.davis572@example.com,+1-555-137-9704,Los Angeles,CA,Premium,2022-10-15,180,2024-12-31
+573,Raj,Sato,raj.sato573@example.com,+1-555-229-3369,Boston,MA,Premium,2024-10-31,915,2026-01-08
+574,Ahmed,Davis,ahmed.davis574@example.com,+1-555-805-4999,Columbus,OH,Premium,2025-02-20,42,2024-12-31
+575,Raj,Brown,raj.brown575@example.com,+1-555-139-3404,Houston,TX,Premium,2021-02-18,392,2025-06-30
+576,Arjun,Patel,arjun.patel576@example.com,+1-555-752-5947,Houston,TX,Regular,2020-04-01,189,2024-12-31
+577,Zara,Khan,zara.khan577@example.com,+1-555-768-2298,Los Angeles,CA,Premium,2024-11-10,989,2024-12-31
+578,Priya,Garcia,priya.garcia578@example.com,+1-555-367-5967,Seattle,WA,Regular,2022-09-25,711,2024-12-31
+579,Mary,Davis,mary.davis579@example.com,+1-555-584-4525,Seattle,WA,Premium,2024-11-24,282,2024-12-31
+580,Zara,Wang,zara.wang580@example.com,+1-555-613-1749,Dallas,TX,Premium,2022-01-12,695,2025-09-01
+581,Fatima,Khan,fatima.khan581@example.com,+1-555-516-4393,New York,NY,Regular,2024-08-24,673,2024-12-31
+582,Wei,Khan,wei.khan582@example.com,+1-555-573-6212,Dallas,TX,Regular,2022-07-09,19,2024-12-31
+583,Omar,Brown,omar.brown583@example.com,+1-555-165-5715,Miami,FL,VIP,2025-03-01,603,2025-10-19
+584,Olivia,Nguyen,olivia.nguyen584@example.com,+1-555-436-9871,Seattle,WA,Regular,2020-02-21,352,2024-12-31
+585,John,Brown,john.brown585@example.com,+1-555-942-8280,Houston,TX,Regular,2025-08-05,216,2024-12-31
+586,Ananya,Wang,ananya.wang586@example.com,+1-555-499-5189,San Francisco,CA,Premium,2020-11-17,647,2026-06-05
+587,Sophia,Sato,sophia.sato587@example.com,+1-555-185-4400,Houston,TX,Premium,2024-02-21,312,2024-12-31
+588,Fatima,Brown,fatima.brown588@example.com,+1-555-790-8657,Columbus,OH,Regular,2021-11-13,640,2024-12-31
+589,Emma,Silva,emma.silva589@example.com,+1-555-525-1383,Chicago,IL,VIP,2023-03-08,570,2025-08-08
+590,Zara,Singh,zara.singh590@example.com,+1-555-484-9807,Miami,FL,Regular,2021-05-20,100,2024-12-31
+591,Liam,Garcia,liam.garcia591@example.com,+1-555-213-5740,Miami,FL,Regular,2021-10-13,786,2024-12-31
+592,Zara,Miller,zara.miller592@example.com,+1-555-518-6767,Denver,CO,Premium,2024-09-08,533,2026-01-15
+593,Yuki,Khan,yuki.khan593@example.com,+1-555-888-6950,Houston,TX,Regular,2023-07-25,515,2026-07-24
+594,Ananya,Sato,ananya.sato594@example.com,+1-555-330-7618,Chicago,IL,Regular,2025-03-15,294,2024-12-31
+595,Noah,Wang,noah.wang595@example.com,+1-555-509-5725,Atlanta,GA,Regular,2023-09-30,782,2024-12-31
+596,Noah,Nguyen,noah.nguyen596@example.com,+1-555-799-2610,Atlanta,GA,Regular,2024-09-08,998,2024-12-31
+597,Olivia,Wilson,olivia.wilson597@example.com,+1-555-751-1475,Phoenix,AZ,Regular,2021-07-21,625,2025-06-11
+598,Yuki,Tanaka,yuki.tanaka598@example.com,+1-555-713-7697,Boston,MA,VIP,2023-08-24,625,2024-12-31
+599,Maria,Wang,maria.wang599@example.com,+1-555-740-8731,Seattle,WA,Regular,2024-02-25,24,2024-12-31
+600,Zara,Costa,zara.costa600@example.com,+1-555-769-7378,Los Angeles,CA,Regular,2022-03-01,871,2025-10-12
+601,Li,Kumar,li.kumar601@example.com,+1-555-840-4920,Houston,TX,Premium,2022-03-29,331,2026-02-23
+602,Wei,Ali,wei.ali602@example.com,+1-555-131-4391,Boston,MA,Regular,2025-02-23,251,2024-12-31
+603,Mia,Costa,mia.costa603@example.com,+1-555-347-3897,Columbus,OH,VIP,2025-08-10,657,2026-01-25
+604,Priya,Costa,priya.costa604@example.com,+1-555-993-3609,Houston,TX,Regular,2020-10-13,8,2024-12-31
+605,Zara,Johnson,zara.johnson605@example.com,+1-555-793-7657,San Francisco,CA,Premium,2025-04-09,883,2024-12-31
+606,Liam,Patel,liam.patel606@example.com,+1-555-527-5260,Phoenix,AZ,Premium,2021-05-10,733,2024-12-31
+607,Yuki,Nguyen,yuki.nguyen607@example.com,+1-555-831-1388,Denver,CO,Regular,2020-09-01,300,2024-12-31
+608,Liam,Johnson,liam.johnson608@example.com,+1-555-509-9381,Houston,TX,Regular,2024-12-07,439,2024-12-31
+609,Priya,Sharma,priya.sharma609@example.com,+1-555-967-5300,Atlanta,GA,Premium,2021-04-02,740,2024-12-31
+610,Li,Davis,li.davis610@example.com,+1-555-772-6567,Chicago,IL,Regular,2022-09-22,815,2024-12-31
+611,Sophia,Garcia,sophia.garcia611@example.com,+1-555-199-6407,Dallas,TX,Regular,2020-10-30,470,2024-12-31
+612,Omar,Singh,omar.singh612@example.com,+1-555-350-5259,Phoenix,AZ,Regular,2024-12-26,339,2024-12-31
+613,Noah,Khan,noah.khan613@example.com,+1-555-381-1585,Seattle,WA,Premium,2021-08-29,535,2024-12-31
+614,Fatima,Smith,fatima.smith614@example.com,+1-555-479-6942,Miami,FL,VIP,2023-06-10,968,2025-11-28
+615,Omar,Wang,omar.wang615@example.com,+1-555-749-5992,Seattle,WA,Regular,2024-12-06,690,2024-12-31
+616,Fatima,Chen,fatima.chen616@example.com,+1-555-924-3106,Los Angeles,CA,Regular,2023-04-12,880,2024-12-31
+617,Liam,Khan,liam.khan617@example.com,+1-555-333-1458,San Francisco,CA,Premium,2023-05-25,143,2026-01-02
+618,Kenji,Smith,kenji.smith618@example.com,+1-555-472-9332,Dallas,TX,Premium,2024-07-20,489,2024-12-31
+619,Yuki,Wang,yuki.wang619@example.com,+1-555-759-3553,Houston,TX,Regular,2025-08-14,322,2024-12-31
+620,Arjun,Davis,arjun.davis620@example.com,+1-555-986-8950,San Francisco,CA,Regular,2025-05-28,180,2026-05-14
+621,Sophia,Miller,sophia.miller621@example.com,+1-555-784-2060,New York,NY,Regular,2023-06-20,212,2024-12-31
+622,Maria,Chen,maria.chen622@example.com,+1-555-723-2959,Dallas,TX,Premium,2023-12-31,511,2025-06-07
+623,Noah,Silva,noah.silva623@example.com,+1-555-112-9587,San Francisco,CA,Premium,2022-04-09,373,2024-12-31
+624,Mia,Johnson,mia.johnson624@example.com,+1-555-741-2619,Chicago,IL,VIP,2025-09-09,69,2024-12-31
+625,Ahmed,Sato,ahmed.sato625@example.com,+1-555-966-9810,Denver,CO,Premium,2020-08-17,458,2024-12-31
+626,Kenji,Tanaka,kenji.tanaka626@example.com,+1-555-350-5195,Miami,FL,Premium,2022-01-18,707,2024-12-31
+627,Lucas,Lopez,lucas.lopez627@example.com,+1-555-806-8472,Miami,FL,Regular,2022-12-24,566,2024-12-31
+628,Ahmed,Patel,ahmed.patel628@example.com,+1-555-294-2043,Los Angeles,CA,Premium,2021-06-26,536,2024-12-31
+629,Fatima,Johnson,fatima.johnson629@example.com,+1-555-333-4996,Miami,FL,Regular,2025-05-08,476,2024-12-31
+630,Priya,Sato,priya.sato630@example.com,+1-555-152-6224,Phoenix,AZ,Premium,2020-10-26,202,2024-12-31
+631,Sophia,Sharma,sophia.sharma631@example.com,+1-555-185-8799,Columbus,OH,Regular,2022-05-30,613,2024-12-31
+632,Sophia,Ali,sophia.ali632@example.com,+1-555-109-8041,Seattle,WA,Premium,2021-04-01,738,2024-12-31
+633,Noah,Nguyen,noah.nguyen633@example.com,+1-555-703-8475,Miami,FL,VIP,2022-10-28,773,2024-12-31
+634,Olivia,Costa,olivia.costa634@example.com,+1-555-604-3892,Dallas,TX,Regular,2025-06-02,527,2024-12-31
+635,Fatima,Nguyen,fatima.nguyen635@example.com,+1-555-370-9719,Houston,TX,Regular,2023-02-01,695,2025-10-01
+636,Ananya,Tanaka,ananya.tanaka636@example.com,+1-555-740-8209,Dallas,TX,Regular,2022-01-16,500,2024-12-31
+637,James,Brown,james.brown637@example.com,+1-555-581-9122,Denver,CO,Regular,2020-09-25,779,2024-12-31
+638,Olivia,Kim,olivia.kim638@example.com,+1-555-196-8261,Dallas,TX,Premium,2022-01-18,199,2025-11-26
+639,Priya,Lopez,priya.lopez639@example.com,+1-555-414-9221,Chicago,IL,Regular,2025-04-16,106,2025-11-29
+640,Mia,Ali,mia.ali640@example.com,+1-555-315-3532,Seattle,WA,Regular,2022-02-25,785,2024-12-31
+641,Liam,Wang,liam.wang641@example.com,+1-555-724-3574,Atlanta,GA,Regular,2025-04-24,670,2024-12-31
+642,Yuki,Wilson,yuki.wilson642@example.com,+1-555-843-5413,Phoenix,AZ,Regular,2022-12-12,484,2024-12-31
+643,Fatima,Davis,fatima.davis643@example.com,+1-555-413-6467,Atlanta,GA,Premium,2023-07-15,461,2024-12-31
+644,Fatima,Wilson,fatima.wilson644@example.com,+1-555-502-7834,Seattle,WA,Regular,2024-07-13,57,2024-12-31
+645,Olivia,Davis,olivia.davis645@example.com,+1-555-924-3292,San Francisco,CA,VIP,2023-01-28,20,2024-12-31
+646,Omar,Garcia,omar.garcia646@example.com,+1-555-777-5193,Miami,FL,Regular,2024-03-09,25,2024-12-31
+647,John,Wilson,john.wilson647@example.com,+1-555-491-6336,Phoenix,AZ,Regular,2022-03-27,817,2025-07-31
+648,Carlos,Costa,carlos.costa648@example.com,+1-555-550-5488,Denver,CO,Regular,2022-09-22,165,2024-12-31
+649,John,Singh,john.singh649@example.com,+1-555-707-8698,Los Angeles,CA,VIP,2020-07-07,800,2024-12-31
+650,Mia,Miller,mia.miller650@example.com,+1-555-823-8979,Los Angeles,CA,Regular,2024-03-16,61,2024-12-31
+651,Priya,Johnson,priya.johnson651@example.com,+1-555-450-5522,San Francisco,CA,Regular,2024-11-29,946,2024-12-31
+652,Fatima,Sharma,fatima.sharma652@example.com,+1-555-237-2212,Columbus,OH,Regular,2024-08-21,845,2024-12-31
+653,Wei,Chen,wei.chen653@example.com,+1-555-406-4276,Seattle,WA,Regular,2024-11-30,252,2024-12-31
+654,John,Silva,john.silva654@example.com,+1-555-881-5271,Denver,CO,Regular,2023-04-08,707,2024-12-31
+655,James,Chen,james.chen655@example.com,+1-555-888-2114,Phoenix,AZ,Premium,2023-07-09,981,2024-12-31
+656,Emma,Kumar,emma.kumar656@example.com,+1-555-319-4016,Los Angeles,CA,Regular,2022-07-21,472,2024-12-31
+657,Emma,Brown,emma.brown657@example.com,+1-555-793-5243,Miami,FL,Regular,2020-04-04,144,2024-12-31
+658,Priya,Nguyen,priya.nguyen658@example.com,+1-555-537-7493,Chicago,IL,Premium,2020-07-15,852,2024-12-31
+659,Arjun,Johnson,arjun.johnson659@example.com,+1-555-482-1265,New York,NY,Regular,2020-05-11,983,2026-02-10
+660,Arjun,Brown,arjun.brown660@example.com,+1-555-651-9061,Phoenix,AZ,Regular,2023-09-29,650,2024-12-31
+661,Raj,Patel,raj.patel661@example.com,+1-555-194-2840,Seattle,WA,Regular,2020-12-25,588,2024-12-31
+662,Noah,Costa,noah.costa662@example.com,+1-555-295-2197,San Francisco,CA,Premium,2024-10-31,838,2024-12-31
+663,Ahmed,Kumar,ahmed.kumar663@example.com,+1-555-856-3493,Columbus,OH,Premium,2020-10-26,187,2025-06-06
+664,Lucas,Silva,lucas.silva664@example.com,+1-555-564-9646,Houston,TX,Premium,2024-11-06,911,2024-12-31
+665,James,Miller,james.miller665@example.com,+1-555-400-1104,Seattle,WA,Regular,2024-05-16,20,2024-12-31
+666,James,Lopez,james.lopez666@example.com,+1-555-537-3465,Houston,TX,Regular,2022-07-01,599,2024-12-31
+667,Mia,Brown,mia.brown667@example.com,+1-555-568-4282,Denver,CO,Premium,2023-12-23,915,2024-12-31
+668,Omar,Silva,omar.silva668@example.com,+1-555-293-3429,Atlanta,GA,Regular,2022-01-13,104,2024-12-31
+669,James,Sato,james.sato669@example.com,+1-555-964-1646,Seattle,WA,Premium,2023-11-28,978,2024-12-31
+670,Raj,Brown,raj.brown670@example.com,+1-555-335-4421,Houston,TX,Regular,2021-10-30,435,2024-12-31
+671,Ahmed,Lopez,ahmed.lopez671@example.com,+1-555-890-6821,Miami,FL,Premium,2024-12-05,127,2026-07-26
+672,Liam,Smith,liam.smith672@example.com,+1-555-988-4417,Columbus,OH,Regular,2025-01-04,450,2024-12-31
+673,Liam,Garcia,liam.garcia673@example.com,+1-555-889-7234,Miami,FL,Regular,2021-05-25,96,2024-12-31
+674,Li,Tanaka,li.tanaka674@example.com,+1-555-841-9462,Seattle,WA,Regular,2022-05-08,124,2024-12-31
+675,Sophia,Costa,sophia.costa675@example.com,+1-555-867-6191,Houston,TX,Premium,2022-05-11,93,2026-03-19
+676,Arjun,Davis,arjun.davis676@example.com,+1-555-361-9335,Columbus,OH,Regular,2025-02-14,422,2025-06-06
+677,James,Miller,james.miller677@example.com,+1-555-530-7558,Phoenix,AZ,VIP,2021-02-13,364,2024-12-31
+678,Emma,Ali,emma.ali678@example.com,+1-555-544-5926,Boston,MA,Premium,2020-12-11,667,2026-03-28
+679,Lucas,Miller,lucas.miller679@example.com,+1-555-116-5500,Atlanta,GA,VIP,2023-08-17,47,2026-03-11
+680,Wei,Lopez,wei.lopez680@example.com,+1-555-678-1151,Atlanta,GA,Regular,2021-09-29,144,2024-12-31
+681,Omar,Singh,omar.singh681@example.com,+1-555-139-2002,Phoenix,AZ,Regular,2022-05-09,888,2024-12-31
+682,Zara,Kim,zara.kim682@example.com,+1-555-480-7797,Dallas,TX,Premium,2024-09-13,177,2024-12-31
+683,Li,Tanaka,li.tanaka683@example.com,+1-555-859-3975,Boston,MA,Regular,2021-03-24,806,2026-02-23
+684,Li,Smith,li.smith684@example.com,+1-555-308-6014,Columbus,OH,Regular,2024-03-08,931,2024-12-31
+685,Ahmed,Costa,ahmed.costa685@example.com,+1-555-129-1423,Houston,TX,Regular,2025-04-11,36,2024-12-31
+686,Zara,Chen,zara.chen686@example.com,+1-555-147-9838,Chicago,IL,Regular,2021-11-26,162,2024-12-31
+687,Priya,Smith,priya.smith687@example.com,+1-555-328-2509,San Francisco,CA,Regular,2020-09-28,116,2026-03-26
+688,Sophia,Kumar,sophia.kumar688@example.com,+1-555-976-9793,Chicago,IL,Premium,2020-01-03,319,2025-06-11
+689,Sophia,Singh,sophia.singh689@example.com,+1-555-231-6290,Dallas,TX,Premium,2024-02-06,980,2025-06-23
+690,Yuki,Kim,yuki.kim690@example.com,+1-555-198-8828,Los Angeles,CA,Regular,2022-03-14,129,2024-12-31
+691,Maria,Tanaka,maria.tanaka691@example.com,+1-555-924-3336,Atlanta,GA,Premium,2020-12-02,762,2025-11-09
+692,Priya,Miller,priya.miller692@example.com,+1-555-729-2724,Dallas,TX,Premium,2022-10-23,190,2026-01-01
+693,Zara,Kim,zara.kim693@example.com,+1-555-436-8571,Dallas,TX,Regular,2022-12-28,779,2024-12-31
+694,Wei,Brown,wei.brown694@example.com,+1-555-483-3379,Chicago,IL,Regular,2020-05-20,766,2024-12-31
+695,Liam,Nguyen,liam.nguyen695@example.com,+1-555-913-4242,New York,NY,VIP,2020-02-28,147,2024-12-31
+696,Lucas,Johnson,lucas.johnson696@example.com,+1-555-343-3652,Phoenix,AZ,Regular,2020-02-17,586,2024-12-31
+697,Sophia,Singh,sophia.singh697@example.com,+1-555-292-7646,Houston,TX,Regular,2022-05-29,465,2024-12-31
+698,Yuki,Khan,yuki.khan698@example.com,+1-555-550-2930,Denver,CO,Premium,2023-10-13,346,2024-12-31
+699,Li,Khan,li.khan699@example.com,+1-555-926-8984,Houston,TX,Premium,2025-02-12,680,2024-12-31
+700,Priya,Kim,priya.kim700@example.com,+1-555-881-9504,Houston,TX,Regular,2024-02-05,437,2024-12-31
+701,Lucas,Smith,lucas.smith701@example.com,+1-555-229-2549,Denver,CO,Regular,2025-02-16,850,2024-12-31
+702,Priya,Sharma,priya.sharma702@example.com,+1-555-829-5844,Denver,CO,Regular,2023-11-24,315,2024-12-31
+703,Noah,Wilson,noah.wilson703@example.com,+1-555-184-9269,San Francisco,CA,Regular,2025-09-23,825,2025-08-19
+704,Wei,Kim,wei.kim704@example.com,+1-555-894-1273,Miami,FL,Regular,2023-12-20,539,2024-12-31
+705,Yuki,Chen,yuki.chen705@example.com,+1-555-980-9692,Seattle,WA,Regular,2024-01-25,553,2024-12-31
+706,Maria,Tanaka,maria.tanaka706@example.com,+1-555-483-3600,Atlanta,GA,Regular,2021-11-09,651,2024-12-31
+707,Lucas,Costa,lucas.costa707@example.com,+1-555-963-3491,Miami,FL,Regular,2024-10-02,879,2024-12-31
+708,Carlos,Khan,carlos.khan708@example.com,+1-555-510-5857,New York,NY,Regular,2024-09-21,916,2024-12-31
+709,Sophia,Kumar,sophia.kumar709@example.com,+1-555-239-5915,Houston,TX,Regular,2022-10-26,726,2024-12-31
+710,Ananya,Kim,ananya.kim710@example.com,+1-555-313-2094,Dallas,TX,Regular,2024-08-07,144,2024-12-31
+711,Wei,Singh,wei.singh711@example.com,+1-555-882-4972,Atlanta,GA,Regular,2021-10-15,662,2024-12-31
+712,Olivia,Miller,olivia.miller712@example.com,+1-555-298-5072,Seattle,WA,Premium,2020-10-15,232,2024-12-31
+713,Ahmed,Chen,ahmed.chen713@example.com,+1-555-226-3487,Chicago,IL,Regular,2021-08-06,689,2024-12-31
+714,Ahmed,Brown,ahmed.brown714@example.com,+1-555-752-2921,New York,NY,Premium,2021-02-24,791,2026-06-27
+715,Lucas,Costa,lucas.costa715@example.com,+1-555-337-8180,Columbus,OH,Regular,2021-05-26,555,2024-12-31
+716,Zara,Costa,zara.costa716@example.com,+1-555-257-2153,Columbus,OH,Premium,2023-10-30,897,2024-12-31
+717,Ahmed,Johnson,ahmed.johnson717@example.com,+1-555-958-5185,Chicago,IL,Regular,2025-03-25,437,2024-12-31
+718,Kenji,Wang,kenji.wang718@example.com,+1-555-808-8983,Los Angeles,CA,Premium,2022-07-09,536,2024-12-31
+719,Priya,Patel,priya.patel719@example.com,+1-555-717-6940,Los Angeles,CA,Regular,2025-07-18,857,2024-12-31
+720,Omar,Wilson,omar.wilson720@example.com,+1-555-158-2723,Chicago,IL,VIP,2023-02-21,863,2025-08-04
+721,Zara,Khan,zara.khan721@example.com,+1-555-755-9320,Dallas,TX,Regular,2022-10-26,366,2024-12-31
+722,Raj,Smith,raj.smith722@example.com,+1-555-830-8955,Boston,MA,Regular,2025-07-20,227,2024-12-31
+723,Kenji,Wilson,kenji.wilson723@example.com,+1-555-372-2703,San Francisco,CA,VIP,2025-06-21,575,2024-12-31
+724,Yuki,Silva,yuki.silva724@example.com,+1-555-721-9502,Chicago,IL,Premium,2024-04-16,44,2024-12-31
+725,Yuki,Sharma,yuki.sharma725@example.com,+1-555-958-2615,Seattle,WA,Regular,2021-04-26,721,2026-05-25
+726,Maria,Davis,maria.davis726@example.com,+1-555-788-7911,Seattle,WA,Premium,2020-06-12,356,2024-12-31
+727,Lucas,Kumar,lucas.kumar727@example.com,+1-555-687-9564,Columbus,OH,Regular,2024-06-21,833,2024-12-31
+728,Lucas,Wilson,lucas.wilson728@example.com,+1-555-126-4539,San Francisco,CA,Regular,2020-04-08,646,2024-12-31
+729,John,Sharma,john.sharma729@example.com,+1-555-522-1464,Dallas,TX,Premium,2022-11-04,368,2024-12-31
+730,Mia,Davis,mia.davis730@example.com,+1-555-354-5532,Houston,TX,Regular,2020-07-14,333,2024-12-31
+731,Noah,Nguyen,noah.nguyen731@example.com,+1-555-887-3631,Dallas,TX,Regular,2023-08-11,759,2024-12-31
+732,Liam,Davis,liam.davis732@example.com,+1-555-935-3818,Phoenix,AZ,Premium,2020-12-30,342,2024-12-31
+733,Emma,Costa,emma.costa733@example.com,+1-555-857-4728,Denver,CO,Regular,2023-06-06,104,2024-12-31
+734,Zara,Patel,zara.patel734@example.com,+1-555-515-6126,San Francisco,CA,Regular,2022-02-01,775,2024-12-31
+735,Liam,Garcia,liam.garcia735@example.com,+1-555-976-8953,Dallas,TX,Premium,2024-11-28,918,2025-06-22
+736,Emma,Wang,emma.wang736@example.com,+1-555-430-1260,Atlanta,GA,Regular,2023-06-25,931,2024-12-31
+737,Arjun,Nguyen,arjun.nguyen737@example.com,+1-555-403-9818,Denver,CO,Regular,2020-11-07,327,2025-09-16
+738,Raj,Patel,raj.patel738@example.com,+1-555-712-7629,Los Angeles,CA,Premium,2021-08-20,734,2024-12-31
+739,John,Sato,john.sato739@example.com,+1-555-506-3179,Houston,TX,VIP,2021-02-28,866,2024-12-31
+740,Zara,Ali,zara.ali740@example.com,+1-555-683-2346,Seattle,WA,Regular,2022-07-09,454,2024-12-31
+741,Mary,Lopez,mary.lopez741@example.com,+1-555-258-5485,Denver,CO,Regular,2022-07-08,854,2024-12-31
+742,Omar,Lopez,omar.lopez742@example.com,+1-555-996-4700,Miami,FL,Regular,2022-06-03,149,2024-12-31
+743,James,Ali,james.ali743@example.com,+1-555-121-8917,Miami,FL,Premium,2024-08-24,570,2024-12-31
+744,Ananya,Silva,ananya.silva744@example.com,+1-555-522-4048,Miami,FL,Premium,2024-06-24,643,2024-12-31
+745,Kenji,Miller,kenji.miller745@example.com,+1-555-367-6963,Los Angeles,CA,Premium,2022-12-15,442,2024-12-31
+746,Emma,Davis,emma.davis746@example.com,+1-555-427-9853,Miami,FL,Regular,2021-07-04,330,2024-12-31
+747,Omar,Lopez,omar.lopez747@example.com,+1-555-651-3109,Phoenix,AZ,Regular,2025-09-09,726,2024-12-31
+748,Sophia,Sato,sophia.sato748@example.com,+1-555-207-4732,Houston,TX,Premium,2022-07-06,477,2024-12-31
+749,Ahmed,Silva,ahmed.silva749@example.com,+1-555-571-8174,New York,NY,Regular,2024-11-21,67,2024-12-31
+750,Li,Smith,li.smith750@example.com,+1-555-559-1942,Denver,CO,VIP,2025-05-06,889,2026-05-18
+751,Omar,Chen,omar.chen751@example.com,+1-555-798-6806,Boston,MA,Regular,2023-02-04,584,2024-12-31
+752,Ahmed,Smith,ahmed.smith752@example.com,+1-555-712-9041,Los Angeles,CA,Regular,2021-06-30,406,2024-12-31
+753,Carlos,Kim,carlos.kim753@example.com,+1-555-417-9821,Columbus,OH,Regular,2023-06-01,339,2024-12-31
+754,Maria,Silva,maria.silva754@example.com,+1-555-996-9322,Phoenix,AZ,VIP,2021-08-13,785,2024-12-31
+755,Ananya,Kim,ananya.kim755@example.com,+1-555-422-1111,Seattle,WA,VIP,2020-08-04,730,2024-12-31
+756,Emma,Silva,emma.silva756@example.com,+1-555-893-2163,Boston,MA,Regular,2024-08-21,748,2024-12-31
+757,Li,Garcia,li.garcia757@example.com,+1-555-715-3938,Miami,FL,Premium,2020-04-30,665,2024-12-31
+758,Sophia,Sharma,sophia.sharma758@example.com,+1-555-191-2542,Houston,TX,VIP,2024-05-05,825,2024-12-31
+759,Olivia,Miller,olivia.miller759@example.com,+1-555-585-3269,Los Angeles,CA,Premium,2022-01-19,99,2024-12-31
+760,Fatima,Davis,fatima.davis760@example.com,+1-555-824-8051,Atlanta,GA,Premium,2025-08-08,93,2024-12-31
+761,Li,Khan,li.khan761@example.com,+1-555-305-4713,Chicago,IL,Regular,2020-11-30,348,2024-12-31
+762,Noah,Sharma,noah.sharma762@example.com,+1-555-363-1334,Denver,CO,Premium,2020-09-06,571,2024-12-31
+763,Mary,Kim,mary.kim763@example.com,+1-555-197-3760,Phoenix,AZ,Premium,2020-02-21,5,2026-06-18
+764,John,Miller,john.miller764@example.com,+1-555-128-7141,Dallas,TX,Premium,2021-12-07,194,2024-12-31
+765,Lucas,Costa,lucas.costa765@example.com,+1-555-286-9768,Columbus,OH,Premium,2023-11-15,100,2025-09-06
+766,Mia,Chen,mia.chen766@example.com,+1-555-483-3898,Seattle,WA,Premium,2021-12-28,520,2024-12-31
+767,Wei,Kumar,wei.kumar767@example.com,+1-555-737-1635,New York,NY,VIP,2021-05-07,827,2026-06-10
+768,Fatima,Ali,fatima.ali768@example.com,+1-555-457-3955,Boston,MA,Regular,2021-11-16,922,2024-12-31
+769,Priya,Singh,priya.singh769@example.com,+1-555-717-3543,Phoenix,AZ,VIP,2023-10-13,961,2025-08-14
+770,Noah,Kim,noah.kim770@example.com,+1-555-951-7370,Denver,CO,Premium,2021-04-21,685,2024-12-31
+771,Ananya,Patel,ananya.patel771@example.com,+1-555-352-6991,Houston,TX,Regular,2025-07-03,193,2024-12-31
+772,Liam,Johnson,liam.johnson772@example.com,+1-555-160-8871,Houston,TX,Premium,2021-02-08,869,2024-12-31
+773,Arjun,Patel,arjun.patel773@example.com,+1-555-770-6251,San Francisco,CA,Premium,2024-06-02,776,2024-12-31
+774,Ananya,Nguyen,ananya.nguyen774@example.com,+1-555-389-6248,Miami,FL,Regular,2022-03-22,300,2024-12-31
+775,Lucas,Wilson,lucas.wilson775@example.com,+1-555-545-7177,Chicago,IL,Regular,2020-04-07,504,2024-12-31
+776,Priya,Brown,priya.brown776@example.com,+1-555-595-7370,Denver,CO,Premium,2023-03-22,790,2026-07-25
+777,Mia,Johnson,mia.johnson777@example.com,+1-555-951-1682,Denver,CO,Regular,2020-12-31,315,2024-12-31
+778,Kenji,Silva,kenji.silva778@example.com,+1-555-277-6138,Denver,CO,Premium,2020-04-24,49,2024-12-31
+779,Fatima,Miller,fatima.miller779@example.com,+1-555-460-9810,Miami,FL,Regular,2024-11-11,757,2024-12-31
+780,Arjun,Tanaka,arjun.tanaka780@example.com,+1-555-620-7075,Atlanta,GA,Regular,2020-07-02,933,2024-12-31
+781,Carlos,Sharma,carlos.sharma781@example.com,+1-555-290-4630,Columbus,OH,Premium,2020-10-25,732,2024-12-31
+782,Carlos,Singh,carlos.singh782@example.com,+1-555-684-1255,Miami,FL,Regular,2024-04-11,211,2024-12-31
+783,Omar,Sharma,omar.sharma783@example.com,+1-555-104-4938,Seattle,WA,Regular,2023-09-16,182,2026-07-08
+784,Liam,Lopez,liam.lopez784@example.com,+1-555-957-7585,Houston,TX,Regular,2021-08-03,614,2024-12-31
+785,Maria,Costa,maria.costa785@example.com,+1-555-364-7927,San Francisco,CA,Premium,2023-06-22,210,2025-07-03
+786,Lucas,Khan,lucas.khan786@example.com,+1-555-806-1167,Chicago,IL,Regular,2024-08-21,387,2024-12-31
+787,Ahmed,Garcia,ahmed.garcia787@example.com,+1-555-599-5152,Phoenix,AZ,Regular,2024-06-07,43,2024-12-31
+788,Omar,Kumar,omar.kumar788@example.com,+1-555-778-4653,Atlanta,GA,Regular,2021-04-13,119,2024-12-31
+789,Li,Singh,li.singh789@example.com,+1-555-287-9797,Boston,MA,Regular,2022-11-16,979,2024-12-31
+790,Mia,Miller,mia.miller790@example.com,+1-555-649-5693,Dallas,TX,Regular,2022-12-07,112,2024-12-31
+791,Priya,Miller,priya.miller791@example.com,+1-555-188-9158,Miami,FL,Regular,2020-05-26,481,2024-12-31
+792,Sophia,Sharma,sophia.sharma792@example.com,+1-555-334-1623,Boston,MA,Premium,2022-01-25,86,2024-12-31
+793,Omar,Patel,omar.patel793@example.com,+1-555-546-7076,Miami,FL,Regular,2021-08-07,453,2024-12-31
+794,Yuki,Johnson,yuki.johnson794@example.com,+1-555-615-4096,San Francisco,CA,Premium,2023-07-26,45,2024-12-31
+795,Kenji,Smith,kenji.smith795@example.com,+1-555-449-5109,Atlanta,GA,VIP,2023-12-05,474,2024-12-31
+796,Carlos,Nguyen,carlos.nguyen796@example.com,+1-555-500-7226,Miami,FL,Regular,2023-04-10,518,2026-06-14
+797,Raj,Lopez,raj.lopez797@example.com,+1-555-742-4184,Atlanta,GA,Regular,2024-12-02,26,2024-12-31
+798,Noah,Patel,noah.patel798@example.com,+1-555-716-9659,Miami,FL,Regular,2021-10-21,147,2024-12-31
+799,Ananya,Brown,ananya.brown799@example.com,+1-555-214-2067,New York,NY,Regular,2020-03-12,634,2024-12-31
+800,Zara,Wang,zara.wang800@example.com,+1-555-429-7068,Los Angeles,CA,Premium,2021-03-01,701,2026-03-08
+801,Maria,Smith,maria.smith801@example.com,+1-555-103-1957,Chicago,IL,Premium,2021-05-05,878,2024-12-31
+802,Maria,Nguyen,maria.nguyen802@example.com,+1-555-677-9938,New York,NY,Regular,2025-05-05,960,2024-12-31
+803,Kenji,Nguyen,kenji.nguyen803@example.com,+1-555-389-7336,Chicago,IL,Regular,2022-08-31,700,2024-12-31
+804,Sophia,Costa,sophia.costa804@example.com,+1-555-453-8454,Dallas,TX,Regular,2021-09-19,466,2024-12-31
+805,Ananya,Davis,ananya.davis805@example.com,+1-555-247-5699,Miami,FL,Regular,2021-12-15,987,2024-12-31
+806,Liam,Khan,liam.khan806@example.com,+1-555-476-1343,Atlanta,GA,Regular,2023-05-13,148,2024-12-31
+807,Mary,Kumar,mary.kumar807@example.com,+1-555-827-9871,Chicago,IL,Premium,2024-07-05,129,2024-12-31
+808,Lucas,Davis,lucas.davis808@example.com,+1-555-515-7899,Miami,FL,Premium,2025-03-01,752,2024-12-31
+809,Noah,Kumar,noah.kumar809@example.com,+1-555-574-6956,Chicago,IL,Regular,2024-06-21,137,2024-12-31
+810,Zara,Tanaka,zara.tanaka810@example.com,+1-555-351-4554,Miami,FL,Premium,2022-03-08,971,2024-12-31
+811,Zara,Kim,zara.kim811@example.com,+1-555-733-6954,Phoenix,AZ,Premium,2024-07-30,384,2024-12-31
+812,Lucas,Ali,lucas.ali812@example.com,+1-555-502-3315,Miami,FL,Regular,2025-01-26,43,2025-06-08
+813,Yuki,Wilson,yuki.wilson813@example.com,+1-555-304-4558,New York,NY,Regular,2021-10-03,676,2024-12-31
+814,Liam,Tanaka,liam.tanaka814@example.com,+1-555-284-8257,Chicago,IL,Regular,2022-04-25,396,2024-12-31
+815,Kenji,Kim,kenji.kim815@example.com,+1-555-379-3553,Atlanta,GA,Premium,2022-03-21,155,2025-07-29
+816,Olivia,Brown,olivia.brown816@example.com,+1-555-351-3139,Columbus,OH,Premium,2025-06-16,324,2024-12-31
+817,Yuki,Costa,yuki.costa817@example.com,+1-555-852-1578,Denver,CO,Regular,2020-09-24,88,2024-12-31
+818,James,Smith,james.smith818@example.com,+1-555-439-2473,New York,NY,Regular,2024-01-01,208,2024-12-31
+819,Zara,Chen,zara.chen819@example.com,+1-555-414-2081,Miami,FL,Regular,2023-07-16,598,2024-12-31
+820,Noah,Singh,noah.singh820@example.com,+1-555-820-3870,Seattle,WA,Regular,2021-02-19,822,2025-11-30
+821,Ananya,Wang,ananya.wang821@example.com,+1-555-267-7802,Atlanta,GA,Regular,2024-08-05,163,2024-12-31
+822,Ananya,Sato,ananya.sato822@example.com,+1-555-580-5607,San Francisco,CA,Regular,2022-10-18,1000,2024-12-31
+823,Priya,Kim,priya.kim823@example.com,+1-555-555-2590,Atlanta,GA,Premium,2021-07-09,902,2024-12-31
+824,Liam,Singh,liam.singh824@example.com,+1-555-588-3792,Chicago,IL,Premium,2024-01-24,114,2025-07-08
+825,Noah,Silva,noah.silva825@example.com,+1-555-286-8329,Seattle,WA,Premium,2025-07-07,970,2024-12-31
+826,Mia,Silva,mia.silva826@example.com,+1-555-447-2392,Houston,TX,Premium,2020-10-09,182,2024-12-31
+827,Wei,Costa,wei.costa827@example.com,+1-555-793-7449,Dallas,TX,Premium,2021-03-30,958,2024-12-31
+828,Mia,Garcia,mia.garcia828@example.com,+1-555-428-5789,San Francisco,CA,Premium,2020-12-06,364,2024-12-31
+829,Yuki,Singh,yuki.singh829@example.com,+1-555-736-7844,New York,NY,VIP,2024-02-04,872,2026-02-12
+830,Ahmed,Garcia,ahmed.garcia830@example.com,+1-555-386-9526,New York,NY,Premium,2020-04-06,502,2026-04-14
+831,John,Wang,john.wang831@example.com,+1-555-764-4912,New York,NY,Premium,2022-12-13,460,2024-12-31
+832,Olivia,Brown,olivia.brown832@example.com,+1-555-379-8505,New York,NY,Regular,2023-09-25,565,2024-12-31
+833,Mary,Chen,mary.chen833@example.com,+1-555-110-1314,Seattle,WA,Regular,2022-03-28,927,2024-12-31
+834,Sophia,Miller,sophia.miller834@example.com,+1-555-136-5428,Chicago,IL,Premium,2023-10-06,376,2025-08-07
+835,Arjun,Wilson,arjun.wilson835@example.com,+1-555-824-6605,Atlanta,GA,Regular,2023-11-19,737,2026-06-08
+836,Ahmed,Sato,ahmed.sato836@example.com,+1-555-600-5614,Miami,FL,Regular,2025-01-16,941,2024-12-31
+837,Mia,Patel,mia.patel837@example.com,+1-555-782-6220,Seattle,WA,Premium,2021-04-09,24,2025-09-25
+838,Wei,Sharma,wei.sharma838@example.com,+1-555-176-3901,Miami,FL,Premium,2021-09-22,586,2025-06-24
+839,Maria,Patel,maria.patel839@example.com,+1-555-109-1220,Boston,MA,Premium,2023-10-29,892,2024-12-31
+840,Yuki,Patel,yuki.patel840@example.com,+1-555-696-8549,Dallas,TX,Regular,2023-09-17,805,2026-03-21
+841,Mia,Sharma,mia.sharma841@example.com,+1-555-224-1920,Seattle,WA,Premium,2022-03-28,941,2024-12-31
+842,Zara,Patel,zara.patel842@example.com,+1-555-193-2500,Atlanta,GA,Premium,2022-08-12,216,2025-09-11
+843,Mary,Patel,mary.patel843@example.com,+1-555-428-9672,Chicago,IL,Regular,2022-03-19,726,2024-12-31
+844,Sophia,Costa,sophia.costa844@example.com,+1-555-290-8687,Los Angeles,CA,Regular,2020-09-07,454,2024-12-31
+845,Li,Tanaka,li.tanaka845@example.com,+1-555-181-3881,New York,NY,VIP,2022-12-14,148,2024-12-31
+846,Ananya,Silva,ananya.silva846@example.com,+1-555-816-3031,Miami,FL,Premium,2020-11-06,193,2024-12-31
+847,Li,Brown,li.brown847@example.com,+1-555-333-3661,Phoenix,AZ,Regular,2023-04-30,616,2024-12-31
+848,Olivia,Tanaka,olivia.tanaka848@example.com,+1-555-392-4575,San Francisco,CA,Regular,2023-11-13,754,2024-12-31
+849,Maria,Tanaka,maria.tanaka849@example.com,+1-555-770-5123,New York,NY,Regular,2021-10-22,67,2024-12-31
+850,Mary,Patel,mary.patel850@example.com,+1-555-452-1989,Columbus,OH,Regular,2024-10-27,82,2024-12-31
+851,Mia,Kumar,mia.kumar851@example.com,+1-555-862-2445,New York,NY,Regular,2024-01-20,715,2024-12-31
+852,Mia,Costa,mia.costa852@example.com,+1-555-167-5299,San Francisco,CA,VIP,2023-07-30,462,2026-01-15
+853,Emma,Singh,emma.singh853@example.com,+1-555-611-5919,Houston,TX,Premium,2023-07-07,560,2024-12-31
+854,Zara,Garcia,zara.garcia854@example.com,+1-555-701-3794,Miami,FL,Regular,2023-12-16,420,2024-12-31
+855,Noah,Kumar,noah.kumar855@example.com,+1-555-915-7606,Houston,TX,Regular,2025-03-17,464,2024-12-31
+856,Wei,Chen,wei.chen856@example.com,+1-555-868-7317,Miami,FL,Regular,2020-04-10,895,2025-07-11
+857,Wei,Brown,wei.brown857@example.com,+1-555-991-3447,Chicago,IL,Regular,2020-02-27,445,2024-12-31
+858,Mia,Wang,mia.wang858@example.com,+1-555-707-4013,Atlanta,GA,Regular,2020-03-08,401,2024-12-31
+859,Sophia,Chen,sophia.chen859@example.com,+1-555-445-4240,Dallas,TX,Regular,2024-05-25,163,2024-12-31
+860,Fatima,Sato,fatima.sato860@example.com,+1-555-333-4112,Dallas,TX,Regular,2025-08-06,444,2024-12-31
+861,Olivia,Wang,olivia.wang861@example.com,+1-555-781-1979,Columbus,OH,Regular,2021-03-10,69,2024-12-31
+862,John,Singh,john.singh862@example.com,+1-555-396-3317,New York,NY,Regular,2025-07-17,823,2025-09-11
+863,Carlos,Wilson,carlos.wilson863@example.com,+1-555-113-6046,Columbus,OH,Regular,2023-10-18,646,2024-12-31
+864,Fatima,Kim,fatima.kim864@example.com,+1-555-539-2996,Seattle,WA,Premium,2023-02-28,350,2025-08-06
+865,Zara,Davis,zara.davis865@example.com,+1-555-805-3099,Phoenix,AZ,Regular,2025-04-23,65,2026-03-22
+866,James,Kumar,james.kumar866@example.com,+1-555-527-5032,Houston,TX,Regular,2023-08-29,705,2024-12-31
+867,Maria,Brown,maria.brown867@example.com,+1-555-587-5596,San Francisco,CA,Regular,2023-09-18,716,2024-12-31
+868,Carlos,Chen,carlos.chen868@example.com,+1-555-900-4750,Houston,TX,Premium,2022-08-28,833,2024-12-31
+869,Maria,Singh,maria.singh869@example.com,+1-555-581-1317,Seattle,WA,Regular,2021-01-26,394,2024-12-31
+870,Wei,Costa,wei.costa870@example.com,+1-555-183-9670,Houston,TX,Regular,2022-12-25,69,2024-12-31
+871,Noah,Miller,noah.miller871@example.com,+1-555-297-5525,San Francisco,CA,Premium,2024-01-30,869,2026-07-03
+872,Mary,Singh,mary.singh872@example.com,+1-555-328-1050,Miami,FL,Regular,2025-05-30,576,2024-12-31
+873,Wei,Khan,wei.khan873@example.com,+1-555-596-6147,Houston,TX,Regular,2022-03-30,844,2025-11-08
+874,Lucas,Garcia,lucas.garcia874@example.com,+1-555-719-2972,Seattle,WA,Premium,2020-09-05,754,2025-11-16
+875,Carlos,Tanaka,carlos.tanaka875@example.com,+1-555-616-5627,Miami,FL,Regular,2024-03-20,434,2026-06-28
+876,Omar,Smith,omar.smith876@example.com,+1-555-367-4346,Dallas,TX,Regular,2020-04-13,30,2024-12-31
+877,Lucas,Nguyen,lucas.nguyen877@example.com,+1-555-531-2289,Phoenix,AZ,Regular,2021-08-27,458,2024-12-31
+878,Lucas,Miller,lucas.miller878@example.com,+1-555-260-8276,Denver,CO,Premium,2021-03-17,960,2024-12-31
+879,Ahmed,Kumar,ahmed.kumar879@example.com,+1-555-302-8427,Dallas,TX,Regular,2021-06-10,331,2024-12-31
+880,James,Sharma,james.sharma880@example.com,+1-555-988-6349,San Francisco,CA,Regular,2024-02-19,146,2026-07-01
+881,John,Miller,john.miller881@example.com,+1-555-126-8114,Denver,CO,Regular,2024-06-08,183,2024-12-31
+882,John,Costa,john.costa882@example.com,+1-555-135-5635,Phoenix,AZ,Regular,2020-06-10,905,2024-12-31
+883,Arjun,Johnson,arjun.johnson883@example.com,+1-555-834-3160,Los Angeles,CA,Regular,2020-10-05,144,2024-12-31
+884,Wei,Sharma,wei.sharma884@example.com,+1-555-267-4850,Denver,CO,Regular,2024-01-15,996,2024-12-31
+885,Emma,Brown,emma.brown885@example.com,+1-555-522-6629,Boston,MA,Premium,2025-07-10,411,2024-12-31
+886,Ananya,Johnson,ananya.johnson886@example.com,+1-555-526-7487,Denver,CO,Regular,2021-01-01,834,2024-12-31
+887,Carlos,Kumar,carlos.kumar887@example.com,+1-555-218-5272,Atlanta,GA,Regular,2020-08-19,661,2024-12-31
+888,Mia,Sato,mia.sato888@example.com,+1-555-153-4694,New York,NY,Regular,2020-06-21,225,2024-12-31
+889,Maria,Chen,maria.chen889@example.com,+1-555-612-6234,Atlanta,GA,Regular,2024-06-09,20,2024-12-31
+890,Arjun,Ali,arjun.ali890@example.com,+1-555-124-7798,Columbus,OH,Regular,2020-06-13,205,2024-12-31
+891,Kenji,Johnson,kenji.johnson891@example.com,+1-555-335-9052,Miami,FL,Regular,2020-11-26,596,2024-12-31
+892,Emma,Tanaka,emma.tanaka892@example.com,+1-555-506-4486,Atlanta,GA,Regular,2020-01-31,938,2024-12-31
+893,Lucas,Costa,lucas.costa893@example.com,+1-555-372-7132,Dallas,TX,Regular,2021-10-16,855,2024-12-31
+894,Carlos,Costa,carlos.costa894@example.com,+1-555-442-4207,Dallas,TX,Premium,2022-12-02,827,2026-04-27
+895,Priya,Nguyen,priya.nguyen895@example.com,+1-555-562-1472,Dallas,TX,Regular,2025-09-27,789,2024-12-31
+896,Liam,Garcia,liam.garcia896@example.com,+1-555-215-1682,Atlanta,GA,Regular,2021-03-13,761,2024-12-31
+897,Carlos,Garcia,carlos.garcia897@example.com,+1-555-683-5892,Phoenix,AZ,Premium,2022-05-27,908,2024-12-31
+898,Kenji,Ali,kenji.ali898@example.com,+1-555-574-1890,Los Angeles,CA,Premium,2022-07-30,581,2025-09-27
+899,Ahmed,Garcia,ahmed.garcia899@example.com,+1-555-124-6077,Denver,CO,Regular,2022-01-11,882,2024-12-31
+900,John,Garcia,john.garcia900@example.com,+1-555-837-7366,Columbus,OH,Premium,2025-02-18,401,2024-12-31
+901,Yuki,Wang,yuki.wang901@example.com,+1-555-591-5675,Columbus,OH,Premium,2022-10-14,80,2024-12-31
+902,Yuki,Sharma,yuki.sharma902@example.com,+1-555-973-1511,New York,NY,Regular,2020-02-15,970,2024-12-31
+903,Ahmed,Smith,ahmed.smith903@example.com,+1-555-555-7249,Dallas,TX,Premium,2021-10-15,100,2024-12-31
+904,Mary,Davis,mary.davis904@example.com,+1-555-761-4125,Miami,FL,VIP,2024-03-07,78,2025-11-11
+905,Ahmed,Wilson,ahmed.wilson905@example.com,+1-555-122-5873,San Francisco,CA,Premium,2021-05-06,310,2024-12-31
+906,Wei,Khan,wei.khan906@example.com,+1-555-919-4353,Columbus,OH,Regular,2020-05-04,902,2024-12-31
+907,Sophia,Wang,sophia.wang907@example.com,+1-555-215-2410,New York,NY,Premium,2025-02-07,891,2024-12-31
+908,Kenji,Sato,kenji.sato908@example.com,+1-555-376-1369,Dallas,TX,Premium,2025-05-18,65,2024-12-31
+909,Zara,Chen,zara.chen909@example.com,+1-555-166-7513,Miami,FL,Regular,2020-05-02,115,2025-08-17
+910,Sophia,Wilson,sophia.wilson910@example.com,+1-555-522-3867,Dallas,TX,VIP,2020-06-29,673,2026-06-12
+911,Raj,Khan,raj.khan911@example.com,+1-555-388-8850,Los Angeles,CA,Regular,2022-12-30,25,2024-12-31
+912,Mia,Khan,mia.khan912@example.com,+1-555-340-8339,Miami,FL,Premium,2020-06-29,895,2024-12-31
+913,Kenji,Wilson,kenji.wilson913@example.com,+1-555-819-9004,Denver,CO,Premium,2020-07-12,294,2024-12-31
+914,Emma,Patel,emma.patel914@example.com,+1-555-476-8475,Seattle,WA,Premium,2021-11-02,383,2024-12-31
+915,Mia,Davis,mia.davis915@example.com,+1-555-664-9859,Atlanta,GA,Regular,2023-11-21,417,2025-09-27
+916,Li,Silva,li.silva916@example.com,+1-555-481-8659,Chicago,IL,VIP,2023-04-12,152,2024-12-31
+917,Mia,Singh,mia.singh917@example.com,+1-555-655-7681,San Francisco,CA,Premium,2024-11-03,89,2025-07-27
+918,Yuki,Khan,yuki.khan918@example.com,+1-555-440-6876,Atlanta,GA,Regular,2025-01-20,772,2024-12-31
+919,Ananya,Kim,ananya.kim919@example.com,+1-555-143-6627,Atlanta,GA,Regular,2021-08-17,614,2024-12-31
+920,John,Sato,john.sato920@example.com,+1-555-951-3612,San Francisco,CA,Premium,2021-07-25,836,2024-12-31
+921,Carlos,Miller,carlos.miller921@example.com,+1-555-943-7864,Boston,MA,VIP,2025-08-15,558,2025-07-10
+922,Mary,Tanaka,mary.tanaka922@example.com,+1-555-689-1066,Boston,MA,Regular,2021-11-05,758,2024-12-31
+923,Maria,Kim,maria.kim923@example.com,+1-555-906-6486,Los Angeles,CA,Regular,2023-08-26,750,2024-12-31
+924,Emma,Sato,emma.sato924@example.com,+1-555-635-7435,Chicago,IL,Regular,2023-12-09,768,2024-12-31
+925,Olivia,Sharma,olivia.sharma925@example.com,+1-555-755-8432,Miami,FL,Premium,2022-02-10,734,2026-03-12
+926,James,Tanaka,james.tanaka926@example.com,+1-555-210-9113,Phoenix,AZ,Regular,2020-10-22,712,2024-12-31
+927,Fatima,Lopez,fatima.lopez927@example.com,+1-555-515-5962,Phoenix,AZ,VIP,2021-01-30,975,2025-11-17
+928,Carlos,Smith,carlos.smith928@example.com,+1-555-131-5846,New York,NY,Regular,2022-01-30,848,2024-12-31
+929,Mia,Patel,mia.patel929@example.com,+1-555-359-8415,Boston,MA,VIP,2024-09-24,968,2024-12-31
+930,Emma,Kim,emma.kim930@example.com,+1-555-110-5918,Chicago,IL,Regular,2024-03-15,214,2024-12-31
+931,Fatima,Wilson,fatima.wilson931@example.com,+1-555-703-8838,Seattle,WA,Regular,2020-06-20,696,2024-12-31
+932,Sophia,Johnson,sophia.johnson932@example.com,+1-555-427-6758,Seattle,WA,Regular,2025-04-23,882,2025-10-09
+933,Liam,Sato,liam.sato933@example.com,+1-555-200-7925,Phoenix,AZ,Regular,2023-12-08,972,2024-12-31
+934,Mia,Singh,mia.singh934@example.com,+1-555-489-1633,New York,NY,VIP,2020-12-21,487,2024-12-31
+935,Ahmed,Sato,ahmed.sato935@example.com,+1-555-184-5020,Los Angeles,CA,Premium,2021-01-20,711,2026-03-13
+936,Liam,Brown,liam.brown936@example.com,+1-555-718-8688,Miami,FL,Regular,2023-06-22,566,2024-12-31
+937,Omar,Kumar,omar.kumar937@example.com,+1-555-728-7727,Miami,FL,Regular,2021-06-09,765,2026-04-28
+938,Mia,Smith,mia.smith938@example.com,+1-555-555-2132,Denver,CO,Regular,2025-03-12,282,2024-12-31
+939,Omar,Silva,omar.silva939@example.com,+1-555-920-9776,Chicago,IL,Regular,2020-07-18,260,2024-12-31
+940,Kenji,Sharma,kenji.sharma940@example.com,+1-555-629-9046,Los Angeles,CA,Regular,2025-01-24,301,2024-12-31
+941,Li,Johnson,li.johnson941@example.com,+1-555-715-6429,Dallas,TX,Regular,2021-09-26,992,2024-12-31
+942,Raj,Garcia,raj.garcia942@example.com,+1-555-597-5080,Columbus,OH,Regular,2021-12-24,792,2024-12-31
+943,Liam,Johnson,liam.johnson943@example.com,+1-555-287-4660,Dallas,TX,Regular,2025-07-13,235,2024-12-31
+944,Omar,Kumar,omar.kumar944@example.com,+1-555-817-2902,Phoenix,AZ,Regular,2021-07-24,136,2024-12-31
+945,Zara,Costa,zara.costa945@example.com,+1-555-124-8177,Seattle,WA,Regular,2024-10-27,22,2024-12-31
+946,Omar,Tanaka,omar.tanaka946@example.com,+1-555-477-9904,Los Angeles,CA,Regular,2025-04-24,35,2024-12-31
+947,Ahmed,Wilson,ahmed.wilson947@example.com,+1-555-818-7918,Denver,CO,Regular,2020-12-23,270,2024-12-31
+948,Mia,Davis,mia.davis948@example.com,+1-555-510-9308,Columbus,OH,Premium,2021-07-17,124,2024-12-31
+949,James,Wang,james.wang949@example.com,+1-555-684-4060,Boston,MA,Regular,2025-01-01,676,2024-12-31
+950,Ananya,Davis,ananya.davis950@example.com,+1-555-369-8829,Denver,CO,Regular,2022-01-29,597,2024-12-31
+951,Olivia,Sharma,olivia.sharma951@example.com,+1-555-140-4805,Denver,CO,Premium,2023-05-15,137,2026-07-24
+952,Zara,Miller,zara.miller952@example.com,+1-555-480-1982,New York,NY,Regular,2020-02-19,116,2024-12-31
+953,Arjun,Kim,arjun.kim953@example.com,+1-555-699-9692,Dallas,TX,Regular,2021-07-15,328,2024-12-31
+954,Maria,Singh,maria.singh954@example.com,+1-555-318-4091,Phoenix,AZ,Regular,2025-05-13,491,2024-12-31
+955,Carlos,Sharma,carlos.sharma955@example.com,+1-555-497-9870,Atlanta,GA,Premium,2020-10-17,150,2024-12-31
+956,Mia,Chen,mia.chen956@example.com,+1-555-248-2114,Denver,CO,Premium,2020-10-24,580,2025-08-29
+957,Li,Lopez,li.lopez957@example.com,+1-555-871-7774,San Francisco,CA,Premium,2024-01-21,961,2024-12-31
+958,Maria,Khan,maria.khan958@example.com,+1-555-161-8075,Chicago,IL,Regular,2023-08-05,800,2024-12-31
+959,Liam,Smith,liam.smith959@example.com,+1-555-787-7122,Miami,FL,Regular,2022-07-09,767,2024-12-31
+960,Wei,Singh,wei.singh960@example.com,+1-555-909-9348,Seattle,WA,VIP,2021-10-06,248,2025-06-30
+961,Yuki,Tanaka,yuki.tanaka961@example.com,+1-555-609-2229,Dallas,TX,Regular,2020-05-06,428,2024-12-31
+962,Raj,Sato,raj.sato962@example.com,+1-555-821-3384,Boston,MA,Premium,2020-06-12,379,2024-12-31
+963,Ahmed,Miller,ahmed.miller963@example.com,+1-555-575-6594,Dallas,TX,Regular,2023-09-01,942,2024-12-31
+964,Fatima,Singh,fatima.singh964@example.com,+1-555-599-7325,Denver,CO,VIP,2021-07-16,481,2025-10-27
+965,John,Patel,john.patel965@example.com,+1-555-601-6610,Los Angeles,CA,Regular,2020-09-14,454,2025-12-10
+966,Lucas,Khan,lucas.khan966@example.com,+1-555-995-5734,Dallas,TX,Regular,2022-07-22,321,2024-12-31
+967,John,Lopez,john.lopez967@example.com,+1-555-295-6710,Seattle,WA,VIP,2022-02-24,846,2024-12-31
+968,John,Tanaka,john.tanaka968@example.com,+1-555-521-5563,San Francisco,CA,Regular,2024-10-02,686,2024-12-31
+969,Mia,Garcia,mia.garcia969@example.com,+1-555-727-3281,Phoenix,AZ,Premium,2023-04-23,195,2024-12-31
+970,Mia,Kim,mia.kim970@example.com,+1-555-829-9892,Houston,TX,Regular,2022-04-17,818,2024-12-31
+971,Noah,Silva,noah.silva971@example.com,+1-555-277-2920,Phoenix,AZ,Premium,2023-04-08,654,2025-12-19
+972,Maria,Garcia,maria.garcia972@example.com,+1-555-908-6527,Seattle,WA,Regular,2025-07-28,384,2024-12-31
+973,Maria,Miller,maria.miller973@example.com,+1-555-834-5435,Seattle,WA,VIP,2025-02-23,551,2026-01-23
+974,John,Chen,john.chen974@example.com,+1-555-720-2180,Dallas,TX,Regular,2024-03-22,833,2024-12-31
+975,Ananya,Miller,ananya.miller975@example.com,+1-555-168-4095,Chicago,IL,Premium,2022-11-09,951,2026-02-18
+976,Sophia,Kumar,sophia.kumar976@example.com,+1-555-697-5539,Miami,FL,Regular,2024-09-18,204,2025-12-23
+977,Ahmed,Johnson,ahmed.johnson977@example.com,+1-555-743-9020,Chicago,IL,Regular,2025-05-05,448,2024-12-31
+978,Liam,Brown,liam.brown978@example.com,+1-555-243-3967,Boston,MA,Regular,2020-08-11,43,2024-12-31
+979,Raj,Khan,raj.khan979@example.com,+1-555-661-9769,Boston,MA,Premium,2021-01-27,948,2025-06-08
+980,Zara,Kim,zara.kim980@example.com,+1-555-309-1654,Chicago,IL,VIP,2020-09-02,11,2026-03-16
+981,Priya,Brown,priya.brown981@example.com,+1-555-836-5541,Seattle,WA,Regular,2022-09-12,237,2024-12-31
+982,Maria,Costa,maria.costa982@example.com,+1-555-684-5370,Seattle,WA,VIP,2023-12-19,861,2024-12-31
+983,Maria,Chen,maria.chen983@example.com,+1-555-666-6189,New York,NY,Premium,2021-12-04,826,2024-12-31
+984,Liam,Garcia,liam.garcia984@example.com,+1-555-731-1285,San Francisco,CA,VIP,2021-01-08,585,2025-11-19
+985,Zara,Costa,zara.costa985@example.com,+1-555-928-8966,Dallas,TX,Regular,2022-10-05,866,2024-12-31
+986,Olivia,Lopez,olivia.lopez986@example.com,+1-555-570-3713,Miami,FL,Premium,2022-06-21,287,2024-12-31
+987,Priya,Smith,priya.smith987@example.com,+1-555-787-6054,Miami,FL,Regular,2024-05-02,457,2024-12-31
+988,Carlos,Lopez,carlos.lopez988@example.com,+1-555-967-2343,Boston,MA,Regular,2024-12-24,454,2024-12-31
+989,Wei,Miller,wei.miller989@example.com,+1-555-868-7228,Seattle,WA,Regular,2023-01-17,211,2024-12-31
+990,Mia,Singh,mia.singh990@example.com,+1-555-908-9584,Chicago,IL,Regular,2020-03-25,512,2024-12-31
+991,Arjun,Costa,arjun.costa991@example.com,+1-555-958-8244,Chicago,IL,Regular,2024-03-07,148,2024-12-31
+992,Omar,Patel,omar.patel992@example.com,+1-555-957-7187,Seattle,WA,Regular,2024-07-12,213,2024-12-31
+993,Carlos,Brown,carlos.brown993@example.com,+1-555-514-5491,Houston,TX,Regular,2023-04-05,921,2024-12-31
+994,Maria,Miller,maria.miller994@example.com,+1-555-998-8695,Seattle,WA,VIP,2022-09-26,661,2024-12-31
+995,Omar,Patel,omar.patel995@example.com,+1-555-830-1358,Boston,MA,Regular,2023-11-14,369,2026-03-17
+996,Liam,Smith,liam.smith996@example.com,+1-555-546-8296,Miami,FL,Premium,2021-01-01,448,2025-10-28
+997,Ahmed,Davis,ahmed.davis997@example.com,+1-555-375-7006,Miami,FL,Premium,2022-11-30,491,2024-12-31
+998,Li,Wang,li.wang998@example.com,+1-555-974-9473,Miami,FL,Regular,2022-03-12,867,2024-12-31
+999,Mary,Miller,mary.miller999@example.com,+1-555-149-4745,Houston,TX,Regular,2021-10-12,95,2024-12-31
+1000,Yuki,Sato,yuki.sato1000@example.com,+1-555-356-2298,New York,NY,Regular,2022-11-11,464,2024-12-31

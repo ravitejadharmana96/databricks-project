@@ -1,0 +1,165 @@
+{
+  "name": "medallion_pipeline",
+  "tasks": [
+    {
+      "task_key": "setup",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/00_setup/create_schemas.sql",
+          "source": "WORKSPACE"
+        }
+      }
+    },
+    {
+      "task_key": "raw_load",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/01_raw/load_raw_tables.sql",
+          "source": "WORKSPACE"
+        },
+        "parameters": {
+          "batch": "{{job.parameters.batch}}"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "setup"
+        }
+      ]
+    },
+    {
+      "task_key": "silver_departments_scd1",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/02_silver/departments_scd1.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "raw_load"
+        }
+      ]
+    },
+    {
+      "task_key": "silver_stores_scd2",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/02_silver/stores_scd2.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "raw_load"
+        }
+      ]
+    },
+    {
+      "task_key": "silver_customers_scd2",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/02_silver/customers_scd2.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "silver_stores_scd2"
+        }
+      ]
+    },
+    {
+      "task_key": "silver_orders_scd1",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/02_silver/orders_scd1.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "silver_departments_scd1"
+        },
+        {
+          "task_key": "silver_customers_scd2"
+        },
+        {
+          "task_key": "silver_stores_scd2"
+        }
+      ]
+    },
+    {
+      "task_key": "silver_dq_rejects",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/02_silver/dq_rejects.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "silver_orders_scd1"
+        }
+      ]
+    },
+    {
+      "task_key": "gold_dimensions",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/03_gold/dimensions.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "silver_dq_rejects"
+        }
+      ]
+    },
+    {
+      "task_key": "gold_fact_orders",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/03_gold/fact_orders.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "gold_dimensions"
+        }
+      ]
+    },
+    {
+      "task_key": "gold_aggregates",
+      "sql_task": {
+        "warehouse_id": "406e144bbc87fee4",
+        "file": {
+          "path": "/Workspace/Users/ravitejadharmana96@gmail.com/claude_medallion/sql/03_gold/aggregates.sql",
+          "source": "WORKSPACE"
+        }
+      },
+      "depends_on": [
+        {
+          "task_key": "gold_fact_orders"
+        }
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "name": "batch",
+      "default": "batch_1"
+    }
+  ]
+}

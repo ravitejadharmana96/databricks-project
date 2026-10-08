@@ -1,0 +1,1001 @@
+department_id,department_name,category,manager_name,annual_budget
+1,Electronics Core 0001,Electronics,Lucas Sharma,50292.34
+2,Grocery Core 0002,Grocery,Maria Chen,209582.25
+3,Apparel Core 0003,Apparel,Ananya Patel,104626.86
+4,Home & Garden Core 0004,Home & Garden,Raj Garcia,49442.66
+5,Toys Core 0005,Toys,Ananya Garcia,207827.41
+6,Sports Core 0006,Sports,Olivia Lopez,91818.67
+7,Beauty Core 0007,Beauty,James Wang,134474.48
+8,Books Core 0008,Books,Wei Garcia,200665.73
+9,Automotive Core 0009,Automotive,Raj Miller,171710.37
+10,Pharmacy Core 0010,Pharmacy,Zara Kumar,395167.43
+11,Furniture Core 0011,Furniture,Liam Patel,135130.49
+12,Pet Supplies Premium 0012,Pet Supplies,Yuki Davis,129250.37
+13,Electronics Premium 0013,Electronics,Mary Kim,66560.23
+14,Grocery Premium 0014,Grocery,Raj Lopez,181417.4
+15,Apparel Premium 0015,Apparel,Noah Nguyen,148852.17
+16,Home & Garden Premium 0016,Home & Garden,Emma Garcia,177627.67
+17,Toys Premium 0017,Toys,Mia Nguyen,103417.8
+18,Sports Premium 0018,Sports,Noah Miller,126523.46
+19,Beauty Premium 0019,Beauty,John Johnson,91254.50
+20,Books Premium 0020,Books,Carlos Silva,173734.54
+21,Automotive Premium 0021,Automotive,Lucas Singh,28080.61
+22,Pharmacy Premium 0022,Pharmacy,Noah Chen,71593.59
+23,Furniture Premium 0023,Furniture,Ananya Sato,54836.92
+24,Pet Supplies Value 0024,Pet Supplies,Fatima Patel,46868.42
+25,Electronics Value 0025,Electronics,Mary Sharma,64512.15
+26,Grocery Value 0026,Grocery,Mia Wilson,115994.42
+27,Apparel Value 0027,Apparel,Yuki Kumar,278222.28
+28,Home & Garden Value 0028,Home & Garden,James Kim,201549.88
+29,Toys Value 0029,Toys,Ananya Khan,150092.96
+30,Sports Value 0030,Sports,Fatima Wilson,223129.91
+31,Beauty Value 0031,Beauty,Arjun Wang,99593.13
+32,Books Value 0032,Books,Lucas Ali,201656.17
+33,Automotive Value 0033,Automotive,Carlos Chen,84559.57
+34,Pharmacy Value 0034,Pharmacy,Arjun Smith,120469.54
+35,Furniture Value 0035,Furniture,James Johnson,82466.55
+36,Pet Supplies Online 0036,Pet Supplies,Carlos Garcia,36403.54
+37,Electronics Online 0037,Electronics,Raj Sato,135122.13
+38,Grocery Online 0038,Grocery,Sophia Sato,47582.87
+39,Apparel Online 0039,Apparel,Yuki Wilson,230317.66
+40,Home & Garden Online 0040,Home & Garden,Omar Ali,71921.02
+41,Toys Online 0041,Toys,Emma Kumar,208959.97
+42,Sports Online 0042,Sports,Maria Lopez,112967.84
+43,Beauty Online 0043,Beauty,James Patel,123910.79
+44,Books Online 0044,Books,Raj Johnson,43709.6
+45,Automotive Online 0045,Automotive,Carlos Sato,113399.49
+46,Pharmacy Online 0046,Pharmacy,Sophia Wilson,69364.45
+47,Furniture Online 0047,Furniture,Olivia Davis,85170.47
+48,Pet Supplies Seasonal 0048,Pet Supplies,Zara Johnson,49417.1
+49,Electronics Seasonal 0049,Electronics,John Sharma,71719.63
+50,Grocery Seasonal 0050,Grocery,Noah Chen,88304.53
+51,Apparel Seasonal 0051,Apparel,Maria Patel,64719.25
+52,Home & Garden Seasonal 0052,Home & Garden,Ananya Sharma,50626.66
+53,Toys Seasonal 0053,Toys,Carlos Miller,162085.89
+54,Sports Seasonal 0054,Sports,Mary Wang,41181.13
+55,Beauty Seasonal 0055,Beauty,Noah Ali,15417.66
+56,Books Seasonal 0056,Books,Ananya Kim,128795.98
+57,Automotive Seasonal 0057,Automotive,Fatima Garcia,117281.63
+58,Pharmacy Seasonal 0058,Pharmacy,Mary Johnson,117510.66
+59,Furniture Seasonal 0059,Furniture,Arjun Wang,39076.15
+60,Pet Supplies Core 0060,Pet Supplies,Li Patel,133410.4
+61,Electronics Core 0061,Electronics,Maria Miller,51832.13
+62,Grocery Core 0062,Grocery,Yuki Patel,80845.4
+63,Apparel Core 0063,Apparel,Arjun Brown,173218.09
+64,Home & Garden Core 0064,Home & Garden,Omar Brown,63249.04
+65,Toys Core 0065,Toys,Mia Nguyen,73053.54
+66,Sports Core 0066,Sports,Raj Smith,66051.03
+67,Beauty Core 0067,Beauty,Emma Patel,183358.87
+68,Books Core 0068,Books,Li Kumar,314509.85
+69,Automotive Core 0069,Automotive,Yuki Nguyen,107978.71
+70,Pharmacy Core 0070,Pharmacy,Ananya Ali,167569.95
+71,Furniture Core 0071,Furniture,Priya Sato,60247.82
+72,Pet Supplies Premium 0072,Pet Supplies,Carlos Brown,42867.63
+73,Electronics Premium 0073,Electronics,Ahmed Tanaka,87142.67
+74,Grocery Premium 0074,Grocery,Mary Patel,221895.09
+75,Apparel Premium 0075,Apparel,Mary Smith,81055.65
+76,Home & Garden Premium 0076,Home & Garden,Ahmed Wang,156276.65
+77,Toys Premium 0077,Toys,Olivia Sato,131099.1
+78,Sports Premium 0078,Sports,Kenji Sato,65177.57
+79,Beauty Premium 0079,Beauty,Fatima Davis,66326.97
+80,Books Premium 0080,Books,Priya Davis,76569.92
+81,Automotive Premium 0081,Automotive,Wei Lopez,152703.7
+82,Pharmacy Premium 0082,Pharmacy,Omar Sharma,87049.11
+83,Furniture Premium 0083,Furniture,Sophia Lopez,41677.36
+84,Pet Supplies Value 0084,Pet Supplies,Maria Lopez,26817.71
+85,Electronics Value 0085,Electronics,Ahmed Davis,125817.26
+86,Grocery Value 0086,Grocery,Ananya Brown,188746.21
+87,Apparel Value 0087,Apparel,Priya Costa,77024.25
+88,Home & Garden Value 0088,Home & Garden,John Wilson,123470.44
+89,Toys Value 0089,Toys,Liam Silva,86068.94
+90,Sports Value 0090,Sports,Ananya Kim,236870.4
+91,Beauty Value 0091,Beauty,Mia Garcia,84942.14
+92,Books Value 0092,Books,Mia Brown,143859.58
+93,Automotive Value 0093,Automotive,Priya Ali,100912.48
+94,Pharmacy Value 0094,Pharmacy,John Miller,155679.65
+95,Furniture Value 0095,Furniture,Carlos Wilson,129759.36
+96,Pet Supplies Online 0096,Pet Supplies,Zara Wang,117018.81
+97,Electronics Online 0097,Electronics,Ananya Smith,76450.84
+98,Grocery Online 0098,Grocery,Kenji Costa,132938.29
+99,Apparel Online 0099,Apparel,Noah Kim,56422.01
+100,Home & Garden Online 0100,Home & Garden,Zara Wang,124031.97
+101,Toys Online 0101,Toys,Mia Nguyen,113029.25
+102,Sports Online 0102,Sports,Maria Kim,35997.5
+103,Beauty Online 0103,Beauty,Wei Smith,161899.95
+104,Books Online 0104,Books,Noah Wilson,251870.9
+105,Automotive Online 0105,Automotive,Omar Miller,97962.94
+106,Pharmacy Online 0106,Pharmacy,Lucas Smith,22530.69
+107,Furniture Online 0107,Furniture,Omar Tanaka,90903.67
+108,Pet Supplies Seasonal 0108,Pet Supplies,Priya Kumar,48777.8
+109,Electronics Seasonal 0109,Electronics,Arjun Sato,705435.83
+110,Grocery Seasonal 0110,Grocery,Noah Costa,43933.7
+111,Apparel Seasonal 0111,Apparel,Noah Wang,159120.26
+112,Home & Garden Seasonal 0112,Home & Garden,Ahmed Lopez,160181.46
+113,Toys Seasonal 0113,Toys,Arjun Singh,118166.61
+114,Sports Seasonal 0114,Sports,Raj Ali,65415.39
+115,Beauty Seasonal 0115,Beauty,Ananya Patel,77065.50
+116,Books Seasonal 0116,Books,Omar Chen,123878.2
+117,Automotive Seasonal 0117,Automotive,Olivia Brown,106412.07
+118,Pharmacy Seasonal 0118,Pharmacy,Carlos Wilson,60223.35
+119,Furniture Seasonal 0119,Furniture,Omar Smith,53159.27
+120,Pet Supplies Core 0120,Pet Supplies,Olivia Sato,173049.92
+121,Electronics Core 0121,Electronics,Yuki Lopez,97084.43
+122,Grocery Core 0122,Grocery,Emma Lopez,87007.66
+123,Apparel Core 0123,Apparel,Liam Wang,275500.47
+124,Home & Garden Core 0124,Home & Garden,Mia Smith,46653.75
+125,Toys Core 0125,Toys,Noah Wang,46838.72
+126,Sports Core 0126,Sports,Carlos Kumar,46795.78
+127,Beauty Core 0127,Beauty,Liam Khan,462008.99
+128,Books Core 0128,Books,Mary Smith,84625.71
+129,Automotive Core 0129,Automotive,Mary Davis,72782.01
+130,Pharmacy Core 0130,Pharmacy,Lucas Johnson,65545.8
+131,Furniture Core 0131,Furniture,Mia Sharma,107387.27
+132,Pet Supplies Premium 0132,Pet Supplies,Omar Khan,137325.85
+133,Electronics Premium 0133,Electronics,Yuki Sharma,138958.79
+134,Grocery Premium 0134,Grocery,Fatima Sharma,308326.79
+135,Apparel Premium 0135,Apparel,Kenji Kim,193360.42
+136,Home & Garden Premium 0136,Home & Garden,Omar Garcia,114214.48
+137,Toys Premium 0137,Toys,Fatima Kim,111033.83
+138,Sports Premium 0138,Sports,Kenji Johnson,74971.3
+139,Beauty Premium 0139,Beauty,Emma Patel,99639.47
+140,Books Premium 0140,Books,Olivia Singh,222959.6
+141,Automotive Premium 0141,Automotive,Omar Chen,76922.39
+142,Pharmacy Premium 0142,Pharmacy,Lucas Khan,435516.35
+143,Furniture Premium 0143,Furniture,Sophia Kumar,77145.97
+144,Pet Supplies Value 0144,Pet Supplies,Ahmed Brown,60323.25
+145,Electronics Value 0145,Electronics,Yuki Kim,109631.69
+146,Grocery Value 0146,Grocery,John Wang,96774.33
+147,Apparel Value 0147,Apparel,Ahmed Brown,56296.94
+148,Home & Garden Value 0148,Home & Garden,Ahmed Sato,94031.42
+149,Toys Value 0149,Toys,Omar Singh,132580.61
+150,Sports Value 0150,Sports,James Patel,69175.15
+151,Beauty Value 0151,Beauty,Maria Ali,128987.13
+152,Books Value 0152,Books,Ananya Tanaka,106939.26
+153,Automotive Value 0153,Automotive,Noah Khan,76215.32
+154,Pharmacy Value 0154,Pharmacy,Zara Garcia,47173.54
+155,Furniture Value 0155,Furniture,Omar Wang,29300.42
+156,Pet Supplies Online 0156,Pet Supplies,Ahmed Silva,277065.74
+157,Electronics Online 0157,Electronics,Fatima Sharma,160573.24
+158,Grocery Online 0158,Grocery,Emma Wang,49165.03
+159,Apparel Online 0159,Apparel,Wei Khan,175265.56
+160,Home & Garden Online 0160,Home & Garden,Priya Smith,113968.47
+161,Toys Online 0161,Toys,Noah Brown,235453.69
+162,Sports Online 0162,Sports,Raj Miller,96752.87
+163,Beauty Online 0163,Beauty,Mia Johnson,54912.57
+164,Books Online 0164,Books,Olivia Costa,127938.15
+165,Automotive Online 0165,Automotive,Arjun Miller,90093.04
+166,Pharmacy Online 0166,Pharmacy,Kenji Wilson,58185.94
+167,Furniture Online 0167,Furniture,Yuki Sharma,48379.52
+168,Pet Supplies Seasonal 0168,Pet Supplies,Li Lopez,113124.43
+169,Electronics Seasonal 0169,Electronics,Maria Ali,202241.82
+170,Grocery Seasonal 0170,Grocery,Noah Patel,217545.95
+171,Apparel Seasonal 0171,Apparel,Mia Garcia,83350.47
+172,Home & Garden Seasonal 0172,Home & Garden,Lucas Chen,44854.32
+173,Toys Seasonal 0173,Toys,Kenji Ali,87738.76
+174,Sports Seasonal 0174,Sports,Fatima Miller,245774.44
+175,Beauty Seasonal 0175,Beauty,Sophia Kumar,89032.72
+176,Books Seasonal 0176,Books,Ahmed Smith,222803.79
+177,Automotive Seasonal 0177,Automotive,James Kim,215506.82
+178,Pharmacy Seasonal 0178,Pharmacy,Li Singh,102231.6
+179,Furniture Seasonal 0179,Furniture,Ahmed Wang,244447.36
+180,Pet Supplies Core 0180,Pet Supplies,Sophia Patel,93697.43
+181,Electronics Core 0181,Electronics,John Kim,60779.6
+182,Grocery Core 0182,Grocery,Olivia Singh,202277.47
+183,Apparel Core 0183,Apparel,Noah Patel,74449.49
+184,Home & Garden Core 0184,Home & Garden,Liam Tanaka,200116.13
+185,Toys Core 0185,Toys,Mary Garcia,97369.82
+186,Sports Core 0186,Sports,Sophia Nguyen,92697.35
+187,Beauty Core 0187,Beauty,Ahmed Sato,57904.2
+188,Books Core 0188,Books,Omar Singh,114383.91
+189,Automotive Core 0189,Automotive,Li Ali,110954.15
+190,Pharmacy Core 0190,Pharmacy,Raj Lopez,94375.42
+191,Furniture Core 0191,Furniture,Raj Khan,222048.70
+192,Pet Supplies Premium 0192,Pet Supplies,Omar Khan,83442.16
+193,Electronics Premium 0193,Electronics,Sophia Lopez,93713.54
+194,Grocery Premium 0194,Grocery,Carlos Costa,105904.47
+195,Apparel Premium 0195,Apparel,Raj Khan,45414.49
+196,Home & Garden Premium 0196,Home & Garden,Ahmed Smith,71777.94
+197,Toys Premium 0197,Toys,Kenji Silva,45075.77
+198,Sports Premium 0198,Sports,Maria Garcia,142647.76
+199,Beauty Premium 0199,Beauty,Noah Brown,63849.26
+200,Books Premium 0200,Books,Olivia Johnson,69208.9
+201,Automotive Premium 0201,Automotive,Liam Miller,118722.74
+202,Pharmacy Premium 0202,Pharmacy,Mary Chen,99285.47
+203,Furniture Premium 0203,Furniture,Priya Kumar,51948.28
+204,Pet Supplies Value 0204,Pet Supplies,Liam Nguyen,51876.36
+205,Electronics Value 0205,Electronics,Mia Sato,82393.15
+206,Grocery Value 0206,Grocery,Omar Singh,154622.5
+207,Apparel Value 0207,Apparel,Priya Nguyen,124656.65
+208,Home & Garden Value 0208,Home & Garden,Li Ali,151960.78
+209,Toys Value 0209,Toys,Emma Wilson,45335.89
+210,Sports Value 0210,Sports,Kenji Kim,164720.20
+211,Beauty Value 0211,Beauty,Raj Costa,269342.37
+212,Books Value 0212,Books,Maria Singh,93563.63
+213,Automotive Value 0213,Automotive,Ahmed Kim,52543.09
+214,Pharmacy Value 0214,Pharmacy,Emma Silva,141584.4
+215,Furniture Value 0215,Furniture,Fatima Garcia,51304.32
+216,Pet Supplies Online 0216,Pet Supplies,Emma Silva,63327.06
+217,Electronics Online 0217,Electronics,James Kim,88598.97
+218,Grocery Online 0218,Grocery,Mia Johnson,142722.9
+219,Apparel Online 0219,Apparel,Emma Lopez,143047.29
+220,Home & Garden Online 0220,Home & Garden,Mia Kim,122474.02
+221,Toys Online 0221,Toys,Priya Nguyen,122757.78
+222,Sports Online 0222,Sports,Noah Johnson,134058.64
+223,Beauty Online 0223,Beauty,Raj Ali,72754.58
+224,Books Online 0224,Books,Carlos Chen,74821.09
+225,Automotive Online 0225,Automotive,Ahmed Wang,23696.28
+226,Pharmacy Online 0226,Pharmacy,Sophia Ali,144897.18
+227,Furniture Online 0227,Furniture,Priya Kumar,51018.92
+228,Pet Supplies Seasonal 0228,Pet Supplies,James Khan,105772.45
+229,Electronics Seasonal 0229,Electronics,Mia Kim,66468.87
+230,Grocery Seasonal 0230,Grocery,Lucas Davis,58327.87
+231,Apparel Seasonal 0231,Apparel,James Costa,243226.02
+232,Home & Garden Seasonal 0232,Home & Garden,Yuki Lopez,149768.76
+233,Toys Seasonal 0233,Toys,Noah Ali,117466.12
+234,Sports Seasonal 0234,Sports,Mary Johnson,66377.46
+235,Beauty Seasonal 0235,Beauty,Priya Lopez,85407.99
+236,Books Seasonal 0236,Books,Zara Sato,71468.45
+237,Automotive Seasonal 0237,Automotive,Wei Wilson,279736.69
+238,Pharmacy Seasonal 0238,Pharmacy,Yuki Wilson,184877.12
+239,Furniture Seasonal 0239,Furniture,Omar Davis,58450.09
+240,Pet Supplies Core 0240,Pet Supplies,Maria Davis,778904.93
+241,Electronics Core 0241,Electronics,Emma Johnson,86733.06
+242,Grocery Core 0242,Grocery,Priya Kumar,57904.83
+243,Apparel Core 0243,Apparel,Lucas Costa,143151.32
+244,Home & Garden Core 0244,Home & Garden,Priya Davis,199966.67
+245,Toys Core 0245,Toys,Maria Brown,375566.27
+246,Sports Core 0246,Sports,Yuki Smith,139415.41
+247,Beauty Core 0247,Beauty,James Chen,66243.62
+248,Books Core 0248,Books,Li Khan,109707.23
+249,Automotive Core 0249,Automotive,Sophia Kumar,177708.59
+250,Pharmacy Core 0250,Pharmacy,Priya Kumar,106126.55
+251,Furniture Core 0251,Furniture,Mary Kim,102820.64
+252,Pet Supplies Premium 0252,Pet Supplies,Li Garcia,82753.53
+253,Electronics Premium 0253,Electronics,Omar Kumar,111224.82
+254,Grocery Premium 0254,Grocery,Ahmed Costa,133691.21
+255,Apparel Premium 0255,Apparel,John Miller,87488.11
+256,Home & Garden Premium 0256,Home & Garden,Priya Sharma,279359.37
+257,Toys Premium 0257,Toys,Ananya Garcia,66099.63
+258,Sports Premium 0258,Sports,Olivia Brown,172907.24
+259,Beauty Premium 0259,Beauty,Zara Sharma,74558.55
+260,Books Premium 0260,Books,Ahmed Davis,95880.2
+261,Automotive Premium 0261,Automotive,Raj Patel,75016.22
+262,Pharmacy Premium 0262,Pharmacy,Emma Chen,113585.44
+263,Furniture Premium 0263,Furniture,Ananya Sato,80840.56
+264,Pet Supplies Value 0264,Pet Supplies,Emma Kim,216825.97
+265,Electronics Value 0265,Electronics,Zara Johnson,68748.78
+266,Grocery Value 0266,Grocery,Carlos Chen,121536.12
+267,Apparel Value 0267,Apparel,Priya Davis,173183.57
+268,Home & Garden Value 0268,Home & Garden,Ahmed Silva,60250.24
+269,Toys Value 0269,Toys,Ananya Costa,136924.27
+270,Sports Value 0270,Sports,James Costa,73713.21
+271,Beauty Value 0271,Beauty,Omar Ali,192641.14
+272,Books Value 0272,Books,Li Chen,110627.57
+273,Automotive Value 0273,Automotive,Wei Nguyen,103807.99
+274,Pharmacy Value 0274,Pharmacy,Noah Brown,58225.02
+275,Furniture Value 0275,Furniture,John Silva,230733.64
+276,Pet Supplies Online 0276,Pet Supplies,Wei Wang,50723.58
+277,Electronics Online 0277,Electronics,Olivia Singh,119150.11
+278,Grocery Online 0278,Grocery,Carlos Tanaka,49154.81
+279,Apparel Online 0279,Apparel,Fatima Kim,141191.2
+280,Home & Garden Online 0280,Home & Garden,Mia Ali,45536.02
+281,Toys Online 0281,Toys,Yuki Johnson,69946.75
+282,Sports Online 0282,Sports,Ahmed Ali,134382.91
+283,Beauty Online 0283,Beauty,Liam Sato,150167.19
+284,Books Online 0284,Books,Mia Davis,118514.96
+285,Automotive Online 0285,Automotive,Omar Nguyen,89702.47
+286,Pharmacy Online 0286,Pharmacy,James Brown,86480.41
+287,Furniture Online 0287,Furniture,Fatima Sharma,93689.56
+288,Pet Supplies Seasonal 0288,Pet Supplies,Olivia Silva,88325.54
+289,Electronics Seasonal 0289,Electronics,Fatima Brown,26971.02
+290,Grocery Seasonal 0290,Grocery,Raj Tanaka,132209.45
+291,Apparel Seasonal 0291,Apparel,Carlos Davis,117671.06
+292,Home & Garden Seasonal 0292,Home & Garden,Priya Chen,72844.7
+293,Toys Seasonal 0293,Toys,Wei Nguyen,126208.06
+294,Sports Seasonal 0294,Sports,Kenji Silva,49344.61
+295,Beauty Seasonal 0295,Beauty,Kenji Nguyen,143042.9
+296,Books Seasonal 0296,Books,Lucas Brown,90642.27
+297,Automotive Seasonal 0297,Automotive,Ahmed Silva,39054.54
+298,Pharmacy Seasonal 0298,Pharmacy,Emma Wang,118784.37
+299,Furniture Seasonal 0299,Furniture,Fatima Patel,34929.6
+300,Pet Supplies Core 0300,Pet Supplies,Liam Kumar,601136.79
+301,Electronics Core 0301,Electronics,Zara Johnson,75203.13
+302,Grocery Core 0302,Grocery,Lucas Garcia,69540.53
+303,Apparel Core 0303,Apparel,Wei Johnson,75402.09
+304,Home & Garden Core 0304,Home & Garden,John Patel,99275.97
+305,Toys Core 0305,Toys,Maria Kumar,117910.72
+306,Sports Core 0306,Sports,Fatima Miller,85653.94
+307,Beauty Core 0307,Beauty,Yuki Johnson,229599.15
+308,Books Core 0308,Books,Raj Brown,44168.72
+309,Automotive Core 0309,Automotive,Mia Costa,175669.43
+310,Pharmacy Core 0310,Pharmacy,Kenji Kim,55956.81
+311,Furniture Core 0311,Furniture,Lucas Kim,75010.31
+312,Pet Supplies Premium 0312,Pet Supplies,Raj Ali,117022.5
+313,Electronics Premium 0313,Electronics,John Chen,274787.21
+314,Grocery Premium 0314,Grocery,Zara Kim,141063.68
+315,Apparel Premium 0315,Apparel,James Davis,49185.24
+316,Home & Garden Premium 0316,Home & Garden,Carlos Lopez,36605.5
+317,Toys Premium 0317,Toys,Arjun Sato,48175.29
+318,Sports Premium 0318,Sports,Yuki Chen,111118.64
+319,Beauty Premium 0319,Beauty,Li Costa,144525.15
+320,Books Premium 0320,Books,Noah Johnson,74346.28
+321,Automotive Premium 0321,Automotive,Maria Kumar,156333.71
+322,Pharmacy Premium 0322,Pharmacy,Noah Lopez,103849.45
+323,Furniture Premium 0323,Furniture,Sophia Garcia,249270.21
+324,Pet Supplies Value 0324,Pet Supplies,Fatima Miller,99225.13
+325,Electronics Value 0325,Electronics,Li Garcia,141478.2
+326,Grocery Value 0326,Grocery,Ahmed Johnson,313134.59
+327,Apparel Value 0327,Apparel,Ananya Sharma,154739.7
+328,Home & Garden Value 0328,Home & Garden,Priya Ali,88681.28
+329,Toys Value 0329,Toys,Olivia Patel,178197.29
+330,Sports Value 0330,Sports,Noah Davis,210510.04
+331,Beauty Value 0331,Beauty,Liam Tanaka,79909.53
+332,Books Value 0332,Books,Raj Davis,54749.14
+333,Automotive Value 0333,Automotive,Priya Nguyen,80940.2
+334,Pharmacy Value 0334,Pharmacy,Mary Ali,222882.55
+335,Furniture Value 0335,Furniture,Wei Singh,93602.78
+336,Pet Supplies Online 0336,Pet Supplies,Raj Smith,21541.25
+337,Electronics Online 0337,Electronics,Ananya Costa,101942.24
+338,Grocery Online 0338,Grocery,Fatima Lopez,79623.0
+339,Apparel Online 0339,Apparel,Olivia Nguyen,172341.79
+340,Home & Garden Online 0340,Home & Garden,Priya Singh,109233.06
+341,Toys Online 0341,Toys,Arjun Silva,72391.27
+342,Sports Online 0342,Sports,Olivia Smith,115336.53
+343,Beauty Online 0343,Beauty,Olivia Wang,118780.36
+344,Books Online 0344,Books,Emma Patel,274756.37
+345,Automotive Online 0345,Automotive,Arjun Sato,45875.01
+346,Pharmacy Online 0346,Pharmacy,Emma Khan,119325.71
+347,Furniture Online 0347,Furniture,Raj Davis,45383.43
+348,Pet Supplies Seasonal 0348,Pet Supplies,Priya Silva,141871.87
+349,Electronics Seasonal 0349,Electronics,Mary Davis,127257.47
+350,Grocery Seasonal 0350,Grocery,Li Kim,87593.01
+351,Apparel Seasonal 0351,Apparel,Lucas Wang,157539.76
+352,Home & Garden Seasonal 0352,Home & Garden,Fatima Garcia,423261.81
+353,Toys Seasonal 0353,Toys,Ananya Singh,35269.67
+354,Sports Seasonal 0354,Sports,Carlos Ali,50425.57
+355,Beauty Seasonal 0355,Beauty,Lucas Brown,30843.01
+356,Books Seasonal 0356,Books,Olivia Miller,97950.97
+357,Automotive Seasonal 0357,Automotive,Arjun Khan,307362.86
+358,Pharmacy Seasonal 0358,Pharmacy,Raj Wilson,178723.02
+359,Furniture Seasonal 0359,Furniture,Ananya Ali,80817.79
+360,Pet Supplies Core 0360,Pet Supplies,Mia Ali,59800.68
+361,Electronics Core 0361,Electronics,Fatima Davis,114194.63
+362,Grocery Core 0362,Grocery,Mary Davis,121687.84
+363,Apparel Core 0363,Apparel,Lucas Johnson,29533.78
+364,Home & Garden Core 0364,Home & Garden,Emma Tanaka,259556.36
+365,Toys Core 0365,Toys,James Chen,301003.28
+366,Sports Core 0366,Sports,Noah Johnson,59660.94
+367,Beauty Core 0367,Beauty,Lucas Davis,90949.19
+368,Books Core 0368,Books,Ahmed Chen,119312.72
+369,Automotive Core 0369,Automotive,Liam Brown,121194.78
+370,Pharmacy Core 0370,Pharmacy,Priya Smith,160210.24
+371,Furniture Core 0371,Furniture,Li Johnson,136481.76
+372,Pet Supplies Premium 0372,Pet Supplies,Yuki Ali,69073.27
+373,Electronics Premium 0373,Electronics,Raj Kumar,30469.37
+374,Grocery Premium 0374,Grocery,Raj Kim,178935.86
+375,Apparel Premium 0375,Apparel,Ananya Sato,72530.09
+376,Home & Garden Premium 0376,Home & Garden,Li Nguyen,58373.26
+377,Toys Premium 0377,Toys,Maria Sharma,57782.4
+378,Sports Premium 0378,Sports,Emma Sato,113514.6
+379,Beauty Premium 0379,Beauty,Ananya Chen,111982.99
+380,Books Premium 0380,Books,Fatima Miller,110700.02
+381,Automotive Premium 0381,Automotive,Kenji Patel,56124.35
+382,Pharmacy Premium 0382,Pharmacy,Raj Kumar,91778.48
+383,Furniture Premium 0383,Furniture,Wei Sato,117700.6
+384,Pet Supplies Value 0384,Pet Supplies,Wei Wilson,100948.65
+385,Electronics Value 0385,Electronics,Priya Tanaka,64372.56
+386,Grocery Value 0386,Grocery,John Lopez,48853.71
+387,Apparel Value 0387,Apparel,Ananya Khan,56760.6
+388,Home & Garden Value 0388,Home & Garden,Ananya Patel,99030.76
+389,Toys Value 0389,Toys,Kenji Chen,40084.64
+390,Sports Value 0390,Sports,Yuki Brown,221448.03
+391,Beauty Value 0391,Beauty,James Patel,114979.78
+392,Books Value 0392,Books,Kenji Wilson,111900.78
+393,Automotive Value 0393,Automotive,Lucas Sato,90229.99
+394,Pharmacy Value 0394,Pharmacy,Mia Miller,78832.64
+395,Furniture Value 0395,Furniture,Mary Wang,87506.33
+396,Pet Supplies Online 0396,Pet Supplies,Carlos Brown,115810.4
+397,Electronics Online 0397,Electronics,Omar Brown,72838.99
+398,Grocery Online 0398,Grocery,John Lopez,94172.99
+399,Apparel Online 0399,Apparel,Maria Chen,55011.99
+400,Home & Garden Online 0400,Home & Garden,Liam Costa,67523.24
+401,Toys Online 0401,Toys,Arjun Kumar,98533.68
+402,Sports Online 0402,Sports,James Patel,249362.12
+403,Beauty Online 0403,Beauty,Maria Garcia,108031.19
+404,Books Online 0404,Books,Fatima Singh,186976.21
+405,Automotive Online 0405,Automotive,Mia Singh,67356.13
+406,Pharmacy Online 0406,Pharmacy,Liam Davis,109077.52
+407,Furniture Online 0407,Furniture,Fatima Patel,79791.03
+408,Pet Supplies Seasonal 0408,Pet Supplies,Ananya Khan,240088.16
+409,Electronics Seasonal 0409,Electronics,Yuki Sharma,108427.1
+410,Grocery Seasonal 0410,Grocery,Wei Garcia,117734.26
+411,Apparel Seasonal 0411,Apparel,Mary Johnson,189268.6
+412,Home & Garden Seasonal 0412,Home & Garden,Wei Costa,189388.32
+413,Toys Seasonal 0413,Toys,Liam Costa,140297.89
+414,Sports Seasonal 0414,Sports,John Tanaka,203325.33
+415,Beauty Seasonal 0415,Beauty,Omar Silva,32258.37
+416,Books Seasonal 0416,Books,Emma Brown,150828.97
+417,Automotive Seasonal 0417,Automotive,Zara Nguyen,39052.68
+418,Pharmacy Seasonal 0418,Pharmacy,Lucas Silva,131508.72
+419,Furniture Seasonal 0419,Furniture,Kenji Singh,39568.7
+420,Pet Supplies Core 0420,Pet Supplies,Yuki Miller,31712.01
+421,Electronics Core 0421,Electronics,Mary Silva,40340.16
+422,Grocery Core 0422,Grocery,Li Chen,148569.68
+423,Apparel Core 0423,Apparel,Yuki Singh,63176.56
+424,Home & Garden Core 0424,Home & Garden,Mia Singh,102561.07
+425,Toys Core 0425,Toys,Li Kumar,188153.04
+426,Sports Core 0426,Sports,Emma Kim,269192.65
+427,Beauty Core 0427,Beauty,Lucas Khan,113581.19
+428,Books Core 0428,Books,Maria Khan,106631.54
+429,Automotive Core 0429,Automotive,Fatima Ali,195023.46
+430,Pharmacy Core 0430,Pharmacy,Sophia Brown,94155.28
+431,Furniture Core 0431,Furniture,Zara Khan,59152.73
+432,Pet Supplies Premium 0432,Pet Supplies,Ananya Miller,241060.65
+433,Electronics Premium 0433,Electronics,Emma Chen,72927.49
+434,Grocery Premium 0434,Grocery,Omar Patel,74339.87
+435,Apparel Premium 0435,Apparel,Ahmed Singh,57649.17
+436,Home & Garden Premium 0436,Home & Garden,Ahmed Chen,169162.05
+437,Toys Premium 0437,Toys,Maria Johnson,53397.4
+438,Sports Premium 0438,Sports,Sophia Sharma,122544.34
+439,Beauty Premium 0439,Beauty,Ananya Wang,22586.13
+440,Books Premium 0440,Books,Sophia Singh,186244.89
+441,Automotive Premium 0441,Automotive,Fatima Brown,78060.16
+442,Pharmacy Premium 0442,Pharmacy,Raj Nguyen,105039.73
+443,Furniture Premium 0443,Furniture,Zara Johnson,165315.2
+444,Pet Supplies Value 0444,Pet Supplies,Li Johnson,230651.01
+445,Electronics Value 0445,Electronics,Sophia Wang,107803.73
+446,Grocery Value 0446,Grocery,Wei Tanaka,94771.17
+447,Apparel Value 0447,Apparel,Priya Brown,51945.83
+448,Home & Garden Value 0448,Home & Garden,Ahmed Wang,46419.8
+449,Toys Value 0449,Toys,Priya Smith,156942.23
+450,Sports Value 0450,Sports,Yuki Nguyen,100430.63
+451,Beauty Value 0451,Beauty,Mia Sharma,67673.66
+452,Books Value 0452,Books,John Lopez,43325.54
+453,Automotive Value 0453,Automotive,Noah Khan,192817.15
+454,Pharmacy Value 0454,Pharmacy,James Wang,124926.20
+455,Furniture Value 0455,Furniture,Priya Kumar,70654.11
+456,Pet Supplies Online 0456,Pet Supplies,Arjun Ali,207352.59
+457,Electronics Online 0457,Electronics,Fatima Davis,114817.04
+458,Grocery Online 0458,Grocery,Wei Singh,118933.37
+459,Apparel Online 0459,Apparel,Ananya Singh,376179.09
+460,Home & Garden Online 0460,Home & Garden,Carlos Lopez,156258.45
+461,Toys Online 0461,Toys,Raj Tanaka,82040.35
+462,Sports Online 0462,Sports,Raj Silva,166005.41
+463,Beauty Online 0463,Beauty,Ananya Chen,81858.77
+464,Books Online 0464,Books,Omar Silva,88103.5
+465,Automotive Online 0465,Automotive,Noah Johnson,89458.04
+466,Pharmacy Online 0466,Pharmacy,Noah Silva,42330.12
+467,Furniture Online 0467,Furniture,Fatima Smith,55077.03
+468,Pet Supplies Seasonal 0468,Pet Supplies,Zara Garcia,138764.80
+469,Electronics Seasonal 0469,Electronics,Emma Patel,103268.43
+470,Grocery Seasonal 0470,Grocery,Raj Singh,43679.25
+471,Apparel Seasonal 0471,Apparel,Wei Nguyen,39034.64
+472,Home & Garden Seasonal 0472,Home & Garden,Liam Miller,153994.34
+473,Toys Seasonal 0473,Toys,Emma Sharma,48281.35
+474,Sports Seasonal 0474,Sports,Arjun Chen,133483.16
+475,Beauty Seasonal 0475,Beauty,James Smith,259473.61
+476,Books Seasonal 0476,Books,Zara Sato,80699.56
+477,Automotive Seasonal 0477,Automotive,Maria Lopez,94092.13
+478,Pharmacy Seasonal 0478,Pharmacy,Carlos Sharma,631097.33
+479,Furniture Seasonal 0479,Furniture,James Lopez,70510.34
+480,Pet Supplies Core 0480,Pet Supplies,Mary Kumar,138582.53
+481,Electronics Core 0481,Electronics,Mary Lopez,149375.54
+482,Grocery Core 0482,Grocery,Maria Sato,39328.72
+483,Apparel Core 0483,Apparel,Fatima Lopez,331264.1
+484,Home & Garden Core 0484,Home & Garden,John Silva,134293.17
+485,Toys Core 0485,Toys,John Lopez,77795.04
+486,Sports Core 0486,Sports,Mia Tanaka,65480.84
+487,Beauty Core 0487,Beauty,Mary Sato,306421.39
+488,Books Core 0488,Books,Olivia Sato,83895.58
+489,Automotive Core 0489,Automotive,Lucas Kim,76324.93
+490,Pharmacy Core 0490,Pharmacy,Omar Wilson,86259.97
+491,Furniture Core 0491,Furniture,Li Sato,82378.37
+492,Pet Supplies Premium 0492,Pet Supplies,Fatima Chen,724615.5
+493,Electronics Premium 0493,Electronics,Ananya Tanaka,60027.46
+494,Grocery Premium 0494,Grocery,Carlos Brown,131342.46
+495,Apparel Premium 0495,Apparel,Ahmed Miller,154847.69
+496,Home & Garden Premium 0496,Home & Garden,Raj Garcia,211156.1
+497,Toys Premium 0497,Toys,Mia Sato,68309.86
+498,Sports Premium 0498,Sports,John Ali,95928.02
+499,Beauty Premium 0499,Beauty,Yuki Garcia,104605.50
+500,Books Premium 0500,Books,James Smith,77602.10
+501,Automotive Premium 0501,Automotive,Emma Ali,59648.82
+502,Pharmacy Premium 0502,Pharmacy,Sophia Kumar,81149.96
+503,Furniture Premium 0503,Furniture,Carlos Davis,80677.32
+504,Pet Supplies Value 0504,Pet Supplies,James Ali,123152.17
+505,Electronics Value 0505,Electronics,Fatima Chen,65766.57
+506,Grocery Value 0506,Grocery,Kenji Lopez,98510.49
+507,Apparel Value 0507,Apparel,Mia Brown,24340.78
+508,Home & Garden Value 0508,Home & Garden,Zara Nguyen,155967.44
+509,Toys Value 0509,Toys,James Ali,36272.25
+510,Sports Value 0510,Sports,Sophia Wang,252010.63
+511,Beauty Value 0511,Beauty,Lucas Johnson,115053.01
+512,Books Value 0512,Books,Raj Kim,35940.08
+513,Automotive Value 0513,Automotive,Raj Chen,70156.29
+514,Pharmacy Value 0514,Pharmacy,Mia Costa,109860.95
+515,Furniture Value 0515,Furniture,Zara Khan,103940.15
+516,Pet Supplies Online 0516,Pet Supplies,Arjun Kim,30171.57
+517,Electronics Online 0517,Electronics,Li Sharma,243953.74
+518,Grocery Online 0518,Grocery,Maria Garcia,116415.58
+519,Apparel Online 0519,Apparel,Carlos Brown,135785.25
+520,Home & Garden Online 0520,Home & Garden,Liam Kumar,40413.07
+521,Toys Online 0521,Toys,Raj Nguyen,43890.86
+522,Sports Online 0522,Sports,Maria Johnson,98788.85
+523,Beauty Online 0523,Beauty,Omar Wang,123382.31
+524,Books Online 0524,Books,Priya Tanaka,172843.58
+525,Automotive Online 0525,Automotive,Omar Silva,96139.02
+526,Pharmacy Online 0526,Pharmacy,Raj Kim,105619.23
+527,Furniture Online 0527,Furniture,John Smith,243724.57
+528,Pet Supplies Seasonal 0528,Pet Supplies,Liam Patel,61462.02
+529,Electronics Seasonal 0529,Electronics,Kenji Miller,146770.63
+530,Grocery Seasonal 0530,Grocery,Liam Chen,258440.94
+531,Apparel Seasonal 0531,Apparel,Raj Tanaka,145253.51
+532,Home & Garden Seasonal 0532,Home & Garden,Priya Wilson,73248.14
+533,Toys Seasonal 0533,Toys,Yuki Costa,265816.40
+534,Sports Seasonal 0534,Sports,John Smith,186802.87
+535,Beauty Seasonal 0535,Beauty,Noah Singh,52782.0
+536,Books Seasonal 0536,Books,Liam Wilson,45201.9
+537,Automotive Seasonal 0537,Automotive,Liam Patel,146911.38
+538,Pharmacy Seasonal 0538,Pharmacy,Maria Patel,179001.07
+539,Furniture Seasonal 0539,Furniture,Zara Miller,79921.51
+540,Pet Supplies Core 0540,Pet Supplies,James Ali,77780.41
+541,Electronics Core 0541,Electronics,Priya Chen,46791.21
+542,Grocery Core 0542,Grocery,Ananya Sato,100135.61
+543,Apparel Core 0543,Apparel,Raj Davis,113375.3
+544,Home & Garden Core 0544,Home & Garden,John Miller,41927.51
+545,Toys Core 0545,Toys,Raj Sato,107925.48
+546,Sports Core 0546,Sports,Liam Wang,57992.67
+547,Beauty Core 0547,Beauty,Sophia Chen,44569.99
+548,Books Core 0548,Books,Olivia Ali,96995.17
+549,Automotive Core 0549,Automotive,Ahmed Lopez,154966.63
+550,Pharmacy Core 0550,Pharmacy,Yuki Garcia,93885.25
+551,Furniture Core 0551,Furniture,James Miller,64526.96
+552,Pet Supplies Premium 0552,Pet Supplies,John Kumar,39266.38
+553,Electronics Premium 0553,Electronics,Lucas Costa,56877.89
+554,Grocery Premium 0554,Grocery,Omar Garcia,96156.02
+555,Apparel Premium 0555,Apparel,Liam Brown,48838.53
+556,Home & Garden Premium 0556,Home & Garden,Sophia Silva,151835.33
+557,Toys Premium 0557,Toys,Ahmed Miller,23915.09
+558,Sports Premium 0558,Sports,James Kumar,175766.14
+559,Beauty Premium 0559,Beauty,Fatima Patel,81896.88
+560,Books Premium 0560,Books,Lucas Ali,43539.84
+561,Automotive Premium 0561,Automotive,John Patel,162687.20
+562,Pharmacy Premium 0562,Pharmacy,Yuki Singh,118397.95
+563,Furniture Premium 0563,Furniture,Omar Wilson,122352.83
+564,Pet Supplies Value 0564,Pet Supplies,Emma Sato,305033.14
+565,Electronics Value 0565,Electronics,Priya Lopez,126945.15
+566,Grocery Value 0566,Grocery,Lucas Costa,133821.77
+567,Apparel Value 0567,Apparel,John Wilson,31876.78
+568,Home & Garden Value 0568,Home & Garden,Ananya Silva,126497.38
+569,Toys Value 0569,Toys,Emma Miller,87671.61
+570,Sports Value 0570,Sports,Omar Tanaka,96262.1
+571,Beauty Value 0571,Beauty,Raj Sharma,349333.66
+572,Books Value 0572,Books,Emma Ali,46687.0
+573,Automotive Value 0573,Automotive,Arjun Singh,83030.25
+574,Pharmacy Value 0574,Pharmacy,Zara Kumar,75630.47
+575,Furniture Value 0575,Furniture,Omar Sharma,46721.01
+576,Pet Supplies Online 0576,Pet Supplies,Priya Kim,164627.31
+577,Electronics Online 0577,Electronics,Ananya Wang,72891.67
+578,Grocery Online 0578,Grocery,Noah Lopez,225889.58
+579,Apparel Online 0579,Apparel,Li Nguyen,129042.06
+580,Home & Garden Online 0580,Home & Garden,Zara Costa,202077.66
+581,Toys Online 0581,Toys,Olivia Miller,45699.23
+582,Sports Online 0582,Sports,Raj Silva,61202.5
+583,Beauty Online 0583,Beauty,Mary Patel,99930.00
+584,Books Online 0584,Books,Yuki Miller,130276.74
+585,Automotive Online 0585,Automotive,Emma Davis,304503.21
+586,Pharmacy Online 0586,Pharmacy,Mia Ali,282531.79
+587,Furniture Online 0587,Furniture,Mia Chen,76684.87
+588,Pet Supplies Seasonal 0588,Pet Supplies,Priya Wang,83947.15
+589,Electronics Seasonal 0589,Electronics,Liam Wilson,124670.46
+590,Grocery Seasonal 0590,Grocery,Olivia Wang,118743.06
+591,Apparel Seasonal 0591,Apparel,Lucas Wang,110276.99
+592,Home & Garden Seasonal 0592,Home & Garden,Wei Wang,69727.96
+593,Toys Seasonal 0593,Toys,Mary Davis,243384.82
+594,Sports Seasonal 0594,Sports,Carlos Miller,259199.48
+595,Beauty Seasonal 0595,Beauty,Sophia Wilson,136670.37
+596,Books Seasonal 0596,Books,Noah Singh,44887.72
+597,Automotive Seasonal 0597,Automotive,Maria Ali,36603.95
+598,Pharmacy Seasonal 0598,Pharmacy,Kenji Singh,104581.12
+599,Furniture Seasonal 0599,Furniture,Priya Khan,45590.43
+600,Pet Supplies Core 0600,Pet Supplies,Raj Lopez,179259.30
+601,Electronics Core 0601,Electronics,Mary Kumar,31630.67
+602,Grocery Core 0602,Grocery,Omar Davis,256157.14
+603,Apparel Core 0603,Apparel,Olivia Wang,172075.16
+604,Home & Garden Core 0604,Home & Garden,Carlos Johnson,115175.65
+605,Toys Core 0605,Toys,Yuki Sato,59900.44
+606,Sports Core 0606,Sports,Arjun Kim,143674.94
+607,Beauty Core 0607,Beauty,Olivia Johnson,40425.59
+608,Books Core 0608,Books,Maria Kim,86790.34
+609,Automotive Core 0609,Automotive,Lucas Khan,121850.95
+610,Pharmacy Core 0610,Pharmacy,Raj Nguyen,366608.32
+611,Furniture Core 0611,Furniture,Liam Tanaka,229169.42
+612,Pet Supplies Premium 0612,Pet Supplies,Emma Kumar,196601.69
+613,Electronics Premium 0613,Electronics,James Patel,153112.55
+614,Grocery Premium 0614,Grocery,Mia Davis,191328.56
+615,Apparel Premium 0615,Apparel,John Ali,66457.94
+616,Home & Garden Premium 0616,Home & Garden,Kenji Singh,218676.46
+617,Toys Premium 0617,Toys,James Sharma,19456.7
+618,Sports Premium 0618,Sports,Ahmed Patel,122060.26
+619,Beauty Premium 0619,Beauty,Emma Kim,162443.2
+620,Books Premium 0620,Books,Liam Nguyen,50712.7
+621,Automotive Premium 0621,Automotive,Maria Wilson,169420.08
+622,Pharmacy Premium 0622,Pharmacy,James Garcia,96035.58
+623,Furniture Premium 0623,Furniture,Maria Tanaka,296803.99
+624,Pet Supplies Value 0624,Pet Supplies,Olivia Chen,95820.41
+625,Electronics Value 0625,Electronics,Raj Sharma,48693.10
+626,Grocery Value 0626,Grocery,Fatima Chen,51698.34
+627,Apparel Value 0627,Apparel,Wei Nguyen,101892.24
+628,Home & Garden Value 0628,Home & Garden,Lucas Wang,79052.56
+629,Toys Value 0629,Toys,Lucas Chen,304295.38
+630,Sports Value 0630,Sports,Noah Garcia,185927.86
+631,Beauty Value 0631,Beauty,Liam Davis,197915.93
+632,Books Value 0632,Books,Wei Lopez,76826.79
+633,Automotive Value 0633,Automotive,John Garcia,150967.26
+634,Pharmacy Value 0634,Pharmacy,Omar Smith,260049.48
+635,Furniture Value 0635,Furniture,Fatima Garcia,102462.11
+636,Pet Supplies Online 0636,Pet Supplies,Zara Miller,79015.63
+637,Electronics Online 0637,Electronics,Maria Singh,84560.9
+638,Grocery Online 0638,Grocery,Carlos Davis,43642.29
+639,Apparel Online 0639,Apparel,John Chen,47889.24
+640,Home & Garden Online 0640,Home & Garden,Olivia Davis,104577.19
+641,Toys Online 0641,Toys,Sophia Patel,100540.86
+642,Sports Online 0642,Sports,Arjun Wilson,86542.56
+643,Beauty Online 0643,Beauty,Lucas Sato,103336.24
+644,Books Online 0644,Books,Mary Sharma,64734.66
+645,Automotive Online 0645,Automotive,Lucas Kim,122223.33
+646,Pharmacy Online 0646,Pharmacy,Olivia Lopez,87258.54
+647,Furniture Online 0647,Furniture,Yuki Johnson,46168.2
+648,Pet Supplies Seasonal 0648,Pet Supplies,Zara Wang,126505.96
+649,Electronics Seasonal 0649,Electronics,Emma Tanaka,109084.55
+650,Grocery Seasonal 0650,Grocery,Ahmed Wang,58274.72
+651,Apparel Seasonal 0651,Apparel,Ahmed Sharma,152391.35
+652,Home & Garden Seasonal 0652,Home & Garden,Maria Garcia,142151.15
+653,Toys Seasonal 0653,Toys,Raj Singh,91851.67
+654,Sports Seasonal 0654,Sports,Sophia Silva,65716.62
+655,Beauty Seasonal 0655,Beauty,Priya Silva,120884.47
+656,Books Seasonal 0656,Books,Zara Tanaka,17066.78
+657,Automotive Seasonal 0657,Automotive,Li Johnson,185784.6
+658,Pharmacy Seasonal 0658,Pharmacy,Zara Nguyen,87345.34
+659,Furniture Seasonal 0659,Furniture,Olivia Brown,76470.83
+660,Pet Supplies Core 0660,Pet Supplies,Emma Sharma,100853.43
+661,Electronics Core 0661,Electronics,Li Lopez,93895.53
+662,Grocery Core 0662,Grocery,Fatima Brown,45085.42
+663,Apparel Core 0663,Apparel,Emma Garcia,36480.72
+664,Home & Garden Core 0664,Home & Garden,Zara Costa,64898.11
+665,Toys Core 0665,Toys,Sophia Garcia,167325.27
+666,Sports Core 0666,Sports,Maria Chen,41721.5
+667,Beauty Core 0667,Beauty,Maria Sato,36850.78
+668,Books Core 0668,Books,James Brown,368400.62
+669,Automotive Core 0669,Automotive,Priya Garcia,102773.47
+670,Pharmacy Core 0670,Pharmacy,Sophia Johnson,77883.12
+671,Furniture Core 0671,Furniture,Maria Tanaka,41897.32
+672,Pet Supplies Premium 0672,Pet Supplies,Noah Patel,116786.4
+673,Electronics Premium 0673,Electronics,Lucas Miller,35860.02
+674,Grocery Premium 0674,Grocery,Olivia Kim,68930.08
+675,Apparel Premium 0675,Apparel,Liam Brown,76325.93
+676,Home & Garden Premium 0676,Home & Garden,Raj Garcia,91520.95
+677,Toys Premium 0677,Toys,Priya Sato,52305.95
+678,Sports Premium 0678,Sports,Noah Ali,76438.98
+679,Beauty Premium 0679,Beauty,Raj Wang,155600.42
+680,Books Premium 0680,Books,Omar Costa,81223.06
+681,Automotive Premium 0681,Automotive,Maria Davis,88230.31
+682,Pharmacy Premium 0682,Pharmacy,Fatima Khan,147092.15
+683,Furniture Premium 0683,Furniture,Liam Kumar,112198.1
+684,Pet Supplies Value 0684,Pet Supplies,Priya Kumar,143179.73
+685,Electronics Value 0685,Electronics,Carlos Miller,69167.96
+686,Grocery Value 0686,Grocery,Lucas Patel,110672.16
+687,Apparel Value 0687,Apparel,Raj Smith,265673.96
+688,Home & Garden Value 0688,Home & Garden,Raj Brown,76904.76
+689,Toys Value 0689,Toys,Sophia Smith,79974.48
+690,Sports Value 0690,Sports,Emma Garcia,176252.72
+691,Beauty Value 0691,Beauty,Noah Chen,68103.53
+692,Books Value 0692,Books,Olivia Sato,96407.64
+693,Automotive Value 0693,Automotive,Liam Chen,78226.29
+694,Pharmacy Value 0694,Pharmacy,Arjun Lopez,194913.91
+695,Furniture Value 0695,Furniture,James Miller,155247.99
+696,Pet Supplies Online 0696,Pet Supplies,Ananya Singh,68213.19
+697,Electronics Online 0697,Electronics,Carlos Sharma,141048.07
+698,Grocery Online 0698,Grocery,Ahmed Johnson,180114.85
+699,Apparel Online 0699,Apparel,Emma Silva,29747.73
+700,Home & Garden Online 0700,Home & Garden,Ahmed Sato,158648.16
+701,Toys Online 0701,Toys,Li Wang,66329.11
+702,Sports Online 0702,Sports,Zara Davis,114674.97
+703,Beauty Online 0703,Beauty,Carlos Singh,104046.43
+704,Books Online 0704,Books,Mary Patel,31354.82
+705,Automotive Online 0705,Automotive,James Tanaka,101095.71
+706,Pharmacy Online 0706,Pharmacy,Yuki Garcia,159288.7
+707,Furniture Online 0707,Furniture,Li Brown,126180.49
+708,Pet Supplies Seasonal 0708,Pet Supplies,Priya Tanaka,87593.06
+709,Electronics Seasonal 0709,Electronics,Fatima Brown,63312.38
+710,Grocery Seasonal 0710,Grocery,Olivia Nguyen,144394.34
+711,Apparel Seasonal 0711,Apparel,Kenji Wang,61660.74
+712,Home & Garden Seasonal 0712,Home & Garden,Fatima Chen,160615.52
+713,Toys Seasonal 0713,Toys,Kenji Johnson,61085.23
+714,Sports Seasonal 0714,Sports,Yuki Lopez,115895.56
+715,Beauty Seasonal 0715,Beauty,Sophia Chen,81761.09
+716,Books Seasonal 0716,Books,Emma Brown,349134.55
+717,Automotive Seasonal 0717,Automotive,Noah Smith,71536.96
+718,Pharmacy Seasonal 0718,Pharmacy,Raj Davis,74547.1
+719,Furniture Seasonal 0719,Furniture,James Johnson,63637.44
+720,Pet Supplies Core 0720,Pet Supplies,Li Wilson,97590.81
+721,Electronics Core 0721,Electronics,Ananya Miller,44883.25
+722,Grocery Core 0722,Grocery,Kenji Nguyen,139141.18
+723,Apparel Core 0723,Apparel,Mary Sharma,46795.54
+724,Home & Garden Core 0724,Home & Garden,Liam Wang,167238.38
+725,Toys Core 0725,Toys,Raj Brown,126818.66
+726,Sports Core 0726,Sports,Sophia Smith,80491.65
+727,Beauty Core 0727,Beauty,Yuki Wilson,67902.78
+728,Books Core 0728,Books,Omar Sato,230127.97
+729,Automotive Core 0729,Automotive,Ahmed Kim,61233.50
+730,Pharmacy Core 0730,Pharmacy,Mary Miller,156575.27
+731,Furniture Core 0731,Furniture,Wei Johnson,76859.43
+732,Pet Supplies Premium 0732,Pet Supplies,Fatima Kim,126471.01
+733,Electronics Premium 0733,Electronics,Priya Smith,42886.24
+734,Grocery Premium 0734,Grocery,Raj Singh,164653.94
+735,Apparel Premium 0735,Apparel,Liam Singh,102822.22
+736,Home & Garden Premium 0736,Home & Garden,Raj Nguyen,104372.5
+737,Toys Premium 0737,Toys,Emma Garcia,94695.20
+738,Sports Premium 0738,Sports,Ahmed Silva,119197.5
+739,Beauty Premium 0739,Beauty,Emma Sato,68629.04
+740,Books Premium 0740,Books,Maria Sato,47226.0
+741,Automotive Premium 0741,Automotive,Arjun Wilson,282428.24
+742,Pharmacy Premium 0742,Pharmacy,Maria Singh,70114.7
+743,Furniture Premium 0743,Furniture,Omar Johnson,100884.31
+744,Pet Supplies Value 0744,Pet Supplies,Kenji Kim,228503.82
+745,Electronics Value 0745,Electronics,Li Garcia,141967.57
+746,Grocery Value 0746,Grocery,Olivia Patel,240426.01
+747,Apparel Value 0747,Apparel,Lucas Chen,156907.26
+748,Home & Garden Value 0748,Home & Garden,Zara Patel,37866.71
+749,Toys Value 0749,Toys,Ananya Brown,211980.99
+750,Sports Value 0750,Sports,James Costa,149179.72
+751,Beauty Value 0751,Beauty,Priya Wilson,42955.45
+752,Books Value 0752,Books,Kenji Sharma,268379.87
+753,Automotive Value 0753,Automotive,Priya Ali,167475.59
+754,Pharmacy Value 0754,Pharmacy,Lucas Singh,113628.03
+755,Furniture Value 0755,Furniture,Li Khan,75992.61
+756,Pet Supplies Online 0756,Pet Supplies,Mia Miller,78629.82
+757,Electronics Online 0757,Electronics,Zara Singh,74481.83
+758,Grocery Online 0758,Grocery,Sophia Kim,70530.87
+759,Apparel Online 0759,Apparel,Ahmed Wilson,111151.65
+760,Home & Garden Online 0760,Home & Garden,Noah Garcia,202366.16
+761,Toys Online 0761,Toys,Sophia Tanaka,100577.95
+762,Sports Online 0762,Sports,Fatima Tanaka,64149.87
+763,Beauty Online 0763,Beauty,Arjun Silva,61427.49
+764,Books Online 0764,Books,Emma Garcia,26418.77
+765,Automotive Online 0765,Automotive,Arjun Miller,115738.2
+766,Pharmacy Online 0766,Pharmacy,James Lopez,71441.56
+767,Furniture Online 0767,Furniture,Li Singh,113270.0
+768,Pet Supplies Seasonal 0768,Pet Supplies,Li Khan,224940.42
+769,Electronics Seasonal 0769,Electronics,Fatima Smith,85863.78
+770,Grocery Seasonal 0770,Grocery,Kenji Garcia,279966.82
+771,Apparel Seasonal 0771,Apparel,Mia Garcia,66004.51
+772,Home & Garden Seasonal 0772,Home & Garden,James Kim,144396.14
+773,Toys Seasonal 0773,Toys,James Lopez,26699.7
+774,Sports Seasonal 0774,Sports,Fatima Nguyen,192708.11
+775,Beauty Seasonal 0775,Beauty,Carlos Kumar,64547.29
+776,Books Seasonal 0776,Books,Yuki Miller,107754.17
+777,Automotive Seasonal 0777,Automotive,Ahmed Davis,142877.45
+778,Pharmacy Seasonal 0778,Pharmacy,Fatima Ali,142381.02
+779,Furniture Seasonal 0779,Furniture,John Khan,280638.1
+780,Pet Supplies Core 0780,Pet Supplies,Ahmed Nguyen,77370.76
+781,Electronics Core 0781,Electronics,Maria Johnson,133694.7
+782,Grocery Core 0782,Grocery,Mia Chen,191180.2
+783,Apparel Core 0783,Apparel,Fatima Khan,199478.15
+784,Home & Garden Core 0784,Home & Garden,Zara Johnson,161979.27
+785,Toys Core 0785,Toys,Omar Lopez,167751.54
+786,Sports Core 0786,Sports,Maria Smith,95045.74
+787,Beauty Core 0787,Beauty,Li Kim,158459.76
+788,Books Core 0788,Books,Priya Singh,58889.8
+789,Automotive Core 0789,Automotive,Ananya Wang,121101.96
+790,Pharmacy Core 0790,Pharmacy,Maria Ali,47886.38
+791,Furniture Core 0791,Furniture,Emma Khan,116337.85
+792,Pet Supplies Premium 0792,Pet Supplies,Priya Singh,122752.06
+793,Electronics Premium 0793,Electronics,Sophia Garcia,99082.53
+794,Grocery Premium 0794,Grocery,Liam Tanaka,79267.39
+795,Apparel Premium 0795,Apparel,Wei Chen,213409.91
+796,Home & Garden Premium 0796,Home & Garden,Kenji Kumar,80508.33
+797,Toys Premium 0797,Toys,Noah Khan,26345.63
+798,Sports Premium 0798,Sports,Kenji Wang,94336.48
+799,Beauty Premium 0799,Beauty,Raj Chen,136149.1
+800,Books Premium 0800,Books,Liam Wilson,214633.31
+801,Automotive Premium 0801,Automotive,Mary Sato,57152.50
+802,Pharmacy Premium 0802,Pharmacy,James Brown,173467.52
+803,Furniture Premium 0803,Furniture,James Kim,79574.11
+804,Pet Supplies Value 0804,Pet Supplies,Arjun Silva,79737.22
+805,Electronics Value 0805,Electronics,Mary Ali,230598.73
+806,Grocery Value 0806,Grocery,Arjun Costa,103139.11
+807,Apparel Value 0807,Apparel,Mia Chen,19120.35
+808,Home & Garden Value 0808,Home & Garden,Emma Garcia,99254.18
+809,Toys Value 0809,Toys,Omar Nguyen,159732.26
+810,Sports Value 0810,Sports,Lucas Khan,207078.49
+811,Beauty Value 0811,Beauty,Yuki Johnson,159730.53
+812,Books Value 0812,Books,James Johnson,137982.77
+813,Automotive Value 0813,Automotive,Liam Sharma,108292.97
+814,Pharmacy Value 0814,Pharmacy,Wei Garcia,169985.64
+815,Furniture Value 0815,Furniture,Fatima Wilson,161623.39
+816,Pet Supplies Online 0816,Pet Supplies,Ahmed Costa,111973.33
+817,Electronics Online 0817,Electronics,Priya Tanaka,127418.09
+818,Grocery Online 0818,Grocery,Priya Sharma,98129.96
+819,Apparel Online 0819,Apparel,Ahmed Tanaka,210756.58
+820,Home & Garden Online 0820,Home & Garden,Olivia Ali,45540.1
+821,Toys Online 0821,Toys,Carlos Singh,280000.47
+822,Sports Online 0822,Sports,Wei Patel,134735.1
+823,Beauty Online 0823,Beauty,Zara Sharma,318527.04
+824,Books Online 0824,Books,Noah Ali,76451.36
+825,Automotive Online 0825,Automotive,Li Johnson,173983.23
+826,Pharmacy Online 0826,Pharmacy,Mia Brown,90566.49
+827,Furniture Online 0827,Furniture,Mary Smith,289601.72
+828,Pet Supplies Seasonal 0828,Pet Supplies,Li Brown,76053.36
+829,Electronics Seasonal 0829,Electronics,Yuki Khan,146789.04
+830,Grocery Seasonal 0830,Grocery,Liam Miller,189758.7
+831,Apparel Seasonal 0831,Apparel,Liam Singh,237774.36
+832,Home & Garden Seasonal 0832,Home & Garden,Li Sharma,94715.17
+833,Toys Seasonal 0833,Toys,Noah Wang,165856.46
+834,Sports Seasonal 0834,Sports,Yuki Smith,95413.51
+835,Beauty Seasonal 0835,Beauty,Olivia Kumar,52422.04
+836,Books Seasonal 0836,Books,John Smith,189811.28
+837,Automotive Seasonal 0837,Automotive,Zara Silva,132828.78
+838,Pharmacy Seasonal 0838,Pharmacy,Mia Brown,105141.3
+839,Furniture Seasonal 0839,Furniture,Li Khan,96765.58
+840,Pet Supplies Core 0840,Pet Supplies,Sophia Davis,157931.53
+841,Electronics Core 0841,Electronics,Wei Sato,280000.95
+842,Grocery Core 0842,Grocery,James Nguyen,246371.40
+843,Apparel Core 0843,Apparel,Sophia Singh,97604.12
+844,Home & Garden Core 0844,Home & Garden,Ahmed Johnson,100294.63
+845,Toys Core 0845,Toys,Liam Miller,86288.53
+846,Sports Core 0846,Sports,Raj Singh,92797.74
+847,Beauty Core 0847,Beauty,Sophia Nguyen,42956.77
+848,Books Core 0848,Books,Mary Sato,131965.69
+849,Automotive Core 0849,Automotive,Yuki Costa,358004.7
+850,Pharmacy Core 0850,Pharmacy,Ananya Garcia,132273.49
+851,Furniture Core 0851,Furniture,John Davis,167801.11
+852,Pet Supplies Premium 0852,Pet Supplies,Yuki Costa,91065.74
+853,Electronics Premium 0853,Electronics,Omar Kumar,63904.87
+854,Grocery Premium 0854,Grocery,Lucas Ali,106766.85
+855,Apparel Premium 0855,Apparel,Priya Johnson,220758.97
+856,Home & Garden Premium 0856,Home & Garden,Omar Wilson,34905.28
+857,Toys Premium 0857,Toys,Carlos Sharma,204722.83
+858,Sports Premium 0858,Sports,Noah Garcia,126765.61
+859,Beauty Premium 0859,Beauty,Olivia Johnson,147443.06
+860,Books Premium 0860,Books,Ahmed Lopez,52790.55
+861,Automotive Premium 0861,Automotive,Arjun Johnson,108726.77
+862,Pharmacy Premium 0862,Pharmacy,Kenji Singh,29985.92
+863,Furniture Premium 0863,Furniture,Raj Khan,93142.21
+864,Pet Supplies Value 0864,Pet Supplies,Yuki Lopez,239210.09
+865,Electronics Value 0865,Electronics,Wei Chen,73175.11
+866,Grocery Value 0866,Grocery,Zara Tanaka,49345.7
+867,Apparel Value 0867,Apparel,John Sato,130155.72
+868,Home & Garden Value 0868,Home & Garden,Yuki Ali,26753.81
+869,Toys Value 0869,Toys,Li Tanaka,111351.53
+870,Sports Value 0870,Sports,Omar Sharma,182266.2
+871,Beauty Value 0871,Beauty,Kenji Silva,534913.95
+872,Books Value 0872,Books,Ananya Ali,193429.9
+873,Automotive Value 0873,Automotive,James Tanaka,51315.52
+874,Pharmacy Value 0874,Pharmacy,Mary Kim,52964.64
+875,Furniture Value 0875,Furniture,Li Ali,123148.87
+876,Pet Supplies Online 0876,Pet Supplies,Mary Ali,50816.03
+877,Electronics Online 0877,Electronics,Emma Kumar,174334.65
+878,Grocery Online 0878,Grocery,Maria Tanaka,422794.24
+879,Apparel Online 0879,Apparel,Fatima Kim,46442.8
+880,Home & Garden Online 0880,Home & Garden,Olivia Kim,64179.39
+881,Toys Online 0881,Toys,James Khan,192175.78
+882,Sports Online 0882,Sports,Maria Nguyen,179467.79
+883,Beauty Online 0883,Beauty,Kenji Sato,133980.91
+884,Books Online 0884,Books,Zara Garcia,76301.44
+885,Automotive Online 0885,Automotive,Mia Patel,66837.78
+886,Pharmacy Online 0886,Pharmacy,Arjun Sharma,79127.94
+887,Furniture Online 0887,Furniture,Ahmed Davis,50560.58
+888,Pet Supplies Seasonal 0888,Pet Supplies,Ahmed Smith,54135.67
+889,Electronics Seasonal 0889,Electronics,Wei Johnson,58324.36
+890,Grocery Seasonal 0890,Grocery,Mary Nguyen,119603.28
+891,Apparel Seasonal 0891,Apparel,Sophia Silva,104369.15
+892,Home & Garden Seasonal 0892,Home & Garden,Omar Brown,181266.44
+893,Toys Seasonal 0893,Toys,Arjun Patel,140156.03
+894,Sports Seasonal 0894,Sports,Ananya Sato,84727.47
+895,Beauty Seasonal 0895,Beauty,Carlos Kim,75303.32
+896,Books Seasonal 0896,Books,Carlos Costa,54962.88
+897,Automotive Seasonal 0897,Automotive,Yuki Costa,187529.05
+898,Pharmacy Seasonal 0898,Pharmacy,Priya Miller,39827.27
+899,Furniture Seasonal 0899,Furniture,James Tanaka,167786.56
+900,Pet Supplies Core 0900,Pet Supplies,Arjun Kumar,96828.37
+901,Electronics Core 0901,Electronics,Lucas Garcia,80696.3
+902,Grocery Core 0902,Grocery,Priya Wang,108187.06
+903,Apparel Core 0903,Apparel,Carlos Kim,116941.56
+904,Home & Garden Core 0904,Home & Garden,Mia Wilson,152499.31
+905,Toys Core 0905,Toys,Omar Wilson,133292.55
+906,Sports Core 0906,Sports,Noah Brown,71916.54
+907,Beauty Core 0907,Beauty,Raj Silva,83015.42
+908,Books Core 0908,Books,Liam Wilson,62526.86
+909,Automotive Core 0909,Automotive,Priya Sato,73525.32
+910,Pharmacy Core 0910,Pharmacy,Fatima Kim,78917.95
+911,Furniture Core 0911,Furniture,Noah Miller,71810.71
+912,Pet Supplies Premium 0912,Pet Supplies,Sophia Wang,102733.04
+913,Electronics Premium 0913,Electronics,Liam Sato,55455.58
+914,Grocery Premium 0914,Grocery,Fatima Kim,288775.5
+915,Apparel Premium 0915,Apparel,James Sato,154703.97
+916,Home & Garden Premium 0916,Home & Garden,Mary Smith,111695.56
+917,Toys Premium 0917,Toys,Ananya Patel,44413.71
+918,Sports Premium 0918,Sports,Zara Davis,150521.07
+919,Beauty Premium 0919,Beauty,Li Lopez,115960.4
+920,Books Premium 0920,Books,Priya Wang,148259.48
+921,Automotive Premium 0921,Automotive,Mary Sato,90351.7
+922,Pharmacy Premium 0922,Pharmacy,Fatima Kim,173562.24
+923,Furniture Premium 0923,Furniture,John Davis,32508.19
+924,Pet Supplies Value 0924,Pet Supplies,Priya Ali,338289.2
+925,Electronics Value 0925,Electronics,John Singh,86473.03
+926,Grocery Value 0926,Grocery,Fatima Silva,43215.11
+927,Apparel Value 0927,Apparel,John Wilson,60076.54
+928,Home & Garden Value 0928,Home & Garden,Maria Nguyen,65433.43
+929,Toys Value 0929,Toys,Wei Kim,93001.05
+930,Sports Value 0930,Sports,Fatima Singh,105295.81
+931,Beauty Value 0931,Beauty,Yuki Patel,44216.99
+932,Books Value 0932,Books,Ahmed Nguyen,36120.01
+933,Automotive Value 0933,Automotive,James Silva,140348.0
+934,Pharmacy Value 0934,Pharmacy,Carlos Johnson,110893.59
+935,Furniture Value 0935,Furniture,Ananya Singh,118904.68
+936,Pet Supplies Online 0936,Pet Supplies,Liam Lopez,263486.94
+937,Electronics Online 0937,Electronics,Fatima Chen,91655.03
+938,Grocery Online 0938,Grocery,Liam Davis,99370.77
+939,Apparel Online 0939,Apparel,Yuki Kim,48634.05
+940,Home & Garden Online 0940,Home & Garden,Noah Wang,157969.98
+941,Toys Online 0941,Toys,Emma Johnson,56112.46
+942,Sports Online 0942,Sports,Raj Khan,85784.79
+943,Beauty Online 0943,Beauty,Carlos Tanaka,190428.77
+944,Books Online 0944,Books,Sophia Kumar,117064.04
+945,Automotive Online 0945,Automotive,Arjun Nguyen,49600.04
+946,Pharmacy Online 0946,Pharmacy,Li Miller,126654.69
+947,Furniture Online 0947,Furniture,Lucas Patel,124344.28
+948,Pet Supplies Seasonal 0948,Pet Supplies,Maria Tanaka,58087.53
+949,Electronics Seasonal 0949,Electronics,Emma Singh,91095.08
+950,Grocery Seasonal 0950,Grocery,Arjun Nguyen,75697.0
+951,Apparel Seasonal 0951,Apparel,James Garcia,160425.63
+952,Home & Garden Seasonal 0952,Home & Garden,Mia Lopez,86575.97
+953,Toys Seasonal 0953,Toys,Priya Singh,144965.47
+954,Sports Seasonal 0954,Sports,Kenji Wang,127682.41
+955,Beauty Seasonal 0955,Beauty,Maria Johnson,38577.13
+956,Books Seasonal 0956,Books,Wei Nguyen,111209.2
+957,Automotive Seasonal 0957,Automotive,Wei Johnson,101601.09
+958,Pharmacy Seasonal 0958,Pharmacy,Kenji Nguyen,124535.56
+959,Furniture Seasonal 0959,Furniture,Raj Garcia,155720.48
+960,Pet Supplies Core 0960,Pet Supplies,Olivia Costa,40897.48
+961,Electronics Core 0961,Electronics,Li Costa,123430.23
+962,Grocery Core 0962,Grocery,Zara Kim,73400.95
+963,Apparel Core 0963,Apparel,Kenji Patel,62783.86
+964,Home & Garden Core 0964,Home & Garden,Li Johnson,107221.00
+965,Toys Core 0965,Toys,Wei Costa,44675.88
+966,Sports Core 0966,Sports,Yuki Costa,99099.84
+967,Beauty Core 0967,Beauty,Sophia Kim,37812.41
+968,Books Core 0968,Books,James Kim,136132.33
+969,Automotive Core 0969,Automotive,Emma Johnson,140963.28
+970,Pharmacy Core 0970,Pharmacy,Sophia Miller,44912.96
+971,Furniture Core 0971,Furniture,Omar Silva,95735.35
+972,Pet Supplies Premium 0972,Pet Supplies,Raj Ali,123221.88
+973,Electronics Premium 0973,Electronics,Ahmed Garcia,101981.58
+974,Grocery Premium 0974,Grocery,Carlos Brown,88874.39
+975,Apparel Premium 0975,Apparel,Fatima Garcia,103899.46
+976,Home & Garden Premium 0976,Home & Garden,Ananya Wilson,117185.04
+977,Toys Premium 0977,Toys,Mia Miller,154395.44
+978,Sports Premium 0978,Sports,Ananya Singh,46627.95
+979,Beauty Premium 0979,Beauty,Sophia Khan,157775.21
+980,Books Premium 0980,Books,Wei Kim,59335.0
+981,Automotive Premium 0981,Automotive,Omar Wang,42751.34
+982,Pharmacy Premium 0982,Pharmacy,John Sato,143212.24
+983,Furniture Premium 0983,Furniture,Mary Wang,72150.86
+984,Pet Supplies Value 0984,Pet Supplies,Raj Chen,91770.89
+985,Electronics Value 0985,Electronics,Raj Patel,66997.96
+986,Grocery Value 0986,Grocery,Yuki Johnson,73317.75
+987,Apparel Value 0987,Apparel,Fatima Costa,41205.62
+988,Home & Garden Value 0988,Home & Garden,James Garcia,101033.2
+989,Toys Value 0989,Toys,Yuki Tanaka,100829.4
+990,Sports Value 0990,Sports,Li Kim,76884.51
+991,Beauty Value 0991,Beauty,Kenji Garcia,105812.18
+992,Books Value 0992,Books,Raj Patel,118942.52
+993,Automotive Value 0993,Automotive,Ananya Silva,68063.94
+994,Pharmacy Value 0994,Pharmacy,Carlos Kumar,279429.37
+995,Furniture Value 0995,Furniture,Ahmed Wang,88700.68
+996,Pet Supplies Online 0996,Pet Supplies,Raj Tanaka,127018.06
+997,Electronics Online 0997,Electronics,Liam Silva,120323.08
+998,Grocery Online 0998,Grocery,John Kumar,601024.44
+999,Apparel Online 0999,Apparel,James Singh,125050.3
+1000,Home & Garden Online 1000,Home & Garden,John Wilson,260302.75

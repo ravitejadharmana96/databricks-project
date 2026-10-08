@@ -1,0 +1,65 @@
+# Plan: Silver and Gold layers for claude_catalog
+
+## Context
+The raw layer is done: `claude_catalog.raw` holds `departments`, `stores`, `customers` and `orders`, 1,000 rows each, with PK/FK constraints. Job `load_raw_layer_claude_catalog` (ID 48588428524370) runs on the Serverless Starter Warehouse (`406e144bbc87fee4`) because no cluster exists.
+The goal is a medallion architecture: raw (as received) -> silver (clean, trusted) -> gold (business-ready analytics).
+
+Deliverable once approved: copy this plan to a local text file, `/Users/apple/Desktop/Cluade_code_db/medallion_plan.txt`. It can't be written in plan mode.
+
+## Silver layer: `claude_catalog.silver` (clean, validated, conformed)
+Purpose: one trusted version of each entity. No business aggregation yet.
+
+| Table | What we do |
+|---|---|
+| silver.departments | Trim text, standardize category names, drop duplicate `department_id`, check `annual_budget >= 0` |
+| silver.stores | Trim text, upper-case `state`, validate region against the allowed list, check `open_date` is not in the future |
+| silver.customers | Lower-case and trim `email`, standardize `phone` to one format, add `full_name`, add `tenure_days` from `signup_date`, check `preferred_store_id` exists in stores |
+| silver.orders | Cast types, normalize `status`, recompute `total_amount = quantity * unit_price` and flag mismatches, add `order_year`, `order_month` and `is_cancelled_or_returned`, check all three FKs |
+| silver.dq_rejects | Quarantine table: rows that fail a rule, with `source_table`, `rule_name` and `rejected_at`. Good rows go to silver, bad rows go here. |
+
+Common to all silver tables:
+- Audit columns: `_loaded_at` and `_source_table`.
+- PK/FK constraints re-declared on silver.
+- Idempotent `CREATE OR REPLACE` or `MERGE` loading, the same pattern as the raw job.
+
+Caveat: the raw data is already clean, so `dq_rejects` will probably be empty. If you want to see the quarantine logic work, we can inject some bad rows into the raw data. That is optional.
+
+## Gold layer: `claude_catalog.gold` (business-ready, for dashboards and analysis)
+**Star schema:**
+- `dim_customer`, `dim_store`, `dim_department`
+- `dim_date`, generated from the order-date range with year, quarter, month, week and weekday
+- `fact_orders`: one row per order with dimension keys, quantity, amounts, status, and a net-revenue flag that excludes cancelled and returned orders
+
+**Aggregates:**
+- `agg_daily_sales`: revenue, orders, average order value (AOV) by day
+- `agg_monthly_revenue`: month-over-month growth
+- `agg_store_performance`: revenue, orders and AOV by store, region and state, with a rank
+- `agg_department_performance`: revenue and units by department and category
+- `customer_360`: lifetime value, order count, first and last order, days since last order, and an RFM segment (Champion, Loyal, At-risk, Lost)
+- `agg_order_status`: cancellation and return rates by store and department
+- `agg_payment_methods`: mix and revenue share by payment method
+
+**Questions this answers:**
+1. Which stores, regions and departments drive the most revenue?
+2. How is revenue trending month over month?
+3. Who are the top customers, and which ones are at risk of churning?
+4. Where are cancellation and return rates highest?
+5. Does the customer segment (Regular, Premium, VIP) change spend?
+6. Which payment methods dominate?
+
+## Orchestration
+- One multi-task job, `medallion_pipeline`, running on the same SQL warehouse (no cluster):
+  `raw_load -> silver_load -> gold_load`, each task depending on the previous one.
+- Reuse the existing raw task and `sql/load_raw_tables.sql`.
+- New files: `sql/silver_load.sql` and `sql/gold_load.sql`, uploaded to `/Workspace/Users/ravitejadharmana96@gmail.com/claude_raw_project/`.
+- Optional, not included unless you ask: a daily schedule, a Lakeview dashboard on gold, and a Genie space.
+
+## Verification
+- Row counts per layer: silver equals raw plus rejects; `fact_orders` has 1,000 rows.
+- No orphan FKs in silver or gold (anti-join queries).
+- `SUM(total_amount)` in raw equals the same figure in `fact_orders` before the net-revenue filter.
+- Run each gold KPI query once and check the results look sensible.
+- The job run succeeds end to end.
+
+## Decisions for you
+Silver and gold as schemas inside `claude_catalog` is the default. Say if you want different names, or a dashboard as the final step.
